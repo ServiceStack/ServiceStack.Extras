@@ -1,0 +1,1 @@
+C:\src\ServiceStack\tests\ServiceStack.ServiceInterface.Tests\obj\Release\ResolveAssemblyReference.cache
