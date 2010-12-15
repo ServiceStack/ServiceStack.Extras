@@ -251,3 +251,6 @@ CODE.inline
 	border-bottom: 1px solid #DCDCDC;
 	margin-bottom: 20px;
 }
+A IMG {
+	border:none;
+}
