@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Show case of applications built with ServiceStack</title>
+    <style type="text/css">
+        BODY, H1, H2, H3, UL, LI {
+            padding: 0;
+            margin: 0;
+        }
+        BODY {
+            font-family: Helvetica, Tahoma, Arial;
+            color: #444;
+            background: #000 url(img/bg.png) repeat-x 0 0;
+            background-attachment:fixed;
+            text-align: center;
+        }
+        A {
+            border:none;
+            color: #060;
+        }
+        #body {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            width: 860px;
+        }
+
+        #header
+        {
+            top: 0;
+            left: 0;
+            text-align: center;
+            position: fixed;
+            height: 120px;
+            width: 100%;
+            background: #000 url(img/bg.png) repeat-x 0 0;
+            border-bottom: solid 4px #222;
+        }
+        #header A
+        {
+            text-shadow:  none;
+        }
+        A:hover
+        {
+            color: #B4E800;            
+        }
+        H1
+        {
+            color: #fff;
+            padding: 93px 0 0 0;
+            font-weight: normal;
+            font-size: 20px;
+            text-align: center;
+            text-shadow:  #000 1px 1px -1px;
+        }
+        H2
+        {
+            text-align:center;
+            position: absolute;
+            width: 100%;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: normal;
+            font-size: 36px;
+            text-shadow:  #ccc .5px 1px -1px;
+            padding: 35px 0 10px 0;
+            text-transform: capitalize;
+            background: #000 url(img/header-bg.png) no-repeat 42.5% 0;
+        }
+        H2 A
+        {
+            color: #B4E800;
+            text-decoration: none;
+        }
+
+        #showcase {
+            margin: 150px 0 0 0;
+        }
+        #showcase H3
+        {
+            clear: left;
+            color: #eee;
+            text-shadow:  #000 1px 1px -1px;
+            margin: 0 0 10px 0;
+            padding: 20px 0 0 0;
+        }
+
+        #showcase A {
+            display: block;
+            float: left;
+            text-decoration: none;
+            padding: 0 20px 10px 0;
+        }
+        #showcase A SPAN {
+            color: #444;
+            text-align: center;
+            width: 390px;
+            margin: 10px 0 0 0;
+            padding: 5px;
+            display: block;
+            height: 50px;
+        }
+        #showcase A:hover SPAN {
+            color: #999;
+            text-shadow:  #000 1px 1px -1px;
+        }
+        #showcase IMG {
+            border: 4px solid transparent;
+        }
+        #showcase A:hover IMG {
+            border: 4px solid #B4E800;
+        }
+
+        #tell
+        {
+            clear: left;
+            padding: 0 0 100px 0;
+        }
+        H3
+        {
+            color: #ddd;
+            text-shadow:  #000 1px 1px -1px;
+        }
+        UL {
+            list-style: square;
+        }
+        LI
+        {
+            margin: 0 0 0 30px;
+            line-height: 30px;
+        }
+        #footer
+        {
+            position: fixed;
+            bottom: 0;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            background: #121212;
+            border-top: solid 1px #242424;
+            border-bottom: solid 1px #242424;
+            font-size: 13px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="body">
+
+<div id="header">
+    <h2><a href="http://www.servicestack.net">ServiceStack</a> show case</h2>
+    <h1>Websites and applications using ServiceStack</h1>
+</div>
+
+<div id="showcase">
+
+    <h3>Real world websites and applications using ServiceStack</h3>
+
+    <a href="http://beta.mflow.com/download">
+        <img src="img/mflowapp-400x350.jpg" alt="Mflow's original QT/C++ music player!" />
+        <span>Mflow's original QT/C++ music player - for PC &amp; Mac</span>
+    </a>
+    <a href="http://beta.mflow.com">
+        <img src="img/mflow-400x350.jpg" alt="Mflow's HTML5 music player!" />
+        <span>Mflow's new HTML5 music player</span>
+    </a>
+    <a href="http://www.freelamusica.com/">
+        <img src="img/freelamusica-400x350.jpg" alt="Free La Musica!" />
+        <span>Ajax app to view Spotify's data, using only SQLite FTS3</span>
+    </a>
+    <a href="http://blogs.mflow.com/mflowapi/MflowAjaxDemo/">
+        <img src="img/mflowajaxdemo-400x350.png" alt="Mflow API Ajax Demo" />
+        <span>Made for Google HackCamp on using the Mflow API</span>
+    </a>
+
+    <h3>Open Source examples and demos apps built with ServiceStack!</h3>
+
+    <a href="http://servicestack.net/ServiceStack.Hello/">
+        <img src="img/hello-400x350.png" alt="Hello, ServiceStack!" />
+        <span>Creating a Hello World Web service from scratch</span>
+    </a>
+    <a href="http://servicestack.net/RedisStackOverflow/">
+        <img src="img/redisstackoverflow-400x350.png" alt="Redis + StackOverflow!" />
+        <span>Mini StackOverflow clone using jQuery, C# and Redis</span>
+    </a>
+    <a href="http://servicestack.net/RestFiles/">
+        <img src="img/restfiles-400x350.png" alt="GitHub-like File Browser over REST!" />
+        <span>GitHub-like browser to view remote files over REST</span>
+    </a>
+    <a href="http://servicestack.net/RedisAdminUI/AjaxClient/">
+        <img src="img/redisadminui-400x350.png" alt="The Redis Admin UI!" />
+        <span>Admin UI - for browsing and managing data in Redis</span>
+    </a>
+    <a href="http://servicestack.net/ServiceStack.MovieRest/">
+        <img src="img/movierest-400x350.png" alt="REST at the Movies!" />
+        <span>REST Web service example for Movies with REST Log!</span>
+    </a>
+    <a href="http://www.servicestack.net/ServiceStack.Examples.Clients/">
+        <img src="img/ajaxexample-400x350.png" alt="REST at the Movies!" />
+        <span>Ajax example using the ServiceStack.js Client Gateway</span>
+    </a>
+</div>
+
+<div id="tell">
+    <h3>Other sightings of ServiceStack</h3>
+    <ul>
+        <li><a href="http://servicestackappharbor.apphb.com">ServiceStack demo on AppHarbor</a> by <a href="http://twitter.com/jakescott">@jakescott</a></li>
+    </ul>
+
+</div>
+</div>
+
+<div id="footer">
+    If you have an app using ServiceStack that you would like to see hear, we'd love to hear it,
+    submit it to: <a href="http://groups.google.com/group/servicestack">ServiceStack Google Group</a>
+</div>
+
+</body>
+</html>
