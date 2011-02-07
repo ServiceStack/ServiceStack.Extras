@@ -173,7 +173,7 @@ H3#logo-title
 }
 #download
 {
-	margin: -60px 0 20px 10px;
+	margin: -80px 0 20px 10px;
 	padding: 10px;
 	border-top: 1px solid #EEE;
 	border-left: 1px solid #EEE;
@@ -253,4 +253,54 @@ CODE.inline
 }
 A IMG {
 	border:none;
+}
+
+
+/* jstweets */
+
+#content a, #content a:link, #content a:visited {
+	text-decoration:none;
+    color: #060;    
+}
+#content a:hover {
+    text-decoration: underline;
+}
+#jstweets {
+    clear: right;
+	width:340px;
+    float: right;
+    font-size: 12px;
+	min-height:225px;
+	border: 1px dotted #7BB682;
+	text-align:left;
+    cursor: pointer;
+    overflow: auto;
+    color: #666;
+}
+#jstweets DIV {
+    padding: 5px;
+    border-bottom: 1px solid #EBEBEB;
+}
+#jstweets DIV:last-child {
+    border-bottom: none;
+}
+#jstweets DIV:hover {
+    background: #EEECEC;
+}
+H3#from-tweets
+{
+    margin: -10px 0 0 0;
+    float: right;
+    width: 280px;
+    background:transparent url('tbird.png') no-repeat top  left;
+    height: 32px;
+    padding: 20px 0 0 55px;
+    left: 520px;
+    font-size: 16px;
+    font-weight: normal;
+}
+H3#from-tweets A
+{
+    font-size: 16px;
+    color: #060;
 }
