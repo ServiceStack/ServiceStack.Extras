@@ -53,12 +53,13 @@ BODY
 {
 	font: 13px/18px Arial;
 	color: #333;
-	width: 830px;
+	width: 950px;
+	bborder: solid 1px red;
 }
 BODY.host
 {
-	background: url(bg-body.png) repeat-y;
-	padding-left: 40px;
+	background: url(bg-body-1024.png) repeat-y;
+	padding-left: 10px;
 	padding-bottom: 40px;
 }
 .r
@@ -114,7 +115,7 @@ A IMG
 }
 #btn-googlecode
 {
-	margin: 8px 0 0 635px;
+	margin: 8px 0 0 735px;
 	position: absolute;
 }
 H3#logo-title
@@ -153,7 +154,7 @@ H3#logo-title
 }
 #content
 {
-	width: 800px;
+	width: 900px;
 	padding: 20px;
 }
 #img-overview
@@ -173,7 +174,7 @@ H3#logo-title
 }
 #download
 {
-	margin: -80px 0 20px 10px;
+	margin: 15px 0 20px 10px;
 	padding: 10px;
 	border-top: 1px solid #EEE;
 	border-left: 1px solid #EEE;
@@ -181,6 +182,7 @@ H3#logo-title
 	border-bottom: 1px solid #CCC;
 	width: 320px;
 	text-align: center;
+	clear: right;
 	float: right;
 }
 #download H2
@@ -200,7 +202,7 @@ H3#logo-title
 }
 #sub-components
 {
-	margin-top: 60px;
+	margin-top: 140px;
 }
 #sub-components SPAN.summary
 {
@@ -214,8 +216,8 @@ H3#logo-title
 	padding-top: 20px;
 	height: 300px;
 	float: left;
-	width: 380px;
-	padding-right: 20px;
+	width: 420px;
+	padding-right: 30px;
 }
 .sub-component .lnk-component
 {
@@ -236,6 +238,7 @@ H3#logo-title
 	/*[disabled]color:#666;*/
 	margin: 0 0 10px;
 }
+
 DL
 {
 	margin-bottom: 10px;
@@ -267,15 +270,16 @@ A IMG {
 }
 #jstweets {
     clear: right;
-	width:340px;
+    width:340px;
     float: right;
     font-size: 12px;
-	min-height:225px;
-	border: 1px dotted #7BB682;
-	text-align:left;
+    min-height:225px;
+    border: 1px solid #7BB682;
+    text-align:left;
     cursor: pointer;
     overflow: auto;
     color: #666;
+    margin: 0 0 20px 40px;
 }
 #jstweets DIV {
     padding: 5px;

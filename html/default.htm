@@ -10,20 +10,22 @@
 	<a id="btn-googlecode" href="https://github.com/ServiceStack/ServiceStack" title="go to service stack project on GitHub"><img src="btn-github.png" alt="GitHub project" alt="ServiceStack GitHub logo" /></a>
 
 	<a href="http://www.servicestack.net" title="Open source Mono and .NET web service framework"><img src="logo-servicestack.png" alt="Service Stack" /></a>
-	<h3 id="logo-title">Opensource .NET and Mono REST Webservices framework</h3>
+	<h3 id="logo-title">Opensource .NET and Mono REST Web Services framework</h3>
 
 	<div id="breadcrumbs">
 		<a href="http://www.servicestack.net" class="selected">servicestack.net</a>
-		| <a href="https://github.com/ServiceStack/ServiceStack">github.com</a>
+		| <a href="http://www.servicestack.net/showcase/">showcase</a>
         | <a href="http://www.servicestack.net/ServiceStack.Hello/">hello world tutorial</a>
+        | <a href="http://www.servicestack.net/ServiceStack.MovieRest/">rest example</a>
         | <a href="http://www.servicestack.net/monotouch/remote-info/">monotouch tutorial</a>
+		| <a href="https://github.com/ServiceStack/ServiceStack">github.com</a>
 		| <a href="http://www.servicestack.net/mythz_blog/">blog</a>
 	</div>
 </div>
 
 <div id="content">
 
-<h3 id="from-tweets">Latest Tweets from <a href="http://twitter.com/servicestack">@ServiceStack</a></h3>
+<h3 id="from-tweets">Latest Tweets from <a href="http://twitter.com/servicestack">@ServiceStack</a>:</h3>
 <div id="jstweets">
 </div>
 
@@ -53,8 +55,10 @@
 	With no other configuration required, they are immediately discoverable and callable via the following supported endpoints:
 </p>
 <ul>
-	<li>REST and XML</li>
-	<li>REST and JSON</li>
+	<li>XML + REST</li>
+	<li>JSON + REST</li>
+	<li>CSV + REST</li>
+	<li>JSV + REST</li>
 	<li>SOAP 1.1 / 1.2</li>
 </ul>
 
@@ -190,18 +194,18 @@
 
 <span class="r"></span>
 <div id="footer">
-	Copyright &copy; 2010 Liquidbit Limited. All rights reserved.
+	Copyright &copy; 2011 Liquidbit Ltd. All rights reserved.
 </div>
 
 <script type="text/javascript">
-    $.getJSON("http://twitter.com/statuses/user_timeline.json?screen_name=ServiceStack&count=4&callback=?",
+    $.getJSON("http://twitter.com/statuses/user_timeline.json?screen_name=ServiceStack&count=5&callback=?",
         function(data){
             var sb = "";
             $.each(data, function(i,item){
                 var ct = item.text;
-                ct = ct.replace(/http:\/\/\S+/g,  '<a href="$&" target="_blank">$&</a>');
-                ct = ct.replace(/\s(@)(\w+)/g,    ' @<a onclick="javascript:pageTracker._trackPageview(\'/outgoing/twitter.com/\');" href="http://twitter.com/$2" target="_blank">$2</a>');
-                ct = ct.replace(/\s(#)(\w+)/g,    ' #<a onclick="javascript:pageTracker._trackPageview(\'/outgoing/search.twitter.com/search?q=%23\');" href="http://search.twitter.com/search?q=%23$2" target="_blank">$2</a>');
+                ct = ct.replace(/https?:\/\/\S+/g,  '<a href="$&" target="_blank">$&</a>');
+                ct = ct.replace(/\s(@)(\w+)/g,    ' <a onclick="javascript:pageTracker._trackPageview(\'/outgoing/twitter.com/\');" href="http://twitter.com/$2" target="_blank">@$2</a>');
+                ct = ct.replace(/\s(#)(\w+)/g,    ' <a onclick="javascript:pageTracker._trackPageview(\'/outgoing/search.twitter.com/search?q=%23\');" href="http://search.twitter.com/search?q=%23$2" target="_blank">#$2</a>');
 
                 sb += '<div>'+ct +'</div>';
             });
