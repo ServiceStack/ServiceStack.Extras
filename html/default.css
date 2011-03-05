@@ -137,6 +137,15 @@ H3.intro
 	font-weight: normal;
 	font-family: Comic Sans MS;
 }
+#quote
+{
+	color: #999;
+	position: absolute;
+	top: 15px;
+	left: 425px;		
+	font-family: Comic Sans MS;
+	font-style: italic;
+}
 
 #breadcrumbs
 {
@@ -153,6 +162,7 @@ H3.intro
 	text-decoration: none;
 	color: #000;
 }
+
 #footer
 {
 	border-top: 1px solid #DCDCDC;
