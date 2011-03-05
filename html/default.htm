@@ -34,14 +34,38 @@
 	<a href="overview.htm">view architecture overview</a>
 </div>
 
+<h3>ServiceStack is a modern, code-first .NET &amp; MONO web services framework encourages modern programming and best-practices web services development</h3>
+<br/>
 <p>
-	ServiceStack is a high-performance Open source .NET REST web services framework that simplifies the development of XML, JSON and SOAP Web Services.
+	With a primary focus on <strong>simplicity and speed</strong>, it allows development of web services using code-first, strong-typed C# models.
+	This enables us to infer a greater intelligence about your services, allowing for the auto-generation of documentation metadata pages,
+	auto-configured formats (XML,JSON,HTML,CSV,JSV) and endpoints (REST,RPC,SOAP), all <strong>without any configuration or code-gen required</strong>.
+	All whilst still providing a clean, succinct, strong-typed API, for a friction-free development experience.
+</p>
+
+<p>
+	From end-to-end it's built using only the fastest open source components available.
+	Avoiding all unnecessary overheads where possible, e.g. chosing only to use .NET's raw, lightweight <b>IHttpHandlers</b>.
+</p>
+
+<p>
+	When the .NET Framework fails to provide efficient implementations in our pipeline, we replace it with our own efficient implementations.
+	Seen in <strong><a href="https://github.com/ServiceStack/ServiceStack.Text">ServiceStack.Text</a></strong>
+	which now contain the fastest JSON, CSV and JSV Text serializers available for .NET
+	(<strong><a href="http://www.servicestack.net/mythz_blog/?p=344">over 3.6x faster then the fastest JSON serializer in .NET</a></strong>).
+</p>
+
+<p>
+	Out-of-the-box it's also bundled with libraries to assist the development of high-performance and scalable web services with
+	<a href="https://github.com/ServiceStack/ServiceStack/wiki/Caching">a multitude of caching options</a>
+	as well as the leading <a href="https://github.com/ServiceStack/ServiceStack.Redis">ServiceStack.Redis C# Client</a>
+	for <a href="http://redis.io">Redis</a> - <a href="http://redis.io/topics/benchmarks">The fastest NoSQL DB in the world</a>.
 </p>
 
 <p>
 	Developed in the modern era, it has first-class support for IOC, testing and convention-based development
 	enabling you to to develop your webservices entirely using pure, clean <acronym title="Plain Old CSharp Objects">POCO</acronym>
-	DataContract's that are decoupled from the endpoint that it is hosted on.
+	DataContract's, decoupled from the endpoint that it is hosted on.
 </p>
 
 <p>
@@ -50,27 +74,32 @@
 </p>
 
 <p>
-	<a href="http://www.servicestack.net/monotouch/remote-info/step4.htm">Creating a web service</a>
+	<strong><a href="http://www.servicestack.net/ServiceStack.Hello">Creating a web service</a></strong>
 	 is done by adding a new Request and Response DataContract and the <strong>Service</strong> to handle them.
-	With no other configuration required, they are immediately discoverable and callable via the following supported endpoints:
+	With just a single build and no other configuration required, they are immediately discoverable and callable.
 </p>
-<ul>
-	<li>XML + REST</li>
-	<li>JSON + REST</li>
-	<li>CSV + REST</li>
-	<li>JSV + REST</li>
-	<li>SOAP 1.1 / 1.2</li>
-</ul>
 
 <p>
 	Services can run on both
-	<a href="http://www.mono-project.com">Mono</a> and the <a href="http://www.microsoft.com/NET/">.NET Framework</a>
-	and be hosted in either a ASP.NET Web Application, Windows Service or Console application.
+	<b><a href="http://www.mono-project.com">Mono</a></b> and the <b><a href="http://www.microsoft.com/NET/">.NET Framework</a></b>
+	and be hosted in either in a stand-alone mode or together with an existing ASP.NET Web Application framework.
+	or detached from a web server, inside a Windows Service or Console application.
 </p>
 
-<p>If you want to know more about Service Stack, check out the following links:</p>
-
 <h2><a href="http://www.servicestack.net/showcase/">ServiceStack Showcase</a></h2>
+
+<div id="download">
+	<h2>Download the latest release</h2>
+
+	<span>
+		Service Stack is packaged in a single ServiceStack.zip, an
+		easy drop-in into any .NET project.
+	</span>
+
+	<a id="btn-download" href="https://github.com/ServiceStack/ServiceStack.Examples/downloads">
+		<img src="btn-download.gif" alt="Download ServiceStack.Examples.zip" />
+	</a>
+</div>
 
 <ul>
     <li><a href="http://www.servicestack.net/ServiceStack.Hello/">Hello world tutorial</a></li>
@@ -86,19 +115,6 @@
 	<li><a href="http://www.ajaxstack.com">Ajax Stack</a></li>
 	<li><strong><a href="http://groups.google.com/group/servicestack">ServiceStack Mail List and Google Group</a></strong></li>
 </ul>
-
-<div id="download">
-	<h2>Download the latest release</h2>
-
-	<span>
-		Service Stack is merged into a single ServiceStack.dll assembly that's an
-		easy drop-in into any .NET project.
-	</span>
-
-	<a id="btn-download" href="https://github.com/ServiceStack/ServiceStack.Examples/downloads">
-		<img src="btn-download.gif" alt="Download ServiceStack.Examples.zip" />
-	</a>
-</div>
 
 <div id="sub-components" class="section">
 	<h2>Running on high performance parts</h2>
