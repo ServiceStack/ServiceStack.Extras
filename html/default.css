@@ -51,8 +51,8 @@ TABLE
 start global element styles*/
 BODY
 {
-	font: 13px/18px Arial;
-	color: #333;
+	font: 14px/16px Arial;
+	color: #444;
 	width: 950px;
 	bborder: solid 1px red;
 }
@@ -129,6 +129,15 @@ H3#logo-title
 	font-weight: bold;
 	font-family: Arial;
 }
+H3.intro
+{
+	margin: 0 0 15px -15px;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: normal;
+	font-family: Comic Sans MS;
+}
+
 #breadcrumbs
 {
 	padding: 0 0 4px 120px;
