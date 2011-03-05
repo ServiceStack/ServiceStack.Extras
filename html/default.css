@@ -54,7 +54,6 @@ BODY
 	font: 14px/16px Arial;
 	color: #444;
 	width: 950px;
-	bborder: solid 1px red;
 }
 BODY.host
 {
@@ -136,6 +135,7 @@ H3.intro
 	line-height: 24px;
 	font-weight: normal;
 	font-family: Comic Sans MS;
+	text-shadow: 1px 1px 1px #ddd;
 }
 #quote
 {
