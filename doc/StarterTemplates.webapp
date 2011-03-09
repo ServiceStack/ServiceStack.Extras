@@ -1,0 +1,37 @@
+<apps>
+<web-application>
+        <name>ApiPath35</name>
+        <vhost>*</vhost>
+        <vport>5000</vport>
+        <vpath>/</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/StarterTemplates/ApiPath35</path>
+</web-application>
+<web-application>
+        <name>CustomPath35</name>
+        <vhost>*</vhost>
+        <vport>5001</vport>
+        <vpath>/</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/StarterTemplates/CustomPath35</path>
+</web-application>
+<web-application>
+        <name>CustomPath40</name>
+        <vhost>*</vhost>
+        <vport>5002</vport>
+        <vpath>/</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/StarterTemplates/CustomPath40</path>
+</web-application>
+<web-application>
+        <name>RootPath35</name>
+        <vhost>*</vhost>
+        <vport>5003</vport>
+        <vpath>/</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/StarterTemplates/RootPath35</path>
+</web-application>
+<web-application>
+        <name>RootPath40</name>
+        <vhost>*</vhost>
+        <vport>5004</vport>
+        <vpath>/</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/StarterTemplates/RootPath40</path>
+</web-application>
+</apps>

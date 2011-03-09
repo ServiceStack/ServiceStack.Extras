@@ -1,0 +1,114 @@
+<apps>
+<web-application>
+        <name>RootPath35</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/RootPath35</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/StarterTemplates/RootPath35</path>
+</web-application>
+<web-application>
+        <name>RootPath40</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/RootPath40</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/StarterTemplates/RootPath40</path>
+</web-application>
+<web-application>
+        <name>ApiPath35</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/ApiPath35</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/StarterTemplates/ApiPath35</path>
+</web-application>
+<web-application>
+        <name>CustomPath35</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/CustomPath35</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/StarterTemplates/CustomPath35</path>
+</web-application>
+<web-application>
+        <name>CustomPath40</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/CustomPath40</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/StarterTemplates/CustomPath40</path>
+</web-application>
+<web-application>
+        <name>ServiceStack.Northwind</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/ServiceStack.Northwind</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/ServiceStack.Northwind/ServiceStack.Northwind</path>
+</web-application>
+<web-application>
+        <name>RedisStackOverflow</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/RedisStackOverflow</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/RedisStackOverflow/RedisStackOverflow</path>
+</web-application>
+<web-application>
+        <name>RestFiles</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/RestFiles</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/RestFiles/RestFiles</path>
+</web-application>
+<web-application>
+        <name>ServiceStack.MovieRest</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/ServiceStack.MovieRest</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/ServiceStack.MovieRest</path>
+</web-application>
+<web-application>
+        <name>ServiceStack.Hello</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/ServiceStack.Hello</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/ServiceStack.Hello</path>
+</web-application>
+<web-application>
+        <name>ServiceStack.Examples.Host.Web</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/ServiceStack.Examples.Host.Web</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/ServiceStack.Examples/ServiceStack.Examples.Host.Web</path>
+</web-application>
+<web-application>
+        <name>RemoteInfo.Host.Web</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/RemoteInfo.Host.Web</vpath>
+        <path>/usr/share/nginx/mono/servicestack.net/RemoteInfo.Host.Web</path>
+</web-application>
+<web-application>
+        <name>RedisWebServices.Host</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/RedisWebServices.Host</vpath>
+        <path>/home/mythz/svn-src/servicestack/Common/ServiceStack.Redis/RedisWebServices/RedisWebServices.Host</path>
+</web-application>
+<web-application>
+        <name>RedisAdminUI</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/RedisAdminUI</vpath>
+        <path>/home/mythz/src/releases/RedisAdminUI</path>
+</web-application>
+<web-application>
+        <name>ServiceStack.Examples.Clients</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/ServiceStack.Examples.Clients</vpath>
+        <path>/home/mythz/src/ServiceStack.Examples/src/ServiceStack.Examples/ServiceStack.Examples.Clients</path>
+</web-application>
+<web-application>
+        <name>FreeLaMusica.Host.Web</name>
+        <vhost>*</vhost>
+        <vport>80</vport>
+        <vpath>/FreeLaMusica.Host.Web</vpath>
+        <path>/home/mythz/nginx/mono/freelamusica.com/FreeLaMusica.Host.Web</path>
+</web-application>
+</apps>
