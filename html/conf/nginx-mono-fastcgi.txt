@@ -1,0 +1,23 @@
+#nginx.conf:
+
+        location ~ \.(aspx|asmx|ashx|asax|ascx|soap|rem|axd|cs|config|dll)$ {
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+            include /etc/nginx/fastcgi_params;  
+        }
+
+        location ~ /(ServiceStack|RemoteInfo|RedisWebServices|RedisAdminUI|RedisStackOverflow|RestFiles|CustomPath|RootPath|ApiPath)\.* {  
+                root /usr/share/nginx/mono/servicestack.net/;  
+                index index.html index.htm index.aspx default.htm Default.htm default.aspx Default.aspx Default.ashx;  
+                fastcgi_index /default.htm;
+                fastcgi_pass  127.0.0.1:9000;  
+                fastcgi_param SCRIPT_FILENAME /usr/share/nginx/mono/servicestack.net$fastcgi_script_name;  
+                include /etc/nginx/fastcgi_params;  
+        }
+
+
+#ServiceStack.webapp:
+
+#start-mono-fastcgi-server.sh:
+
+/opt/mono/bin/fastcgi-mono-server4 --appconfigdir /etc/rc.d/init.d/mono-fastcgi /socket=tcp:127.0.0.1:9000 /logfile=/var/log/mono/fastcgi.log
