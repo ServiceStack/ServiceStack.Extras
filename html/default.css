@@ -132,11 +132,25 @@ H3.intro
 {
 	margin: 0 0 15px -15px;
 	width: 530px;
-	font-size: 20px;
-	line-height: 24px;
+	font-family: Helvetica;
+	font-size: 24px;
+	line-height: 28px;
 	font-weight: normal;
-	font-family: Comic Sans MS;
-	text-shadow: 1px 1px 1px #ddd;
+	color: #060;
+	text-shadow: 1px 2px 2px #c9c9cf;
+}
+#nuget
+{
+	text-align: center;
+	margin: 20px 0;
+}
+#nuget H3
+{
+	margin: 5px 0 0 0;
+}
+#nuget H3 A
+{
+	color: #039 !important;
 }
 #quote
 {
@@ -147,6 +161,23 @@ H3.intro
 	font-family: Comic Sans MS;
 	font-style: italic;
 }
+#slides
+{
+	margin: 30px 0 20px 20px;
+}
+#slides H5
+{
+	margin: 5px 0 0 10px;
+	font-size: 18px;
+	color: #666;
+	font-weight: normal;
+}
+#slides H5 A
+{
+	color: #039 !important;
+	text-decoration: underline !important;
+}
+
 
 #breadcrumbs
 {

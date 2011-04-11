@@ -27,8 +27,7 @@
 <div id="content">
 <div id="top-nav"><a href="default.htm">&lt; back</a></div>
 
-
-<h2>Detailed overview of Service Stack</h2>
+<h2>About Service Stack</h2>
 
 <p>
 	With a primary focus on <strong>simplicity and speed</strong>, ServiceStack allows development of web services code-first, using normal C# objects.
@@ -80,46 +79,6 @@
 	and be hosted in either in a stand-alone mode or together with an existing ASP.NET Web Application framework.
 	or detached from a web server, inside a Windows Service or Console application.
 </p>
-
-
-<h2>Visualizing ServiceStack</h2>
-
-<img src="detailed-overview.png" alt="Detailed overview of Service Stack" />
-
-<br />
-<p>
-	The diagram above shows all the custom code needed to host a simple web service in Service Stack.
-</p>
-<p>
-	No other endpoint configurations, mandatory base classes, Operation or Service Contract's are required - your service will just work.<br/>
-	It's well suited for SOA webservices development as you get the complete freedom of your Request and
-	Response DataContract's to define your web service interface.
-	Your <acronym title="Data Transfer Objects">DTO</acronym>'s define everything,
-	Service Stack does not add any extra markup to your services - they're just pure DTO's over HTTP.
-</p>
-<p>
-	The endpoint protocols and webservice transport are abstracted away (although still discoverable)
-	free-ing you to concentrate on implementing the web service logic against strongly-typed DataContract's.
-	If your DataContract's are kept in a dependency-free seperate assembly, they can safely be shared with
-	all your .NET service clients (including Silverlight) eliminating the need for any generated code.
-</p>
-
-<p>
-	The Xml and Json endpoints are efficient lightweight IHttpHandler's that allow your service to be called via REST HTTP GET requests, e.g:
-</p>
-
-<dl>
-	<dd><a href="http://www.servicestack.net/ServiceStack.Examples.Host.Web/ServiceStack/Xml/SyncReply/GetFactorial?ForNumber=2">/Xml/SyncReply/GetFactorial?ForNumber=2</a></dd>
-	<dd><a href="http://www.servicestack.net/ServiceStack.Examples.Host.Web/ServiceStack/Json/SyncReply/GetFactorial?ForNumber=2">/Json/SyncReply/GetFactorial?ForNumber=2</a></dd>
-</dl>
-
-<p>
-	A dynamically generated <a href="http://www.servicestack.net/ServiceStack.Examples.Host.Web/ServiceStack/Metadata">/Metadata</a> page
-	(containing your webservices <a href="http://www.servicestack.net/ServiceStack.Examples.Host.Web/ServiceStack/Public/Soap12">WSDL's</a>)
-	listing all your web services is also provided to assist service consumers discovering and accessing your services:
-</p>
-
-<img id="img-metadata" src="page-metadata.png" alt="Service Stack metadata page" />
 
 <div id="top-nav"><a href="default.htm">&lt; back</a></div>
 

@@ -36,58 +36,20 @@
 	<a href="overview.htm">view architecture overview</a>
 </div>
 
-<h3 class="intro">A modern, code-first, DTO-driven, web services framework encouraging best-practices development to create high-perfomance, scalable REST web services</h3>
+<h3 class="intro">
+	A modern, code-first, DTO-driven, WCF replacement web services framework encouraging
+	best-practices for creating DRY, high-perfomance, scalable REST web services
+</h3>
 
-<p>
-	With a primary focus on <strong>simplicity and speed</strong>, ServiceStack allows development of web services code-first, using normal C# objects.
-	Using strong-typed DTO's provides a well-defined contract for your web service as well as enabling us to infer a richer intelligence about them,
-	allowing the auto-generation of documentation metadata pages, auto-configuration of popular formats (XML,JSON,HTML,CSV,JSV) and endpoints (REST,RPC,SOAP),
-	all <strong>without any configuration or code-gen required</strong>.
-	All whilst still providing a clean, succinct, strong-typed API, for a friction-free development experience.
-</p>
+<div id="slides">
+	<a href="https://docs.google.com/present/view?id=dg3mcfb_208gv3kcnd8"><img
+		src="img/slides-overview-04.png" alt="ServiceStack Modus operandi" width="412" height="343" /></a>
 
-<p>
-	From end-to-end it's built using only the fastest open source components available.
-	Avoiding all unnecessary overheads where possible, e.g. chosing only to use .NET's raw, lightweight <b>IHttpHandlers</b>.
-</p>
-
-<p>
-	When the .NET Framework fails to provide efficient implementations in our pipeline, we replace it with our own efficient implementations.
-	As done in <strong><a href="https://github.com/ServiceStack/ServiceStack.Text">ServiceStack.Text</a></strong>
-	now maintaining the fastest Text serializers available for .NET - now with JSON, CSV, JSV formats that are over
-	<strong><a href="http://www.servicestack.net/mythz_blog/?p=344">3.6x faster then the fastest JSON serializer in .NET</a></strong>.
-</p>
-
-<p>
-	Out-of-the-box it's also bundled with libraries to assist the development of high-performance and scalable web services with
-	<a href="https://github.com/ServiceStack/ServiceStack/wiki/Caching">a multitude of caching options</a>
-	as well as the leading <a href="https://github.com/ServiceStack/ServiceStack.Redis">ServiceStack.Redis C# Client</a>
-	for <a href="http://redis.io">Redis</a> - <a href="http://redis.io/topics/benchmarks">The fastest NoSQL DB in the world</a>.
-</p>
-
-<p>
-	Developed in the modern era, it has first-class support for IOC, testing and convention-based development
-	enabling you to to develop your webservices entirely using pure, clean <acronym title="Plain Old CSharp Objects">POCO</acronym>
-	DataContract's, decoupled from the endpoint that it is hosted on.
-</p>
-
-<p>
-	These same <acronym title="Data Tranfer Objects">DTO</acronym>'s can later be shared with any .NET client application
-	eliminating the need for any generated code.
-</p>
-
-<p>
-	<strong><a href="http://www.servicestack.net/ServiceStack.Hello">Creating a web service</a></strong>
-	 is done by adding a new Request and Response DataContract and the <strong>Service</strong> to handle them.
-	With just a single build and no other configuration required, they are immediately discoverable and callable.
-</p>
-
-<p>
-	Services can run on both
-	<b><a href="http://www.mono-project.com">Mono</a></b> and the <b><a href="http://www.microsoft.com/NET/">.NET Framework</a></b>
-	and be hosted in either in a stand-alone mode or together with an existing ASP.NET Web Application framework.
-	or detached from a web server, inside a Windows Service or Console application.
-</p>
+	<h5>
+		<a href="https://docs.google.com/present/view?id=dg3mcfb_208gv3kcnd8">Full-overview</a> and
+		<a href="https://docs.google.com/present/view?id=dg3mcfb_213gsvvmmfk">Creating REST services</a> slides
+	</h5>
+</div>
 
 <h2><a href="http://www.servicestack.net/showcase/">ServiceStack Showcase</a></h2>
 
@@ -105,10 +67,12 @@
 </div>
 
 <ul>
+    <li><a href="https://github.com/ServiceStack/ServiceStack/wiki/Release-Notes">Latest Release Notes</a></li>
     <li><a href="http://www.servicestack.net/ServiceStack.Hello/">Hello world tutorial</a></li>
     <li><a href="http://www.servicestack.net/RestFiles/">GitHub-like browser to manage remote filesystem over REST</a></li>
     <li><a href="http://www.servicestack.net/ServiceStack.MovieRest/">REST Web Service example</a></li>
     <li><a href="http://www.servicestack.net/RedisStackOverflow/">StackOverflow clone created entirely with Redis and jQuery</a></li>
+    <li><a href="http://www.servicestack.net/Backbone.Todos/">Backbone.js TODO app with Redis and REST backend</a></li>
     <li><a href="http://www.servicestack.net/ServiceStack.Northwind/">ServiceStack features using a real-world dataset</a></li>
 	<li><a href="http://www.servicestack.net/RedisAdminUI/AjaxClient/">Live preview of Redis Admin UI (Service Stack + Redis)</a></li>
 	<li><a href="http://www.servicestack.net/ServiceStack.Examples.Clients/">Live preview of Service Stack</a></li>
@@ -118,6 +82,11 @@
 	<li><a href="http://www.ajaxstack.com">Ajax Stack</a></li>
 	<li><strong><a href="http://groups.google.com/group/servicestack">ServiceStack Mail List and Google Group</a></strong></li>
 </ul>
+
+<div id="nuget">
+	<a href="https://github.com/ServiceStack/ServiceStack/wiki/NuGet"><img src="http://servicestack.net/img/nuget-servicestack.png" alt="Install-Package ServiceStack" /></a>
+	<h3><a href="https://github.com/ServiceStack/ServiceStack/wiki/NuGet">Install ServiceStack via NuGet</a></h3>
+</div>
 
 <div id="sub-components" class="section">
 	<h2>Running on high performance parts</h2>
@@ -218,11 +187,15 @@
 </div>
 
 <script type="text/javascript">
-    $.getJSON("http://twitter.com/statuses/user_timeline.json?screen_name=ServiceStack&count=9&callback=?",
+    $.getJSON("http://twitter.com/statuses/user_timeline.json?screen_name=ServiceStack&count=20&callback=?",
         function(data){
             var sb = "";
+            var c = 0;
             $.each(data, function(i,item){
                 var ct = item.text;
+				if (ct.charAt(0) == '@') return;
+				if (c++ > 4) return;
+
                 ct = ct.replace(/https?:\/\/\S+/g,  '<a href="$&" target="_blank">$&</a>');
                 ct = ct.replace(/\s(@)(\w+)/g,    ' <a onclick="javascript:pageTracker._trackPageview(\'/outgoing/twitter.com/\');" href="http://twitter.com/$2" target="_blank">@$2</a>');
                 ct = ct.replace(/\s(#)(\w+)/g,    ' <a onclick="javascript:pageTracker._trackPageview(\'/outgoing/search.twitter.com/search?q=%23\');" href="http://search.twitter.com/search?q=%23$2" target="_blank">#$2</a>');
