@@ -137,7 +137,20 @@ H3.intro
 	line-height: 28px;
 	font-weight: normal;
 	color: #060;
-	text-shadow: 1px 3px 2px #c9c9cf;
+	text-shadow: 1px 2px 2px #c9c9cf;
+}
+#nuget
+{
+	text-align: center;
+	margin: 20px 0;
+}
+#nuget H3
+{
+	margin: 5px 0 0 0;
+}
+#nuget H3 A
+{
+	color: #039 !important;
 }
 #quote
 {
