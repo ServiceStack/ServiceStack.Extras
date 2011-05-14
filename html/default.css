@@ -51,9 +51,14 @@ TABLE
 start global element styles*/
 BODY
 {
-	font: 14px/16px Arial;
+	font: 14px arial;
+    line-height: 150%;
 	color: #444;
 	width: 950px;
+}
+A
+{
+    font-family: 'Droid Sans', Arial;
 }
 BODY.host
 {
@@ -73,9 +78,20 @@ BODY.host
 }
 H2
 {
-	color: #555;
-	font: 24px Arial;
-	padding: 15px 0;
+    font-family: 'Droid Sans', Arial;
+    font-weight: normal;
+    color: #363636;
+    font-size: 25px;
+    padding: 15px 0;
+}
+H2 A
+{
+    color: #205AAF !important;
+}
+H2 A:hover
+{
+    color: #363636 !important;
+    text-decoration: none !important;
 }
 P
 {
@@ -95,12 +111,17 @@ ACRONYM
 H3
 {
 	color: #063;
+    font-family: 'Droid Sans', Arial;
+    font-size: 22px;
+    font-weight: normal;
 }
 H4
 {
-	color: #555;
 	margin: 1em 0 0.5em;
-	font: bold 18px/24px Arial;
+    color: #343434;
+    font-family: 'Droid Sans', Arial;
+    font-size: 17px;
+    font-weight: normal;
 }
 UL
 {
@@ -123,21 +144,18 @@ H3#logo-title
 	margin-right: 0;
 	margin-bottom: 17px;
 	margin-left: 120px;
-	color: #0E5710;
-	font-size: 18px;
-	font-weight: bold;
-	font-family: Arial;
+    color: #0E5710;
 }
 H3.intro
 {
 	margin: 0 0 15px -15px;
 	width: 530px;
-	font-family: Helvetica;
+	font-family: 'Droid Sans', Helvetica;
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: normal;
 	color: #060;
-	text-shadow: 1px 2px 2px #c9c9cf;
+	text-shadow: 1px 1px 1px rgba(162, 162, 162, 0.6);
 }
 #nuget
 {
@@ -150,7 +168,12 @@ H3.intro
 }
 #nuget H3 A
 {
-	color: #039 !important;
+    color: #205AAF !important;
+}
+#nuget H3 A:hover
+{
+    color: #343434 !important;
+    text-decoration: none;
 }
 #quote
 {
@@ -174,34 +197,43 @@ H3.intro
 }
 #slides H5 A
 {
-	color: #039 !important;
-	text-decoration: underline !important;
+    color: #205AAF !important;
 }
-
+#slides H5 A:hover
+{
+    color: #343434 !important;
+    text-decoration: none;
+}
 
 #breadcrumbs
 {
 	padding: 0 0 4px 120px;
-	border-bottom: 1px solid #DCDCDC;
 	margin-bottom: 5px;
+    border-bottom: 1px dotted #D2D2D2;
 }
 #breadcrumbs A
 {
-	color: #0E5710;
+	color: #205AAF !important;
+    font-size: 15px;
+    text-decoration: none;
+}
+#breadcrumbs A:hover
+{
+    color: #343434 !important;
 }
 #breadcrumbs A.selected
 {
 	text-decoration: none;
-	color: #000;
+	color: #000 !important;
 }
 
 #footer
 {
-	border-top: 1px solid #DCDCDC;
+    border-top: 1px dotted #D2D2D2;
 	font-size: 11px;
 	color: #666;
 	padding: 4px 0 0 10px;
-	margin-top: 40px;
+	margin-top: 70px;
 }
 #content
 {
@@ -260,7 +292,13 @@ H3.intro
 	padding: 10px;
 	margin: 0;
 	display: block;
-	background: #F1F1F1;
+	background: #F0F0F0;
+    font-size: 15px;
+    line-height: 150%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px 3px 3px 3px;
+    padding: 10px;
 }
 .sub-component
 {
@@ -314,7 +352,7 @@ A IMG {
 
 #content a, #content a:link, #content a:visited {
 	text-decoration:none;
-    color: #060;    
+    color: #060;
 }
 #content a:hover {
     text-decoration: underline;
@@ -323,13 +361,15 @@ A IMG {
     clear: right;
     width:340px;
     float: right;
+    font-family: arial;
     font-size: 12px;
+    line-height: 130%;
     min-height:225px;
     border: 1px solid #7BB682;
     text-align:left;
     cursor: pointer;
     overflow: auto;
-    color: #666;
+    color: #444;
     margin: 0 0 20px 40px;
 }
 #jstweets DIV {
@@ -358,4 +398,9 @@ H3#from-tweets A
 {
     font-size: 16px;
     color: #060;
+}
+H3#from-tweets A:hover
+{
+    color: #343434 !important;
+    text-decoration: none;
 }

@@ -22,17 +22,43 @@
     <favorites_list name="html" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="default.htm" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/default.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="42" selection-start="5788" selection-end="5788" vertical-scroll-proportion="0.16020942">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="default.htm" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/default.htm">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="5" column="0" selection-start="147" selection-end="248" vertical-scroll-proportion="-3.2692308">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="overview.htm" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/overview.htm">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="5" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="0.08900524">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/default.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="215" column="18" selection-start="3264" selection-end="3264" vertical-scroll-proportion="0.751046">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -46,6 +72,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/default.css" />
         <option value="$PROJECT_DIR$/default.htm" />
         <option value="$PROJECT_DIR$/overview.htm" />
       </list>
@@ -78,6 +105,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -96,17 +124,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceStack.Extras" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.keymap" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
@@ -198,16 +239,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/overview.htm">
+    <entry file="file://$PROJECT_DIR$/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.4214876">
+        <state line="215" column="18" selection-start="3264" selection-end="3264" vertical-scroll-proportion="0.751046">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/default.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="42" selection-start="5788" selection-end="5788" vertical-scroll-proportion="0.16020942">
+        <state line="5" column="0" selection-start="147" selection-end="248" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/overview.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="0.08900524">
           <folding />
         </state>
       </provider>
