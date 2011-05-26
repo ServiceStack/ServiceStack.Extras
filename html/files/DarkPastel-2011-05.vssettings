@@ -170,7 +170,7 @@
 							<Item Name="Current Statement" Foreground="0x00000000" Background="0x0064BCE8" BoldFont="No"/>
 							<Item Name="Definition Window Background" Foreground="0x01000002" Background="0x00646464" BoldFont="No"/>
 							<Item Name="SymbolLineClassificationFormat" Foreground="0x00FFA953" Background="0x02000000" BoldFont="No"/>
-							<Item Name="MarkerFormatDefinition/HighlightedReference" Foreground="0x00000000" Background="0x00CCE0DB" BoldFont="No"/>
+							<Item Name="MarkerFormatDefinition/HighlightedReference" Foreground="0x00000000" Background="0x00008080" BoldFont="No"/>
 							<Item Name="HTML Attribute" Foreground="0x00FFFFFF" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="HTML Attribute Value" Foreground="0x005CC2A5" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="HTML Comment" Foreground="0x00C0C0C0" Background="0x02000000" BoldFont="Yes"/>
@@ -194,8 +194,9 @@
 							<Item Name="Refactoring Current Field" Foreground="0x02000000" Background="0x00B4E4B4" BoldFont="No"/>
 							<Item Name="Refactoring Dependent Field" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Class Identifier" Foreground="0x0029B6FF" Background="0x02000000" BoldFont="No"/>
-							<Item Name="ReSharper Completion Replacement Range" Foreground="0x00000000" Background="0x00E1E4FF" BoldFont="No"/>
+							<Item Name="ReSharper Completion Replacement Range" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Constant Identifier" Foreground="0x00FF00FF" Background="0x02000000" BoldFont="Yes"/>
+							<Item Name="ReSharper Current Line Highlight" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Delegate Identifier" Foreground="0x00FFA953" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Enum Identifier" Foreground="0x00FFA953" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Field Identifier" Foreground="0x00FF00FF" Background="0x02000000" BoldFont="No"/>
@@ -204,6 +205,7 @@
 							<Item Name="ReSharper Interface Identifier" Foreground="0x000080FF" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Late Bound Identifier" Foreground="0x000080FF" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Matched Brace" Foreground="0x00FFFFFF" Background="0x00808080" BoldFont="No"/>
+							<Item Name="ReSharper Matched Format String Item" Foreground="0x00000000" Background="0x00B3DEF5" BoldFont="No"/>
 							<Item Name="ReSharper Namespace Identifier" Foreground="0x00F1C7C7" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Operator Identifier" Foreground="0x00C8C800" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Static Class Identifier" Foreground="0x00FFA953" Background="0x02000000" BoldFont="No"/>
