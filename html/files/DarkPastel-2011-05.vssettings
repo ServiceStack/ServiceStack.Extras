@@ -381,18 +381,22 @@
 				<PropertyValue name="ShowTagToolbar">0</PropertyValue>
 				<PropertyValue name="RulerAndGridShowRuler">0</PropertyValue>
 				<PropertyValue name="LayoutTableToolColor">3575607</PropertyValue>
+				<PropertyValue name="DisableDesignView">0</PropertyValue>
 				<PropertyValue name="MarkupValidationWarningLevel">2</PropertyValue>
 				<PropertyValue name="ClientAttrCasing">2</PropertyValue>
 				<PropertyValue name="AttrValueNotQuoted">0</PropertyValue>
 				<PropertyValue name="CssPositionDesignMode">2</PropertyValue>
 				<PropertyValue name="LayerBackgroundLabelColor">15724527</PropertyValue>
 				<PropertyValue name="AutoThumbnailBorder">1</PropertyValue>
+				<PropertyValue name="JsEditorTimeout">50</PropertyValue>
+				<PropertyValue name="AutoIdSnippets">0</PropertyValue>
 				<PropertyValue name="ManualDtp">243</PropertyValue>
 				<PropertyValue name="StyleApplicationOverlayBackgroundColor">15577469</PropertyValue>
 				<PropertyValue name="LayoutSiteSelectedBorderColor">0</PropertyValue>
 				<PropertyValue name="CssUseHtmlForImageSize">0</PropertyValue>
 				<PropertyValue name="CssBackgroundDesignMode">2</PropertyValue>
 				<PropertyValue name="HtmlGifInterlaced">0</PropertyValue>
+				<PropertyValue name="JsExternalTimeout">2000</PropertyValue>
 				<PropertyValue name="AutoInsertCloseTag">-1</PropertyValue>
 				<PropertyValue name="InsertAttrValueQuotesFormatting">-1</PropertyValue>
 				<PropertyValue name="WebPartColor">7257087</PropertyValue>
@@ -405,9 +409,11 @@
 				<PropertyValue name="SmallPictureFileType">gif</PropertyValue>
 				<PropertyValue name="HtmlMargin">80</PropertyValue>
 				<PropertyValue name="JsFailsafeTimeout">15000</PropertyValue>
+				<PropertyValue name="RequireAngleBracketForTagIntellisense">-1</PropertyValue>
 				<PropertyValue name="AutoIdOnPasteSourceView">-1</PropertyValue>
 				<PropertyValue name="RulerAndGridGridSpacing">20</PropertyValue>
 				<PropertyValue name="EditorOptionFlags">167772168</PropertyValue>
+				<PropertyValue name="JsMaxCacheFiles">5</PropertyValue>
 				<PropertyValue name="IdleYield">-1</PropertyValue>
 				<PropertyValue name="IdleParseDelay">750</PropertyValue>
 				<PropertyValue name="InsertAttrValueQuotesTyping">0</PropertyValue>
@@ -418,9 +424,11 @@
 				<PropertyValue name="LayerLabelTextColor">0</PropertyValue>
 				<PropertyValue name="LoadToolboxOnIdle">-1</PropertyValue>
 				<PropertyValue name="ClientTagNotLowerCase">0</PropertyValue>
+				<PropertyValue name="RestrictionsBOMFlag">4294967295</PropertyValue>
 				<PropertyValue name="HtmlRightMarginRule">2</PropertyValue>
 				<PropertyValue name="HtmlBreakInTags">255</PropertyValue>
 				<PropertyValue name="AutoThumbnailSize">100</PropertyValue>
+				<PropertyValue name="HTMLSortAttributes">1</PropertyValue>
 				<PropertyValue name="LayoutMarginOverlayColor">12895452</PropertyValue>
 				<PropertyValue name="CssPageDesignMode">1</PropertyValue>
 				<PropertyValue name="RulerAndGridSnapDistance">5</PropertyValue>
@@ -450,7 +458,7 @@
 				<PropertyValue name="LayerHandleBackgroundColor">16777215</PropertyValue>
 				<PropertyValue name="LayerHandleColor">0</PropertyValue>
 				<PropertyValue name="HtmlJpegQuality">90</PropertyValue>
-				<PropertyValue name="TargetFriendlyName">XHTML 1.0 Transitional (Netscape 7, Opera 7, Internet Explorer 6)</PropertyValue>
+				<PropertyValue name="TargetFriendlyName">XHTML 1.0 Transitional</PropertyValue>
 				<PropertyValue name="ValidateDeprecated">0</PropertyValue>
 				<PropertyValue name="ShowAspNonVisualElements">1</PropertyValue>
 				<PropertyValue name="CssReuseUserClasses">1</PropertyValue>
@@ -472,7 +480,7 @@
 			</ToolsOptionsSubCategory>
 			<ToolsOptionsSubCategory name="JScript" RegisteredName="JScript" PackageName="Text Management Package">
 				<PropertyValue name="TabSize">4</PropertyValue>
-				<PropertyValue name="AutoListMembers">true</PropertyValue>
+				<PropertyValue name="AutoListMembers">false</PropertyValue>
 				<PropertyValue name="IndentStyle">1</PropertyValue>
 				<PropertyValue name="HideAdvancedMembers">true</PropertyValue>
 				<PropertyValue name="ShowNavigationBar">false</PropertyValue>
@@ -484,7 +492,7 @@
 				<PropertyValue name="WordWrap">false</PropertyValue>
 				<PropertyValue name="IndentSize">4</PropertyValue>
 				<PropertyValue name="CutCopyBlankLines">true</PropertyValue>
-				<PropertyValue name="AutoListParams">true</PropertyValue>
+				<PropertyValue name="AutoListParams">false</PropertyValue>
 			</ToolsOptionsSubCategory>
 			<ToolsOptionsSubCategory name="JScript Specific" RegisteredName="JScript Specific" PackageName="Visual Studio HTM Editor Package">
 				<PropertyValue name="JScriptInsertSpaceAfterKeywords">-1</PropertyValue>
@@ -631,9 +639,7 @@
 												<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{99b8fa2f-ab90-4f57-9c32-949f146f1914}" DockedWidth="215.906817917046" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="537.6" FloatingWidth="716.8"/>
 												<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{1820bae5-c385-4492-9de5-e35c9cf17b18}" DockedWidth="215.906817917046" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
 												<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="4" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}" DockedWidth="215.906817917046" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="384" FloatingWidth="512"/>
-											</DocumentGroup>
-											<DocumentGroup IsVisible="True" DockedHeight="827" DockedWidth="206.400946704139">
-												<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="309" IconResourcePackage="0c6e6407-13fc-4878-869a-c8b4016c57fe" Name="ST:0:0:{b2bc9916-e3e6-43a8-ad5f-3bdb95f53db5}" IsSelected="True" IsVisible="True" DockedHeight="827" DockedWidth="206.400946704139" FloatingTop="497" FloatingLeft="514" FloatingHeight="827" FloatingWidth="719"/>
+												<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="309" IconResourcePackage="0c6e6407-13fc-4878-869a-c8b4016c57fe" Name="ST:0:0:{b2bc9916-e3e6-43a8-ad5f-3bdb95f53db5}" IsVisible="True" DockedWidth="215.906817917046" FloatingTop="497" FloatingLeft="514" FloatingHeight="827" FloatingWidth="719"/>
 											</DocumentGroup>
 										</DocumentGroupContainer>
 										<DockGroup IsVisible="True" DockedHeight="192" DockedWidth="1024">
@@ -1125,23 +1131,23 @@
 				<Alias Name="props" Definition="View.PropertiesWindow"/>
 				<Alias Name="memory1" Definition="Debug.Memory1"/>
 				<Alias Name="memory2" Definition="Debug.Memory2"/>
-				<Alias Name="memory3" Definition="Debug.Memory3"/>
 				<Alias Name="Lcase" Definition="Edit.MakeLowercase"/>
-				<Alias Name="memory4" Definition="Debug.Memory4"/>
-				<Alias Name="locals" Definition="Debug.Locals"/>
+				<Alias Name="memory3" Definition="Debug.Memory3"/>
 				<Alias Name="kb" Definition="Debug.ListCallStack"/>
+				<Alias Name="locals" Definition="Debug.Locals"/>
+				<Alias Name="memory4" Definition="Debug.Memory4"/>
 				<Alias Name="da" Definition="Debug.ListMemory /Ansi"/>
-				<Alias Name="db" Definition="Debug.ListMemory /Format:OneByte"/>
 				<Alias Name="DelEOL" Definition="Edit.DeleteToEOL"/>
+				<Alias Name="db" Definition="Debug.ListMemory /Format:OneByte"/>
 				<Alias Name="dc" Definition="Debug.ListMemory /Format:FourBytes /Ansi"/>
 				<Alias Name="dd" Definition="Debug.ListMemory /Format:FourBytes"/>
 				<Alias Name="df" Definition="Debug.ListMemory /Format:Float"/>
-				<Alias Name="WordWrap" Definition="Edit.ToggleWordWrap"/>
 				<Alias Name="AddProj" Definition="File.AddNewProject"/>
+				<Alias Name="WordWrap" Definition="Edit.ToggleWordWrap"/>
 				<Alias Name="dq" Definition="Debug.ListMemory /Format:EightBytes"/>
 				<Alias Name="du" Definition="Debug.ListMemory /Unicode"/>
-				<Alias Name="designer" Definition="View.ViewDesigner"/>
 				<Alias Name="ListMembers" Definition="Edit.ListMembers"/>
+				<Alias Name="designer" Definition="View.ViewDesigner"/>
 				<Alias Name="code" Definition="View.ViewCode"/>
 				<Alias Name="ParamInfo" Definition="Edit.ParameterInfo"/>
 				<Alias Name="DelHSp" Definition="Edit.DeleteHorizontalWhiteSpace"/>
@@ -1153,14 +1159,14 @@
 				<Alias Name="TileV" Definition="Window.TileVertically"/>
 				<Alias Name="OutlineDefs" Definition="Edit.CollapsetoDefinitions"/>
 				<Alias Name="CloseAll" Definition="Window.CloseAllDocuments"/>
-				<Alias Name="ToggleBook" Definition="Edit.ToggleBookmark"/>
 				<Alias Name="InsertFile" Definition="Edit.InsertFileAsText"/>
+				<Alias Name="ToggleBook" Definition="Edit.ToggleBookmark"/>
 				<Alias Name="autos" Definition="Debug.Autos"/>
 				<Alias Name="SaveAll" Definition="File.SaveAll"/>
 				<Alias Name="new" Definition="File.NewFile"/>
 				<Alias Name="d" Definition="Debug.ListMemory"/>
-				<Alias Name="rtc" Definition="Debug.RunToCursor"/>
 				<Alias Name="navigate" Definition="View.WebBrowser"/>
+				<Alias Name="rtc" Definition="Debug.RunToCursor"/>
 				<Alias Name="g" Definition="Debug.Start"/>
 				<Alias Name="k" Definition="Debug.ListCallStack"/>
 				<Alias Name="format" Definition="Edit.FormatSelection"/>
@@ -1168,10 +1174,10 @@
 				<Alias Name="p" Definition="Debug.StepOver"/>
 				<Alias Name="q" Definition="Debug.StopDebugging"/>
 				<Alias Name="r" Definition="Debug.ListRegisters"/>
-				<Alias Name="t" Definition="Debug.StepInto"/>
 				<Alias Name="~*kb" Definition="Debug.ListCallStack /AllThreads"/>
-				<Alias Name="u" Definition="Debug.ListDisassembly"/>
+				<Alias Name="t" Definition="Debug.StepInto"/>
 				<Alias Name="nf" Definition="File.NewFile"/>
+				<Alias Name="u" Definition="Debug.ListDisassembly"/>
 				<Alias Name="registers" Definition="Debug.Registers"/>
 				<Alias Name="LineCut" Definition="Edit.LineCut"/>
 				<Alias Name="memory" Definition="memory1"/>
@@ -1181,9 +1187,9 @@
 				<Alias Name="DelBOL" Definition="Edit.DeleteToBOL"/>
 				<Alias Name="~*k" Definition="Debug.ListCallStack /AllThreads"/>
 				<Alias Name="NextBook" Definition="Edit.NextBookmark"/>
-				<Alias Name="TaskList" Definition="View.TaskList"/>
-				<Alias Name="Ucase" Definition="Edit.MakeUppercase"/>
 				<Alias Name="NewProj" Definition="File.NewProject"/>
+				<Alias Name="Ucase" Definition="Edit.MakeUppercase"/>
+				<Alias Name="TaskList" Definition="View.TaskList"/>
 				<Alias Name="Untabify" Definition="Edit.UntabifySelectedLines"/>
 				<Alias Name="GotoBrace" Definition="Edit.GotoBrace"/>
 				<Alias Name="cls" Definition="Edit.ClearAll"/>
@@ -1192,29 +1198,29 @@
 				<Alias Name="log" Definition="Tools.LogCommandWindowOutput"/>
 				<Alias Name="print" Definition="File.Print"/>
 				<Alias Name="op" Definition="File.OpenProject"/>
-				<Alias Name="eval" Definition="Debug.EvaluateStatement"/>
 				<Alias Name="alias" Definition="Tools.Alias"/>
+				<Alias Name="eval" Definition="Debug.EvaluateStatement"/>
 				<Alias Name="watch" Definition="Debug.Watch"/>
 				<Alias Name="cmd" Definition="View.CommandWindow"/>
-				<Alias Name="help" Definition="Help.F1Help"/>
 				<Alias Name="GotoLn" Definition="Edit.GoTo"/>
+				<Alias Name="help" Definition="Help.F1Help"/>
 				<Alias Name="disasm" Definition="Debug.Disassembly"/>
 				<Alias Name="redo" Definition="Edit.Redo"/>
-				<Alias Name="undo" Definition="Edit.Undo"/>
-				<Alias Name="tabify" Definition="Edit.TabifySelectedLines"/>
 				<Alias Name="LineDel" Definition="Edit.LineDelete"/>
+				<Alias Name="tabify" Definition="Edit.TabifySelectedLines"/>
+				<Alias Name="undo" Definition="Edit.Undo"/>
 				<Alias Name="StopOutlining" Definition="Edit.CollapsetoDefinitions"/>
 				<Alias Name="pr" Definition="Debug.StepOut"/>
-				<Alias Name="SaveAs" Definition="File.SaveSelectedItemsAs"/>
 				<Alias Name="FullScreen" Definition="View.FullScreen"/>
+				<Alias Name="SaveAs" Definition="File.SaveSelectedItemsAs"/>
 				<Alias Name="nav" Definition="navigate"/>
-				<Alias Name="SwapAnchor" Definition="Edit.SwapAnchor"/>
 				<Alias Name="exit" Definition="File.Exit"/>
-				<Alias Name="threads" Definition="Debug.Threads"/>
+				<Alias Name="SwapAnchor" Definition="Edit.SwapAnchor"/>
 				<Alias Name="PrevBook" Definition="Edit.PreviousBookmark"/>
+				<Alias Name="threads" Definition="Debug.Threads"/>
 				<Alias Name="close" Definition="File.Close"/>
-				<Alias Name="toolbox" Definition="View.Toolbox"/>
 				<Alias Name="bl" Definition="Debug.Breakpoints"/>
+				<Alias Name="toolbox" Definition="View.Toolbox"/>
 				<Alias Name="bp" Definition="Debug.ToggleBreakpoint"/>
 				<Alias Name="??" Definition="Debug.QuickWatch"/>
 				<Alias Name="StopFind" Definition="Edit.FindInFiles /stop"/>
@@ -1295,7 +1301,7 @@
 						<Column Name="Bitmap" Width="17" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
 						<Column Name="ProviderKnowsOrder" Width="19" Visibility="Visible" SortPriority="0" SortDirection="Up"/>
 						<Column Name="Checked" Width="28" Visibility="Invisible" SortPriority="-1" SortDirection="Up"/>
-						<Column Name="Description" Width="1132" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
+						<Column Name="Description" Width="1115" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
 						<Column Name="File" Width="130" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
 						<Column Name="Line" Width="70" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
 						<Column Name="Column" Width="70" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
@@ -1533,8 +1539,8 @@
 							<Item Name="ReSharper Field Identifier" Foreground="0x00FF00FF" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper HTML ID attribute" Foreground="0x0080FF00" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Hyperlink" Foreground="0x00DD913E" Background="0x02000000" BoldFont="No"/>
-							<Item Name="ReSharper Interface Identifier" Foreground="0x00FFA953" Background="0x02000000" BoldFont="No"/>
-							<Item Name="ReSharper Late Bound Identifier" Foreground="0x00FFA953" Background="0x02000000" BoldFont="No"/>
+							<Item Name="ReSharper Interface Identifier" Foreground="0x000080FF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="ReSharper Late Bound Identifier" Foreground="0x000080FF" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Namespace Identifier" Foreground="0x00F1C7C7" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Operator Identifier" Foreground="0x00C8C800" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Static Class Identifier" Foreground="0x00FFA953" Background="0x02000000" BoldFont="No"/>
@@ -1542,12 +1548,12 @@
 							<Item Name="ReSharper Suggestion" Foreground="0x0091DD3E" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Template Editor Template Keyword" Foreground="0x00FFA953" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Todo Item" Foreground="0x003232C8" Background="0x02000000" BoldFont="Yes"/>
-							<Item Name="ReSharper Type Parameter Identifier" Foreground="0x00FFA953" Background="0x02000000" BoldFont="No"/>
+							<Item Name="ReSharper Type Parameter Identifier" Foreground="0x000080FF" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Warning" Foreground="0x008080FF" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Write Usage" Foreground="0x00000000" Background="0x00C1B6FF" BoldFont="No"/>
 							<Item Name="Script Comment" Foreground="0x0080FF00" Background="0x02000000" BoldFont="No"/>
-							<Item Name="Script Keyword" Foreground="0x00FFA953" Background="0x02000000" BoldFont="No"/>
-							<Item Name="Script String" Foreground="0x008080FF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Script Keyword" Foreground="0x0029B6FF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Script String" Foreground="0x0080FF80" Background="0x02000000" BoldFont="No"/>
 							<Item Name="Smart Tag" Foreground="0x00F1C7C7" Background="0x02000000" BoldFont="No"/>
 							<Item Name="SQL DML Marker" Foreground="0x00DD913E" Background="0x02000000" BoldFont="No"/>
 							<Item Name="Stale Code" Foreground="0x00C0C0C0" Background="0x02000000" BoldFont="Yes"/>
@@ -1821,8 +1827,10 @@
 					<modify Cmd="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000359" CmdPri="00500001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000019f" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000300" BeginGroup="false"/>
 				</DefaultCustomizations>
 				<UserCustomizations>
+					<add_group Group="{28BFB7A4-EC68-44CA-B5DE-2024096E8802}:00000201" GroupPri="40000001" Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002"/>
+					<add_toolbar Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002" Name="GitExtensions" MenuType="toolbar"/>
 					<modify_toolbar Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000001" Visibility="auto" FullScreen="hide" Dock="top" Row="1" DockRectangle="0,25,1014,51"/>
-					<modify_toolbar Menu="{B85579AA-8BE0-4C4F-A850-90902B317571}:00004000" Visibility="auto" FullScreen="hide" Dock="top" Row="2" FloatRectangle="0,0,403,24" DockRectangle="2,0,403,24"/>
+					<modify_toolbar Menu="{B85579AA-8BE0-4C4F-A850-90902B317571}:00004000" Visibility="auto" FullScreen="hide" Dock="top" Row="2" FloatRectangle="0,0,403,24" DockRectangle="31,0,403,24"/>
 					<modify_toolbar Menu="{9ADF33D0-8AAD-11D0-B606-00A0C922E851}:0000000e" Visibility="auto" FullScreen="hide" Dock="top" Row="2" FloatRectangle="0,0,418,24" DockRectangle="7,0,418,24"/>
 					<modify_toolbar Menu="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00000010" Visibility="auto" FullScreen="hide" Dock="top" Row="2" DockRectangle="795,51,1345,77"/>
 					<modify_toolbar Menu="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00000013" Visibility="auto" FullScreen="hide" Dock="top" Row="2" DockRectangle="366,51,795,77"/>
@@ -1831,6 +1839,47 @@
 					<modify_toolbar Menu="{E8B06F42-6D01-11D2-AA7D-00C04F990343}:00000001" Visibility="auto" FullScreen="hide" Dock="top" Row="2" DockRectangle="0,51,781,77"/>
 					<modify_toolbar Menu="{A764E896-518D-11D2-9A89-00C04F79EFC3}:00000103" Visibility="auto" FullScreen="hide" Dock="top" Row="2" DockRectangle="0,51,291,77"/>
 					<modify_toolbar Menu="{CB26E292-901A-419C-B79D-49BD45C43929}:00002710" Visibility="auto" FullScreen="hide" Dock="top" Row="2" FloatRectangle="0,0,271,24" DockRectangle="33,0,271,24"/>
+					<modify_toolbar Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002" Name="GitExtensions" Visibility="hide" FullScreen="hide" Dock="top" Row="4" FloatRectangle="0,0,208,24" DockRectangle="0,0,208,24"/>
+					<add CmdPri="06008001" Group="{6201D7F8-C80D-46F6-8B13-02FEA9FBDB0A}:0000001e" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">GitPlugin.Connect.GitExtensionsFileHistory</add>
+					<add CmdPri="06010001" Group="{6201D7F8-C80D-46F6-8B13-02FEA9FBDB0A}:0000001e" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">GitPlugin.Connect.GitExtensionsRevert</add>
+					<add CmdPri="02800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001ec" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000042b">GitPlugin.Connect.GitExtensionsFileHistory</add>
+					<add CmdPri="02c00001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001ec" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000042b">GitPlugin.Connect.GitExtensionsRevert</add>
+					<add CmdPri="03800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000209" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430">GitPlugin.Connect.GitExtensionsFileHistory</add>
+					<add CmdPri="04400001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000209" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430">GitPlugin.Connect.GitExtensionsRevert</add>
+					<add CmdPri="0a800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000209" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000472">GitPlugin.Connect.GitExtensionsFileHistory</add>
+					<add CmdPri="0d400001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000209" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000472">GitPlugin.Connect.GitExtensionsRevert</add>
+					<add CmdPri="00800001" Group="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00001051" GroupPri="01000000" Menu="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00000034">GitPlugin.Connect.GitExtensionsFileHistory</add>
+					<add CmdPri="00c00001" Group="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00001051" GroupPri="01000000" Menu="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00000034">GitPlugin.Connect.GitExtensionsRevert</add>
+					<add CmdPri="02058001" Group="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:0000105d" GroupPri="00800000" Menu="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00000035">GitPlugin.Connect.GitExtensionsFileHistory</add>
+					<add CmdPri="0205c001" Group="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:0000105d" GroupPri="00800000" Menu="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00000035">GitPlugin.Connect.GitExtensionsRevert</add>
+					<add CmdPri="00380001" Group="{061317B2-F992-435E-A23D-9EAD4B972ED5}:00001002" GroupPri="00200000" Menu="{061317B2-F992-435E-A23D-9EAD4B972ED5}:00000102">GitPlugin.Connect.GitExtensionsFileHistory</add>
+					<add CmdPri="003c0001" Group="{061317B2-F992-435E-A23D-9EAD4B972ED5}:00001002" GroupPri="00200000" Menu="{061317B2-F992-435E-A23D-9EAD4B972ED5}:00000102">GitPlugin.Connect.GitExtensionsRevert</add>
+					<add CmdPri="40000001" Group="{28BFB7A4-EC68-44CA-B5DE-2024096E8802}:00000201" GroupPri="40000001" Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002">GitPlugin.Connect.GitExtensionsCommit</add>
+					<add CmdPri="40008001" Group="{28BFB7A4-EC68-44CA-B5DE-2024096E8802}:00000201" GroupPri="40000001" Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002">GitPlugin.Connect.GitExtensionsBrowse</add>
+					<add CmdPri="40010001" Group="{28BFB7A4-EC68-44CA-B5DE-2024096E8802}:00000201" GroupPri="40000001" Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002">GitPlugin.Connect.GitExtensionsPull</add>
+					<add CmdPri="40018001" Group="{28BFB7A4-EC68-44CA-B5DE-2024096E8802}:00000201" GroupPri="40000001" Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002">GitPlugin.Connect.GitExtensionsPush</add>
+					<add CmdPri="40020001" Group="{28BFB7A4-EC68-44CA-B5DE-2024096E8802}:00000201" GroupPri="40000001" Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002">GitPlugin.Connect.GitExtensionsStash</add>
+					<add CmdPri="40028001" Group="{28BFB7A4-EC68-44CA-B5DE-2024096E8802}:00000201" GroupPri="40000001" Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002">GitPlugin.Connect.GitExtensionsSettings</add>
+					<modify CmdPri="06008001" Group="{6201D7F8-C80D-46F6-8B13-02FEA9FBDB0A}:0000001e" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000006">GitPlugin.Connect.GitExtensionsFileHistory</modify>
+					<modify CmdPri="06010001" Group="{6201D7F8-C80D-46F6-8B13-02FEA9FBDB0A}:0000001e" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000004">GitPlugin.Connect.GitExtensionsRevert</modify>
+					<modify CmdPri="02800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001ec" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000042b" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000006">GitPlugin.Connect.GitExtensionsFileHistory</modify>
+					<modify CmdPri="02c00001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001ec" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000042b" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000004">GitPlugin.Connect.GitExtensionsRevert</modify>
+					<modify CmdPri="03800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000209" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000006">GitPlugin.Connect.GitExtensionsFileHistory</modify>
+					<modify CmdPri="04400001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000209" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000004">GitPlugin.Connect.GitExtensionsRevert</modify>
+					<modify CmdPri="0a800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000209" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000472" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000006">GitPlugin.Connect.GitExtensionsFileHistory</modify>
+					<modify CmdPri="0d400001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000209" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000472" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000004">GitPlugin.Connect.GitExtensionsRevert</modify>
+					<modify CmdPri="00800001" Group="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00001051" GroupPri="01000000" Menu="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00000034" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000006">GitPlugin.Connect.GitExtensionsFileHistory</modify>
+					<modify CmdPri="00c00001" Group="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00001051" GroupPri="01000000" Menu="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00000034" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000004">GitPlugin.Connect.GitExtensionsRevert</modify>
+					<modify CmdPri="02058001" Group="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:0000105d" GroupPri="00800000" Menu="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00000035" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000006">GitPlugin.Connect.GitExtensionsFileHistory</modify>
+					<modify CmdPri="0205c001" Group="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:0000105d" GroupPri="00800000" Menu="{D7E8C5E1-BDB8-11D0-9C88-0000F8040A53}:00000035" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000004">GitPlugin.Connect.GitExtensionsRevert</modify>
+					<modify CmdPri="00380001" Group="{061317B2-F992-435E-A23D-9EAD4B972ED5}:00001002" GroupPri="00200000" Menu="{061317B2-F992-435E-A23D-9EAD4B972ED5}:00000102" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000006">GitPlugin.Connect.GitExtensionsFileHistory</modify>
+					<modify CmdPri="003c0001" Group="{061317B2-F992-435E-A23D-9EAD4B972ED5}:00001002" GroupPri="00200000" Menu="{061317B2-F992-435E-A23D-9EAD4B972ED5}:00000102" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000004">GitPlugin.Connect.GitExtensionsRevert</modify>
+					<modify CmdPri="40000001" Group="{28BFB7A4-EC68-44CA-B5DE-2024096E8802}:00000201" GroupPri="40000001" Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000007">GitPlugin.Connect.GitExtensionsCommit</modify>
+					<modify CmdPri="40008001" Group="{28BFB7A4-EC68-44CA-B5DE-2024096E8802}:00000201" GroupPri="40000001" Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:0000000c">GitPlugin.Connect.GitExtensionsBrowse</modify>
+					<modify CmdPri="40010001" Group="{28BFB7A4-EC68-44CA-B5DE-2024096E8802}:00000201" GroupPri="40000001" Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000009">GitPlugin.Connect.GitExtensionsPull</modify>
+					<modify CmdPri="40018001" Group="{28BFB7A4-EC68-44CA-B5DE-2024096E8802}:00000201" GroupPri="40000001" Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000008">GitPlugin.Connect.GitExtensionsPush</modify>
+					<modify CmdPri="40020001" Group="{28BFB7A4-EC68-44CA-B5DE-2024096E8802}:00000201" GroupPri="40000001" Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000003">GitPlugin.Connect.GitExtensionsStash</modify>
+					<modify CmdPri="40028001" Group="{28BFB7A4-EC68-44CA-B5DE-2024096E8802}:00000201" GroupPri="40000001" Menu="{000D7B18-CDE4-49F0-B194-FE3E25BBF096}:00000002" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">GitPlugin.Connect.GitExtensionsSettings</modify>
 				</UserCustomizations>
 			</CommandBars>
 			<PropertyValue name="ShowLargeButtons">false</PropertyValue>
