@@ -147,7 +147,7 @@
 							<Item Name="Indicator Margin" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
 							<Item Name="Line Numbers" Foreground="0x00AF912B" Background="0x02000000" BoldFont="No"/>
 							<Item Name="Visible White Space" Foreground="0x00AF912B" Background="0x02000000" BoldFont="No"/>
-							<Item Name="Brace Matching (Rectangle)" Foreground="0x02000000" Background="0x02000000" BoldFont="Yes"/>
+							<Item Name="Brace Matching (Rectangle)" Foreground="0x02000000" Background="0x00414141" BoldFont="Yes"/>
 							<Item Name="Breakpoint (Disabled)" Foreground="0x00FFFFFF" Background="0x00463A96" BoldFont="No"/>
 							<Item Name="Breakpoint (Enabled)" Foreground="0x00FFFFFF" Background="0x00463A96" BoldFont="Yes"/>
 							<Item Name="Breakpoint (Error)" Foreground="0x00A3DBFF" Background="0x00463A96" BoldFont="Yes"/>
@@ -157,6 +157,7 @@
 							<Item Name="Code Snippet Dependent Field" Foreground="0x00FFFFFF" Background="0x02000000" BoldFont="No"/>
 							<Item Name="Code Snippet Field" Foreground="0x02000000" Background="0x00800080" BoldFont="Yes"/>
 							<Item Name="Collapsible Text" Foreground="0x00C0C0C0" Background="0x01000003" BoldFont="Yes"/>
+							<Item Name="outlining.collapsehintadornment" Foreground="0x00808080" Background="0x00FAF7F6" BoldFont="No"/>
 							<Item Name="Comment" Foreground="0x00A2FF75" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="Compiler Error" Foreground="0x00DD913E" Background="0x02000000" BoldFont="No"/>
 							<Item Name="CSS Comment" Foreground="0x00FFFF00" Background="0x02000000" BoldFont="Yes"/>
@@ -169,6 +170,7 @@
 							<Item Name="Current Statement" Foreground="0x00000000" Background="0x0064BCE8" BoldFont="No"/>
 							<Item Name="Definition Window Background" Foreground="0x01000002" Background="0x00646464" BoldFont="No"/>
 							<Item Name="SymbolLineClassificationFormat" Foreground="0x00FFA953" Background="0x02000000" BoldFont="No"/>
+							<Item Name="MarkerFormatDefinition/HighlightedReference" Foreground="0x00000000" Background="0x00CCE0DB" BoldFont="No"/>
 							<Item Name="HTML Attribute" Foreground="0x00FFFFFF" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="HTML Attribute Value" Foreground="0x005CC2A5" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="HTML Comment" Foreground="0x00C0C0C0" Background="0x02000000" BoldFont="Yes"/>
@@ -191,6 +193,7 @@
 							<Item Name="Refactoring Background" Foreground="0x01000002" Background="0x00E6EFEE" BoldFont="Yes"/>
 							<Item Name="Refactoring Current Field" Foreground="0x02000000" Background="0x00B4E4B4" BoldFont="No"/>
 							<Item Name="Refactoring Dependent Field" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="ReSharper Class Identifier" Foreground="0x0029B6FF" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Completion Replacement Range" Foreground="0x00000000" Background="0x00E1E4FF" BoldFont="No"/>
 							<Item Name="ReSharper Constant Identifier" Foreground="0x00FF00FF" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="ReSharper Delegate Identifier" Foreground="0x00FFA953" Background="0x02000000" BoldFont="No"/>
@@ -200,6 +203,7 @@
 							<Item Name="ReSharper Hyperlink" Foreground="0x00DD913E" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Interface Identifier" Foreground="0x000080FF" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Late Bound Identifier" Foreground="0x000080FF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="ReSharper Matched Brace" Foreground="0x00FFFFFF" Background="0x00808080" BoldFont="No"/>
 							<Item Name="ReSharper Namespace Identifier" Foreground="0x00F1C7C7" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Operator Identifier" Foreground="0x00C8C800" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Static Class Identifier" Foreground="0x00FFA953" Background="0x02000000" BoldFont="No"/>
