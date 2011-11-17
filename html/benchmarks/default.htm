@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Open source .NET and Mono web services framework</title>
+    <link rel="stylesheet" type="text/css" href="../default.css" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+	<!-- script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script -->
+	<script type="text/javascript" src="js/jquery-1.7.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
+
+	<style type="text/css">
+		#content {
+			margin:0;
+			padding:0;
+			width: auto;
+		}
+		#content h3 {
+			color: #666;
+			margin: 10px 0 0 0;
+			padding: 0 0 10px 0;
+		}
+		#content h4 {
+			float: left;
+			margin: 30px 0 0 0;
+			padding: 0;
+			color: #205AAF;
+			font-family: 'Droid Sans', Arial;
+			font-size: 18px;
+		}
+		#content h4 small {
+			color: #aaa;
+			padding: 0 0 0 5px;
+		}
+		#content i {
+			float: right;
+			display: block;
+			margin: 30px 10px 0 0;
+			font-style: normal;
+			font-size: 12px;
+			text-decoration: none;
+			color: #555;
+		}
+		#content i a
+		{
+			color: #205AAF !important;
+		}
+	</style>
+</head>
+<body class="host">
+
+<div id="header">
+	<a id="btn-googlecode" href="https://github.com/ServiceStack/ServiceStack" title="go to service stack project on GitHub"><img src="../btn-github.png" alt="GitHub project" alt="ServiceStack GitHub logo" /></a>
+
+	<a href="http://www.servicestack.net" title="Open source Mono and .NET web service framework"><img src="../logo-servicestack.png" alt="Service Stack" /></a>
+	<h3 id="logo-title">.NET Server frameworks and library benchmarks</h3>
+
+	<div id="breadcrumbs">
+		<a href="http://www.servicestack.net" class="selected">servicestack.net</a>
+		| <a href="http://www.servicestack.net/docs/">documentation</a>
+		| <a href="https://groups.google.com/forum/#!forum/servicestack">google group</a>
+		| <a href="http://www.servicestack.net/mythz_blog/">blog</a>
+	</div>
+</div>
+
+<div id="content">
+
+	<h3>Collection of .NET Benchmarks ordered by most recent</h3>
+	<span class="summary">
+		A collection .NET library 3rd Party and our own benchmarks found on the Internet showcasing the performance of .NET server technologies.<br/>
+		* Labels of components used in ServiceStack are highlighted in bold. 
+	</span>
+
+	<i>source: <a href="http://code.google.com/p/dapper-dot-net/">http://code.google.com/p/dapper-dot-net/</a></i>
+	<h4>Dappers ORM Benchmarks <small>(15/11/2011)</small></h4>
+	<div id="dapper-benchmarks"></div>
+
+	<i>source: <a href="http://theburningmonk.com/2011/11/performance-test-json-serializers-part-ii/">http://theburningmonk.com</a></i>
+	<h4>Burning Monk JSON Benchmarks <small>(12/11/2011)</small></h4>
+	<div id="burningmonk-benchmarks"></div>
+
+	<i>source: <a href="http://www.servicestack.net/mythz_blog/?p=474">http://www.servicestack.net/mythz_blog/?p=474</a></i>
+	<h4>Raven DB's NoSQL Performance Benchmarks <small>(08/09/2010)</small></h4>
+	<div id="redis-ravendb-benchmarks"></div>
+
+	<i>source: <a href="http://www.servicestack.net/benchmarks/NorthwindDatabaseRowsSerialization.100000-times.2010-08-17.html">http://www.servicestack.net/benchmarks/</a></i>
+	<h4>Northwind DB Tables .NET Serialization benchmarks <small>(17/08/2010)</small></h4>
+	<div id="northwind-benchmarks"></div>
+
+	<i>source: <a href="http://www.codeproject.com/Articles/43296/Introduction-to-Munq-IOC-Container-for-ASP-NET.aspx">http://www.codeproject.com/</a></i>
+	<h4>Munq's Stock Quotes Service example IOC Benchmarks <small>(26/10/2009)</small></h4>
+	<div id="munq-benchmarks"></div>
+
+	<hr style="width:99%; margin:30px 0 10px 0" />
+	<p>
+		* <a href="https://groups.google.com/forum/#!forum/servicestack"><b>Please let us know</b></a> if you have your own .NET benchmarks you would like to see here.
+	</p>
+
+</div>
+
+<script type="text/javascript">
+	var charts = [];
+
+	var benchmarks = [{
+		target: 'dapper-benchmarks',
+		title: 'Performance of SELECT mapping over 500 iterations', 
+		yTitle: 'Total execution time (ms)',
+		resultsMap: {
+			'Hand coded': [47],
+			'Dapper': [49],
+			'<b>ServiceStack.OrmLite</b>': [50],
+			'PetaPoco': [52],
+			'BLToolkit': [80],
+			'NHibernate SQL': [104],
+			'SubSonic CodingHorror': [107],
+			'Linq 2 SQL': [181],
+			'Entity Framework': [631]
+		},
+		resultsMapLabels: ["POCO Serialization"]
+	},{
+		target: 'burningmonk-benchmarks',
+		title: 'Performance of JSON serialization over 100,000 iterations', 
+		yTitle: 'Total execution time (ms)',
+		resultsMap: {
+			'<b>ServiceStack.Text</b>': [799.8832,1025.3732],
+			'fastJson': [1092.7831,1266.9510],
+			'DataContractJsonSerializer': [1267.9713, 4125.0374],
+			'SimpleJson': [1520.1667,4389.5182],
+			'Json.Net': [1657.7278,4646.8325],
+			'JavaScriptSerializer': [3491.9612,6328.6513],
+			'JayRock': [7167.3999,8755.7990]
+		},
+		resultsMapLabels: ["Serialization", "Deserialization"]
+	},{
+		target: 'redis-ravendb-benchmarks',
+		title: '.NET NoSQL Performance of writing 5,163 documents', 
+		yTitle: 'Total execution time (ms)',
+		resultsMap: {
+			'<b>ServiceStack.Redis + Cygin</b>': [182],
+			'<b>ServiceStack.Redis + Cygin + fsync</b>': [254],
+			'RavenDB': [2983]
+		},
+		resultsMapLabels: ["Raw Write Performance"]
+	},{
+		target: 'northwind-benchmarks',
+		title: 'Performance of serializing a row in every Northwind DB Table over 100,000 iterations', 
+		yTitle: 'Avg execution time (ms)',
+		resultsMap: {
+			'ProtoBuf.Net v.1': [120.9475],
+			'<b>ServiceStack.Jsv</b>': [270.0429],
+			'<b>ServiceStack.Json</b>': [312.6265],
+			'Microsoft Xml DataContract Serializer': [838.1957],
+			'Json.Net': [947.2970],
+			'Microsoft Binary Formatter': [1113.4011],
+			'Microsoft Json DataContract Serializer': [1125.8554]
+		},
+		resultsMapLabels: ["Serialization and Deserialization"]
+	},{
+		target: 'munq-benchmarks',
+		title: '.NET IOC Container Benchmarks', 
+		yTitle: 'Total execution time (ms)',
+		resultsMap: {
+			'None': [5.1746],
+			'Munq': [68.3385],
+			'<b>Funq</b>': [76.2779],
+			'StructureMap': [280.9433],
+			'Unity': [613.0442],
+			'Autofac': [877.035],
+			'Ninject': [4122.1138],
+			'Windsor': [4206.1035],
+			'Ninject2': [5059.9001]
+		},
+		resultsMapLabels: ["IOC Resolution performance"],
+		unit: ' ticks'
+	}
+	];
+
+	function makeChartOptions(options)
+	{
+		var o = $.extend({
+			target: '',
+			chartType: 'column',
+			title: '',
+			xCategories: [],
+			yTitle: '',
+			resultsMapLabels: [],
+			legend: {
+				align: 'right',
+				x: -100,
+				verticalAlign: 'top',
+				y: 20,
+				floating: true,
+				backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColorSolid) || 'white',
+				borderColor: '#CCC',
+				borderWidth: 1,
+				shadow: false 
+			},
+			tooltip: {
+				formatter: function() {
+					return '<b>'+ this.x +'</b><br/>' 
+						+ this.series.name +': '+ this.y + (options.unit || 'ms') + '<br/>' 
+						+ 'Total: '+ this.point.stackTotal + (options.unit || 'ms');
+				}
+			},
+			plotOptions: {
+				column: {
+					stacking: 'normal',
+					dataLabels: {
+						enabled: true,
+						color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+					}
+				}
+			}
+		}, options);
+
+		var chartOptions = {
+			chart: {
+				renderTo: o.target,
+				defaultSeriesType: o.chartType
+			},
+			title: {
+				text: o.title
+			},
+			xAxis: {
+				categories: o.xCategories
+			},
+			yAxis: {
+				min: 0,
+				title: {
+					text: o.yTitle
+				}
+			},
+			legend: o.legend,
+			tooltip: o.tooltip,
+			plotOptions: o.plotOptions,
+		    series: []
+		};
+
+		var data = [];
+		$.each(options.resultsMap, function(name, scores){
+			chartOptions.xAxis.categories.push(name);
+			$.each(scores, function(i, score){
+				if (!data[i]) data[i] = [];
+				data[i].push(Math.round(score));
+			});			
+		});
+		$.each(options.resultsMapLabels, function(i, name){
+			chartOptions.series.push({name: name, data: data[i]});
+		});
+
+		return chartOptions;
+	}
+
+	$(document).ready(function() {
+		$.each(benchmarks, function(i, benchmark){
+			charts.push(new Highcharts.Chart(makeChartOptions(benchmark)));
+		});
+	});		
+</script>
+
+
+<span class="r"></span>
+<div id="footer">
+	Copyright &copy; 2011 Liquidbit Ltd. All rights reserved.
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7722718-7");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
