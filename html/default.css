@@ -1,6 +1,6 @@
 /*http://meyerweb.com/eric/tools/css/reset/
 v1.0 | 20080212*/
-HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P, BLOCKQUOTE, PRE, A, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE, DEL, DFN, EM, FONT, IMG, INS, KBD, Q, S, SAMP, SMALL, STRIKE, STRONG, SUB, SUP, TT, VAR, B, U, I, CENTER, DL, DT, DD, OL, UL, LI, FIELDSET, FORM, LABEL, LEGEND, TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD
+HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P, BLOCKQUOTE, PRE, A, ABBR, ACRONYM, ADDRESS, BIG, CITE, , DEL, DFN, EM, FONT, IMG, INS, KBD, Q, S, SAMP, SMALL, STRIKE, STRONG, SUB, SUP, TT, VAR, B, U, I, CENTER, DL, DT, DD, OL, UL, LI, FIELDSET, FORM, LABEL, LEGEND, TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD
 {
 	margin: 0;
 	padding: 0;
@@ -156,24 +156,6 @@ H3.intro
 	font-weight: normal;
 	color: #060;
 	text-shadow: 1px 1px 1px rgba(162, 162, 162, 0.6);
-}
-#nuget
-{
-	text-align: center;
-	margin: 20px 0;
-}
-#nuget H3
-{
-	margin: 5px 0 0 0;
-}
-#nuget H3 A
-{
-    color: #205AAF !important;
-}
-#nuget H3 A:hover
-{
-    color: #343434 !important;
-    text-decoration: none;
 }
 #quote
 {
@@ -403,4 +385,34 @@ H3#from-tweets A:hover
 {
     color: #343434 !important;
     text-decoration: none;
+}
+
+#nuget H3
+{
+	padding: 10px 0 0 0;
+	text-align: center;
+}
+#nuget H3 A
+{
+    color: #205AAF !important;
+}
+#nuget H3 A:hover
+{
+    color: #343434 !important;
+    text-decoration: none;
+}
+
+.nuget-badge code {
+    background-color: #202020;
+    border: 4px solid #c0c0c0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 2px 2px 3px #6e6e6e;
+    color: #e2e2e2;
+    display:block;
+    font: 1.5em 'andale mono', 'lucida console', monospace; 
+    line-height: 1.5em;
+    overflow: auto;
+    padding: 15px; 
 }
