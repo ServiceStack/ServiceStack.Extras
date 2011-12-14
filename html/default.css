@@ -52,7 +52,7 @@ start global element styles*/
 BODY
 {
 	font: 14px arial;
-    line-height: 150%;
+	line-height: 150%;
 	color: #444;
 	width: 950px;
 }
@@ -63,7 +63,6 @@ A
 BODY.host
 {
 	background: url(bg-body-1024.png) repeat-y;
-	padding-left: 10px;
 	padding-bottom: 40px;
 }
 .r
