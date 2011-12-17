@@ -52,6 +52,10 @@
 		pre {
 			margin: 20px 40px;
 		}
+		acronym {
+			background-color:#f1f1f1;
+			border-bottom: 1px dotted #063;
+		}
 	</style>
 </head>
 <body class="host">
@@ -60,13 +64,13 @@
 	<a id="btn-googlecode" href="https://github.com/ServiceStack/" title="go to Service Stack projects on GitHub"><img src="btn-github.png" alt="GitHub project" alt="ServiceStack GitHub logo" /></a>
 
 	<a href="http://www.servicestack.net" title="Open source Mono and .NET web service framework"><img src="logo-servicestack-xmas.png" alt="Service Stack" /></a>
-	<h3 id="logo-title">Upgrade to a modern, faster, REST API-enabled ASP.NET MVC</h3>
+	<h3 id="logo-title">Upgrade to a cleaner, faster, REST API-enabled ASP.NET MVC</h3>
 
 	<div id="breadcrumbs">
-		<a href="http://www.servicestack.net" class="selected">servicestack.net</a>
+		<a href="https://twitter.com/ServiceStack">@ServiceStack</a>
 		| <a href="http://www.servicestack.net/docs/">documentation</a>
 		| <a href="https://groups.google.com/forum/#!forum/servicestack">google group</a>
-		| <a href="http://www.servicestack.net/mythz_blog/">blog</a>
+		| <a href="http://www.servicestack.net/mythz_blog/">blog</a>		
 	</div>
 </div>
 
@@ -75,11 +79,11 @@
 	<h2>Super charge your ASP.NET MVC website with ServiceStack's MVC PowerPack!</h2>
 	<span class="summary">
 		ASP.NET MVC is a fine web framework but ships with some inefficient and ugly parts by default and misses others, vital in this Internet age! <br/>
-		So like a .NET Santa, ServiceStack is in town to fill its gaps with goodies - because even good frameworks need love too :)
+		So like a .NET Santa, ServiceStack is in town to fill in gaps with goodies - because even good frameworks need love too :)
 	</span>
 
 	<img id="feature" src="servicestack-powerpack.png" align="right" alt="ServiceStack MVC PowerPack!" />
-	<p>TL;DR - ServiceStack boosts your MVC and is a dead-easy drop in with:</p>
+	<p>TL;DR - ServiceStack boosts your MVC website and is a dead-easy install with:</p>
 
     <div class="nuget-badge" style="width:550px;font-size:13px">
         <p>
@@ -101,7 +105,7 @@
 			No abstract and testable logging or configuration framework
 		</li>
 		<li>
-			Cache and Session providers mandate XML config and are untestable
+			Cache and Session providers are untestable and mandate XML config
 		</li>
 		<li>
 			ASP.NET's Session provider has a 
@@ -118,7 +122,7 @@
 	<h3 style="color:#063;">ServiceStack is coming to town! (bearing gifts :)</h3>
 
 	<p>
-		Even if you don't intend to use the Web Services framework, you can still take advantage of our highly-optimized, testable components promoting better code-practices and faster response times!
+		Even if you don't intend to use its Web Services framework, you can still take advantage of ServiceStack's highly-optimized, testable components enabling better code-practices and faster response times!
 	</p>
 
 	<h4>IOC - Funq</h4>
@@ -135,7 +139,7 @@
 		Already well known to 
 		<a href="http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID</a> developers, an IOC promotes well-designed architecture yet it only takes a little IOC to reap its great rewards. <br/> 
 		As it makes a great first IOC, we've included <a href="https://twitter.com/#!/KZU">@kzu's</a> <a href="http://funq.codeplex.com/">Funq</a> because of its tiny size, 
-		<a href="benchmarks/default.htm#munq">excellent perf and memory characteristics</a> that sports an intuitive, friendly, code-centric API. <br/>
+		<a href="benchmarks/default.htm#munq">excellent perf and memory characteristics</a> that sports an intuitive, friendly, code-centric interface. <br/>
 	</p>
 	<p>
 		To use: register all your dependencies in the new 
@@ -143,7 +147,7 @@
 		which are then automatically binded to the public properties or contructor of your MVC Controllers or ServiceStack web services. If you're already playing for team IOC, you likely have your preferred IOC player which you can draft pick instead 
 		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/NuGet/ServiceStack.Host.Mvc/content/App_Start/ServiceStackFramework.cs.pp#L55">from this line</a>.
 	</p>
-	<i>
+	<i style="text-align:center;display:block;">
 		A great resource if you're new to IOC/DI and TDD is Daniel Cazzulino ScreenCast series showing how he
 		<a href="http://blogs.clariusconsulting.net/kzu/funq-screencast-series-on-how-to-building-a-di-container-using-tdd/">developed Funq using TDD</a>.
 	</i>
@@ -157,8 +161,8 @@
 		The lack of a JSON serializer with decent performance in .NET has resorted some developers to using
 		<a href="https://twitter.com/#!/MikaelEliasson/status/141113725263417344">ugly hacks</a> 
 		and has caused us <a href="http://www.servicestack.net/mythz_blog/?p=344">to develop our own JSON serializer</a> that replaces .NET's slowest serializer with 
-		<a href="benchmarks/default.htm#burningmonk-json">.NET's fastest!</a> - for a factor of times better performance. <br />
-		We feel the energy savings could be better put to use, like toasting marshmallows over a warm xmas fire :)
+		<a href="benchmarks/default.htm#burningmonk-json">.NET's fastest</a> - for a factor of times better performance! <br />
+		We feel the CPU heat energy savings could be better put to use, like toasting marshmallows over a warm xmas fire :)
 	</p>
 	<p>
 		As JSON is quickly becoming the 
@@ -169,15 +173,15 @@
 	<p>
 		<img src="webconfig.png" alt="web.config" align="left" />
 		.NET's config model was conceived during the great hype of XML, a time where XML was the most sought buzzword prompting most enterprise-serving-companies to wedge it in their products' stockings or find some other way to be word-associated with it. Yet when the hype dies down, value proposition is the only thing to keep it standing, and against well-designed code - it's found wanting.	<br/>
-		Where it's consistently more verbose, poorer object model fit, creating more friction in a less capable language that only becomes further compounded when it needs to be duplicated to run in different host projects e.g. test projects.
+		It's consistently more verbose, a poorer object model fit, creating more friction in a less capable language that only becomes further compounded when it needs to be duplicated to run in different host projects e.g. test projects.
 	</p>
 	<p>
-		Unfortunately like most legacies the only way to be free of it, is to have a clean-break. There will never be a perfect implementation sufficing all use-cases, out-lasting the test of time. 
-		In order to avoid needing rewrites to take advantage of shinier technology, we prepare for it, in the cleanest way possible, by binding to interfaces not implementations - the best way to package
+		Unfortunately like most legacy tech the only way to be free of it, is to have a clean-break. There will never be a perfect lib implementation sufficing all use-cases, out-lasting the test of time. 
+		In order to avoid needing rewrites to take advantage of shinier tech, we prepare for it, in the cleanest way possible, by binding to interfaces not implementations - the best way to package
 		these interfaces is in a implementation and dependency-free dll.
 	</p>
 	<p>
-		And like any good advice, we keep strict adherence to it :) where all ServiceStack providers described below implement clean, unimpeded interfaces contained in the implementation-free 
+		And like any good advice, we keep strict adherence to it :) where all ServiceStack providers detailed below implement clean, unimpeded interfaces contained in the implementation-free 
 		<a href="https://github.com/ServiceStack/ServiceStack/tree/master/src/ServiceStack.Interfaces">ServiceStack.Interfaces.dll</a>.
 	</p>
 
@@ -203,7 +207,7 @@
 		where any write access to the Users Session is <b>locked for the entire request</b>. Common symptoms of this limitation include degraded response times for your pages and ajax requests.
 	</p>
 	<p>
-		Not being strong fans of un-intended, debilitating magic behaviour, we provide our own simple and flexible 
+		Not being strong fans of un-intended, debilitating magic behaviour, we provide our own simple yet flexible 
 		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/src/ServiceStack.Interfaces/CacheAccess/ISession.cs">ISession API</a>
 		that takes advantage of our Caching API so User Sessions can be stored in any of the above Caching Providers.
 	</p>
@@ -221,7 +225,7 @@
 	<h4>Configuration AppSettings</h4>
 	<p>
 		Despite being avid protesters in the anti-XML config movement, we're still 100% for app Config in general though it should be limited to what's actually configurable by your application.
-		Instead of building tiered configSection manatees we prefer to store structured data in App.config's appSetting's values which is still able to express rich config graphs but does so in a much more manageable size.
+		Instead of building tiered configSection manatees we prefer to store structured data in Web.config's appSetting's values which is still able to express rich config graphs but does so in a much more human-friendly and manageable size.
 	</p>
 	<p>
 		To this end we provide our own pluggable <a href="https://github.com/ServiceStack/ServiceStack/blob/master/src/ServiceStack/Configuration/AppSettings.cs">AppSettings</a>
@@ -229,11 +233,12 @@
 		<a href="http://www.servicestack.net/docs/text-serializers/jsv-format">human friendly JSV format</a>.
 	</p>
 	<p>
-		Benefits over existing Congiguration API include the ability to store rich data stuctures in appSettings values, more succinct access to typed data and since its an interface it can easily be swapped to source your configuration from an different source without a rewrite. e.g. from a central DB.
+		Benefits over existing Congiguration API include the ability to store rich data stuctures in appSettings values, more succinct access to typed data and since its an interface it can easily be swapped to source your configuration from an different source without a rewrite. e.g. from a central DB. <br/>
+		Here's a quick example show-casing its use:
 	</p>
 		
 <pre><code class="src">&lt;appSettings&gt;
-	&lt;add key="LastUpdated" value="25/12/2011 12:00:00" /&gt;
+	&lt;add key="LastUpdated" value="01/01/2012 12:00:00" /&gt;
 	&lt;add key="AllowedUsers" value="Tom,Mick,Harry" /&gt;
 	&lt;add key="RedisConfig" value="{Host:localhost,Port:6379,Database:1,Timeout:10000}" /&gt;
 &lt;/appSettings&gt;
@@ -242,8 +247,12 @@ IResourceManager appSettings = new AppSettings();
 DateTime lastUpdate = appSettings.Get&lt;DateTime&gt;("LastUpdated");
 IList&lt;string&gt; allowedUsers = appSettings.GetList("AllowedUsers");
 var redisConf = appSettings.Get&lt;RedisConfig&gt;("RedisConf");
-var searchUrl = appSettings.Get("SearchUrl", "http://www.google.com"); //default value if not exists
+var searchUrl = appSettings.Get("SearchUrl", "http://www.google.com"); //use default value if no config exists
 </code></pre>
+
+	<p>
+		The default value is particularly nice as you can have workable default options in code whilst its overridable in the Web.config when you need to.
+	</p>
 
 	<h4>The Entity Framework problem</h4>
 	<p>
@@ -254,65 +263,95 @@ var searchUrl = appSettings.Get("SearchUrl", "http://www.google.com"); //default
 		<a href="benchmarks/default.htm#dapper">2 fastest Micro ORMs</a> in .NET in 
 		<a href="http://code.google.com/p/dapper-dot-net/">Dapper</a> and <a href="https://github.com/ServiceStack/ServiceStack.OrmLite">OrmLite</a>. 
 		Both ORMs work the same way in that they're simply Extension methods hanging off ADO.NET's <kbd>System.Data.*</kbd> interfaces. 
-		Since they use your existing dbConnection, don't require any config and map to clean POCOs they are non-invasive and easy to use.
+		Since they don't require any config to setup, can make use your existing dbConnection and maps to clean POCOs - they are an easy and non-invasive option to use.
 	</p>
 	<p>
 		The best way to optimize pages with heavy database access is to profile it, and an easy way to do that is to make use of the 
 		<a href="http://code.google.com/p/mvc-mini-profiler/">Mvc MiniProfiler</a> embedded in ServiceStack. 
 		The profiler has special support for profiling Entity Framework, Linq2Sql, Dapper and OrmLite.
-		You can see screenshots and a good overview of how to enable it in the <a href="https://github.com/ServiceStack/ServiceStack/wiki/Release-Notes">Release Notes</a>.
+		There's screenshots and a good overview of how to enable it in the <a href="https://github.com/ServiceStack/ServiceStack/wiki/Release-Notes">v3.09 Release Notes</a>.
 	</p>
 
 	<h4>ServiceStack REST Web Services</h4>
 	<p>
 		<img src="restapi.png" alt="/api" align="left" />
-		By now you should have a fairly good idea of the different libraries that make up the ServiceStack Framework and the core philosophy behind them promoting clean, simple performance-focused solutions around good coding practices. The Web Service Framework itself closely follows this thread and extends it further by also promoting established remote service practices - uncommon in the .NET world. To get a flavour of its API, a simple 
+		By now you should have a fairly good idea of the different libraries that make up the ServiceStack Framework and the core philosophy behind them promoting clean, simple, performance-focused solutions around good coding practices. The Web Service Framework itself closely follows this thread and extends it further by also promoting established remote service practices - uncommon in the .NET world. To get a flavour of its simple API, a basic 
 		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/NuGet/ServiceStack.Host.Mvc/content/App_Start/ServiceStackFramework.cs.pp#L85">Web Service</a> and 
-		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/NuGet/ServiceStack.Host.Mvc/content/App_Start/ServiceStackFramework.cs.pp#L107">Rest Service</a> are included in this NuGet package
+		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/NuGet/ServiceStack.Host.Mvc/content/App_Start/ServiceStackFramework.cs.pp#L107">REST Service</a> are included in this NuGet package
 		and hosted from <b>/api</b>. Here's a recent thread describing 
 		<a href="https://groups.google.com/forum/#!msg/servicestack/D8hcApC0mfI/V45CG7SMxdQJ">ServiceStack's DTO-first advantages vs WCF's RPC paradigm</a>.
 	</p>
 	<p>
-		In a CoffeeTable overview: ServiceStack is a 
+		<i>In a CoffeeTable overview:</i> ServiceStack is a 
 		<a href="http://servicestack.net/benchmarks/">high-performance</a>, 
-		<a href="http://www.servicestack.net/files/slides-crossplatform.png">cross-platform</a> web service framework encouraging established remote services best practices from Martin Fowler (i.e. Remote Service, DTO, Gateway) common in the Java world and improved upon in ServiceStack by taking advantage of C#'s language features to provide a succinct and expressive framework that's also a friendly option for <a href="http://www.servicestack.net/mythz_blog/?p=785">F# (on Win or Mono)</a>.
-		It has strong support for all the web formats where all services automatically support JSON, XML, HTML, CSV, JSV, SOAP 1.1/1.2 wire formats including HTML ContentTypes (x-www-form-urlencoded / multipart) and calling conventions (JSONP) out-of-the-box with <b>no XML config required :)</b>. Whilst only taking a single LOC to disable system-wide features. 
+		<a href="http://www.servicestack.net/files/slides-crossplatform.png">cross-platform</a> web service framework encouraging established remote services best practices (i.e. Martin Fowlers 
+		<a href="http://martinfowler.com/eaaCatalog/remoteFacade.html">Remote Facade</a>, 
+		<a href="http://martinfowler.com/eaaCatalog/dataTransferObject.html">DTO</a>, 
+		<a href="http://martinfowler.com/eaaCatalog/gateway.html">Gateway</a>) common in the Java world and improved upon in ServiceStack after taking advantage of C#'s language features yielding a succinct and expressive framework that's also a friendly option for <a href="http://www.servicestack.net/mythz_blog/?p=785">F# (on Win or Mono)</a>.
 	</p>
 	<p>
-		For developer productivity the HTML view returns a 
-		<a href="https://github.com/ServiceStack/ServiceStack/wiki/HTML5ReportFormat">HTML5 JSON Report</a> so the web service response can be introspected at a glance and a 
+		ServiceStack has strong support for all web formats where all services created automatically enable JSON, XML, HTML, CSV, JSV, SOAP 1.1/1.2 wire formats incl. HTML ContentTypes (form-urlencoded/multipart) and calling conventions (JSONP) out-of-the-box with <b>no XML config required :)</b>. Whilst it only takes a single <acronym title="Line of Code">LOC</acronym> to disable system-wide features. 
+	</p>
+	<p>
+		For developer productivity viewing your web service in a browser returns a 
+		<a href="https://github.com/ServiceStack/ServiceStack/wiki/HTML5ReportFormat">HTML5 JSON Report</a> where its response can be introspected at a glance and a 
 		<a href="https://github.com/ServiceStack/ServiceStack/wiki/Release-Notes">built-in Mini Profiler</a> to easily able you to audit your web services execution times.
 	</p>
 	<p>
-		It's code-first DTO approach renders the API nearly invisible, getting out of your way letting you define your services using your own typed, code-first DTOs making it easy to create coarse-grained APIs (a best practice for remote communications). 
-		By default services bind to a DI/DDD clean room where it need only implement a dependency-free <kbd>IService</kbd> that accepts your C# Request POCO and
-		<a href="http://stackoverflow.com/questions/6245616/does-servicestack-support-binary-responses/6249042#6249042">lets you return any C# object</a>, generating the expected output. 
-		Exceptions are handled and automatically serialized into your Response DTO with the preferred HTTP Status Code.
-		It's layered, loosely coupled architecture promotes testable code with its built-in IOC allowing 
-		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/tests/ServiceStack.WebHost.IntegrationTests/Tests/WebServicesTests.cs">the same unit test to also run as an Integration test</a> on all JSON, XML, JSV and SOAP endpoints. 		
+		It's code-first DTO approach renders the API nearly invisible (i.e. the best kind :), getting out of your way to provide a friction-free dev experience where services are defined using typed, code-first DTOs making it a cinch to create coarse-grained APIs (best practice for remote communications). 
+		By default services bind to a <acronym title="Dependency Injection">DI</acronym>/<acronym title="Domain Driven Design">DDD</acronym> clean room where it need only implement the dependency-free 
+		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/src/ServiceStack.Interfaces/ServiceHost/IService.cs">IService</a> that accepts your C# Request POCO and
+		<a href="http://stackoverflow.com/questions/6245616/does-servicestack-support-binary-responses/6249042#6249042">lets you return any C# object</a>, generating the desired output.
+		C# Exceptions are handled as well, serialized into your Response DTO and sent with the preferred HTTP Status Code.
+		It's layered design enforces loosely-coupled and testable code where
+		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/tests/ServiceStack.WebHost.IntegrationTests/Tests/WebServicesTests.cs">the same unit test can run as an Integration test</a> on all JSON, XML, JSV and SOAP endpoints. 		
 	</p>
 	<p>
-		For client/server access ServiceStack includes 
+		For client/server connectivity, succinct and strong-typed 
 		<a href="http://www.servicestack.net/RestFiles/#!files/tests/SyncRestClientTests.cs.txt">Sync</a> and 
 		<a href="http://www.servicestack.net/RestFiles/#!files/tests/AsyncRestClientTests.cs.txt">Async</a> 
-		generic service clients providing strong-typed access end-to-end without any code-gen (using the code-first DTOs) on .NET/Mono platforms including 
-		<a href="https://github.com/ServiceStack/ServiceStack.Examples/blob/master/src/MonoTouch/RestFilesClient/RestFilesClient/Main.cs#L46">MonoTouch</a>.
-	</p>
-	<p>
-		For a comparison with Web APIs <a href="twitter.com/AlexZeitler">@AlexZeitler</a> has started a port of ServiceStack.Example projects at:
-		<a href="https://github.com/AlexZeitler/WebApi.Examples">https://github.com/AlexZeitler/WebApi.Examples</a>
+		generic service clients are included enabling typed access end-to-end without any code-gen (re-using code-first DTOs) on .NET/Mono platforms including 
+		<a href="https://github.com/ServiceStack/ServiceStack.Examples/blob/master/src/MonoTouch/RestFilesClient/RestFilesClient/Main.cs#L46">MonoTouch</a>. 
+		Whilst it works cleanly with popular Ajax libraries like 
+		<a href="http://www.servicestack.net/RestFiles/#!files">jQuery</a> and 
+		<a href="http://www.servicestack.net/Backbone.Todos/">Backbone.js</a> without requiring any bloated special-purpose libs to call your services.
 	</p>
 
-	<h4>Other goodies</h4>
+	<h4>And lots more...</h4>
 	<p>
-		<img src="xcode.png" alt="utils" align="left" />
-		In addition to the above components ServiceStack includes many other little nuggets that can save the need to reference external dependencies and help in achieving your next online masterpiece! 
-		Many utilities are stored in Extension methods that you can naturally discover in VS.NET during your work day.
+		<img src="xcode.png" alt="utils" align="right" />
+		In addition to the above, ServiceStack includes many other little nuggets to ease your development burden and help in achieving your next online masterpiece! Many utils are stored in Extension methods that are naturally discoverable during your day-to-day VS.NET travels. Here are some of the more notable features:
 	</p>
 	<ul>
-		<li>C# Redis Client for the fastest distributed NoSQL data store</li>
+		<li>
+			<a href="https://github.com/ServiceStack/ServiceStack.Redis/">Full-featured C# Redis Client</a> for access to the fastest distributed NoSQL data store - unprecendented power at your fingertips!
+		</li>
+		<li>
+			<a href="http://www.servicestack.net/mythz_blog/?p=202">T.Dump() extension method</a> which recursively dumps all the public properties of any type into a human readable "pretty formatted" string.
+		</li>
+		<li>
+			<a href="https://github.com/ServiceStack/ServiceStack/blob/master/src/ServiceStack.Common/Utils/ReflectionUtils.cs#L124">TranslateTo&lt;T&gt; and PopulateWith&lt;T&gt;</a> extension methods
+			for mapping between C# models.
+		</li>
+		<li>
+			<a href="https://github.com/ServiceStack/ServiceStack/tree/master/src/ServiceStack.Interfaces/Messaging">Messaging API</a> with 
+			<a href="https://github.com/ServiceStack/ServiceStack/blob/master/tests/ServiceStack.Messaging.Tests/TransientServiceMessagingTests.cs">In-Memory</a> 
+			and 
+			<a href="https://github.com/ServiceStack/ServiceStack.Redis/blob/master/tests/ServiceStack.Redis.Tests/RedisMqHostTests.cs">Redis MQ</a>
+			hosts allowing you to reliably defer and execute async logic in background tasks.
+		</li>
 	</ul>
 
+	<h4>Where to next...</h4>
+	<p>
+		Follow <a href="https://twitter.com/ServiceStack">@ServiceStack</a> for updates.
+		Ask questions on <a href="http://stackoverflow.com">StackOverflow</a> (with the <kbd>ServiceStack</kbd> tag) or by posting to
+		<a href="https://groups.google.com/forum/#!forum/servicestack">ServiceStack's mailing list</a>. <br/>
+		For real-time support (that you just can't buy :) we're usually hanging out in <a href="http://jabbr.net/#/rooms/servicestack">http://jabbr.net/servicestack</a>
+	</p>
+	<p>
+		Enjoy!
+	</p>
 
 </div>
 
