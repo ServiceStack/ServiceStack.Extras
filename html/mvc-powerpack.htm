@@ -68,6 +68,7 @@
 
 	<div id="breadcrumbs">
 		<a href="https://twitter.com/ServiceStack">@ServiceStack</a>
+		| <a href="http://www.servicestack.net/benchmarks/">benchmarks</a>
 		| <a href="http://www.servicestack.net/docs/">documentation</a>
 		| <a href="https://groups.google.com/forum/#!forum/servicestack">google group</a>
 		| <a href="http://www.servicestack.net/mythz_blog/">blog</a>		
@@ -96,7 +97,7 @@
 
 	<ul>
 		<li>
-			No IOC. Promotes static vars and an unhealthy use of XML Configuration
+			No <acronym title="Inversion of Control">IOC</acronym>. Promotes static vars and an unhealthy use of XML Configuration
 		</li>	
 		<li>
 			Uses .NET's slowest JSON serializer
@@ -112,7 +113,7 @@
 			<a href="http://stackoverflow.com/questions/3629709/i-just-discovered-why-all-asp-net-websites-are-slow-and-i-am-trying-to-work-out">degrading performance issue by design</a>
 		</li>
 		<li>
-			Includes .NET's slowest ORM in Entity Framework
+			Includes .NET's slowest <acronym title="Object-relational mapping">ORM</acronym> in Entity Framework
 		</li>
 		<li>
 			No REST or Web Service Framework for developing 3rd Party APIs
@@ -132,7 +133,7 @@
 		it fails the final hurdle by not including an IOC - i.e. the most important ingredient influencing the creation of testable, loosely-coupled and maintainable code. 
 	</p>
 	<p>
-		Without an IOC you're led to using test-inhibiting static variables whilst the composition of your app dependencies is relegated down to in-flexible XML Config. <br/>
+		Without an IOC you're led to using test-inhibiting static variables whilst the composition of your app dependencies is relegated down to its in-flexible XML Config. <br/>
 		Only the configurable parts of your application should be in your Web.config as code remains the superior way to define and compose your apps dependencies having the advantages of being debuggable and statically verifiable at compile-time.
 	</p>
 	<p>
@@ -148,21 +149,21 @@
 		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/NuGet/ServiceStack.Host.Mvc/content/App_Start/ServiceStackFramework.cs.pp#L55">from this line</a>.
 	</p>
 	<i style="text-align:center;display:block;">
-		A great resource if you're new to IOC/DI and TDD is Daniel Cazzulino ScreenCast series showing how he
+		A great resource if you're new to IOC/<acronym title="Dependency Injection">DI</acronym> and <acronym title="Test Driven Development">TDD</acronym> is Daniel Cazzulino ScreenCast series showing how he
 		<a href="http://blogs.clariusconsulting.net/kzu/funq-screencast-series-on-how-to-building-a-di-container-using-tdd/">developed Funq using TDD</a>.
 	</i>
 
 	<h4>JSON</h4>
 	<p>
 		<img src="json100.png" alt="json" align="left" />
-		In the age of Ajax, instant utility and response times reigning supreme experiences, we're still not sure what led the MVC team to bundle .NET's most inefficeint 
+		In the age of Ajax, instant utility and response times reigning supreme experiences, we're still not sure what led the MVC team to bundle .NET's most inefficient 
 		(<a href="http://www.danrigsby.com/blog/index.php/2008/05/28/javascriptserializer-undeprecated-in-net-35-sp1/">and previously deprecated</a>) JSON Serializer in JavaScriptSerializer.
 		
-		The lack of a JSON serializer with decent performance in .NET has resorted some developers to using
+		The lack of a JSON serializer with decent performance in .NET has some developers resorting to
 		<a href="https://twitter.com/#!/MikaelEliasson/status/141113725263417344">ugly hacks</a> 
-		and has caused us <a href="http://www.servicestack.net/mythz_blog/?p=344">to develop our own JSON serializer</a> that replaces .NET's slowest serializer with 
-		<a href="benchmarks/default.htm#burningmonk-json">.NET's fastest</a> - for a factor of times better performance! <br />
-		We feel the CPU heat energy savings could be better put to use, like toasting marshmallows over a warm xmas fire :)
+		and has caused us <a href="http://www.servicestack.net/mythz_blog/?p=344">to develop our own JSON serializer</a> now in this package replacing .NET's slowest serializer with 
+		<a href="benchmarks/default.htm#burningmonk-json">.NET's fastest</a> - for a factor of times better JSON performance! <br />
+		We feel the CPU heat energy savings could be put to better use, like toasting marshmallows over a warm xmas fire :)
 	</p>
 	<p>
 		As JSON is quickly becoming the 
@@ -177,12 +178,12 @@
 	</p>
 	<p>
 		Unfortunately like most legacy tech the only way to be free of it, is to have a clean-break. There will never be a perfect lib implementation sufficing all use-cases, out-lasting the test of time. 
-		In order to avoid needing rewrites to take advantage of shinier tech, we prepare for it, in the cleanest way possible, by binding to interfaces not implementations - the best way to package
-		these interfaces is in a implementation and dependency-free dll.
+		In order to avoid needing rewrites to take advantage of shinier tech, we prepare for it, in the cleanest way possible, by binding to interfaces not implementations - and the best way to package
+		these interfaces is in a implementation / dependency-free dll.
 	</p>
 	<p>
-		And like any good advice, we keep strict adherence to it :) where all ServiceStack providers detailed below implement clean, unimpeded interfaces contained in the implementation-free 
-		<a href="https://github.com/ServiceStack/ServiceStack/tree/master/src/ServiceStack.Interfaces">ServiceStack.Interfaces.dll</a>.
+		And like all our good advice, we like adhering to it :) where all ServiceStack providers detailed below implement clean, unimpeded interfaces contained in the implementation-free 
+		<a href="https://github.com/ServiceStack/ServiceStack/tree/master/src/ServiceStack.Interfaces">ServiceStack.Interfaces Project</a>.
 	</p>
 
 	<h4>Caching</h4>
@@ -259,7 +260,7 @@ var searchUrl = appSettings.Get("SearchUrl", "http://www.google.com"); //use def
 		<img src="entityframework.png" alt="web.config" align="left" />
 		If you're not concerned about poor performance or being surprised by the occaisional unintended behaviour, then there's a lot to like in Entity Framework :) 
 		Although there may be times when you want to improve a critical hotspot in your code or wish to escape EF's abstractions and flex your SQL skills by issuing 
-		optimized and complicated SQL queries. For these situations you can make use of any of the included 
+		optimized and complex SQL queries. For these situations you can make use of any of the included 
 		<a href="benchmarks/default.htm#dapper">2 fastest Micro ORMs</a> in .NET in 
 		<a href="http://code.google.com/p/dapper-dot-net/">Dapper</a> and <a href="https://github.com/ServiceStack/ServiceStack.OrmLite">OrmLite</a>. 
 		Both ORMs work the same way in that they're simply Extension methods hanging off ADO.NET's <kbd>System.Data.*</kbd> interfaces. 
@@ -344,7 +345,7 @@ var searchUrl = appSettings.Get("SearchUrl", "http://www.google.com"); //use def
 
 	<h4>Where to next...</h4>
 	<p>
-		Follow <a href="https://twitter.com/ServiceStack">@ServiceStack</a> for updates.
+		Follow <a href="https://twitter.com/ServiceStack">@ServiceStack</a> for updates. Read the <a href="http://www.servicestack.net/docs/">documentation</a>.
 		Ask questions on <a href="http://stackoverflow.com">StackOverflow</a> (with the <kbd>ServiceStack</kbd> tag) or by posting to
 		<a href="https://groups.google.com/forum/#!forum/servicestack">ServiceStack's mailing list</a>. <br/>
 		For real-time support (that you just can't buy :) we're usually hanging out in <a href="http://jabbr.net/#/rooms/servicestack">http://jabbr.net/servicestack</a>
