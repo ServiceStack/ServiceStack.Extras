@@ -134,7 +134,7 @@
 	</p>
 	<p>
 		Without an IOC you're led to using test-inhibiting static variables whilst the composition of your app dependencies is relegated down to its in-flexible XML Config. <br/>
-		Only the configurable parts of your application should be in your Web.config as code remains the superior way to define and compose your apps dependencies having the advantages of being debuggable and statically verifiable at compile-time.
+		Only the configurable parts of your application should be in your Web.config as code remains the superior way to define and compose your apps dependencies and has the advantages of being debuggable and statically verifiable at compile-time.
 	</p>
 	<p>
 		Already well known to 
@@ -145,7 +145,7 @@
 	<p>
 		To use: register all your dependencies in the new 
 		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/NuGet/ServiceStack.Host.Mvc/content/App_Start/ServiceStackFramework.cs.pp#L46">AppHost</a> 
-		which are then automatically binded to the public properties or contructor of your MVC Controllers or ServiceStack web services. If you're already playing for team IOC, you likely have your preferred IOC player which you can draft pick instead 
+		which are then automatically wired to the public properties or constructor of your MVC Controllers or ServiceStack web services. If you're already playing for team IOC, you likely have your preferred IOC player which you can draft pick instead 
 		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/NuGet/ServiceStack.Host.Mvc/content/App_Start/ServiceStackFramework.cs.pp#L55">from this line</a>.
 	</p>
 	<i style="text-align:center;display:block;">
