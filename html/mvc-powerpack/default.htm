@@ -161,8 +161,8 @@
 		
 		The lack of a JSON serializer with decent performance in .NET has some developers resorting to
 		<a href="https://twitter.com/#!/MikaelEliasson/status/141113725263417344">ugly hacks</a> 
-		and has caused us <a href="http://www.servicestack.net/mythz_blog/?p=344">to develop our own JSON serializer</a> now in this package replacing .NET's slowest serializer with 
-		<a href="http://www.servicestack.net/benchmarks/#burningmonk-json">.NET's fastest</a> - for a factor of times better JSON performance! <br />
+		and has caused us <a href="http://www.servicestack.net/mythz_blog/?p=344">to develop our own JSON serializer</a> (also included) replacing .NET's slowest serializer with 
+		<a href="http://www.servicestack.net/benchmarks/#burningmonk-json">.NET's fastest</a> - for multiple of times better JSON performance! <br />
 		We feel the CPU heat energy savings could be put to better use, like toasting marshmallows over a warm xmas fire :)
 	</p>
 	<p>
@@ -187,7 +187,7 @@
 	</p>
 	<p>
 		And like all our good advice, we like adhering to it :) where all ServiceStack providers detailed below implement clean, unimpeded interfaces contained in the implementation-free 
-		<a href="https://github.com/ServiceStack/ServiceStack/tree/master/src/ServiceStack.Interfaces">ServiceStack.Interfaces Project</a>.
+		<a href="https://github.com/ServiceStack/ServiceStack/tree/master/src/ServiceStack.Interfaces">ServiceStack.Interfaces</a> Project.
 	</p>
 
 	<h4>Caching</h4>
@@ -238,7 +238,7 @@
 		<a href="http://www.servicestack.net/docs/text-serializers/jsv-format">human friendly JSV format</a>.
 	</p>
 	<p>
-		Benefits over existing Congiguration API include the ability to store rich data stuctures in appSettings values, more succinct access to typed data and since its an interface it can easily be swapped to source your configuration from an different source without a rewrite. e.g. from a central DB. <br/>
+		Benefits over existing Configuration API include the ability to store rich data stuctures in appSettings values, more succinct access to typed data and since its an interface it can easily be swapped to source your configuration from an different source (e.g. from a central DB) without a rewrite. <br/>
 		Here's a quick example show-casing its use:
 	</p>
 		
