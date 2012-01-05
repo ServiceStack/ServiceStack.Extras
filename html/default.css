@@ -352,6 +352,10 @@ A IMG {
 #content a:hover {
     text-decoration: underline;
 }
+#gitstatus
+{
+	margin-left: 10px;
+}
 #jstweets {
     clear: right;
     width:340px;
