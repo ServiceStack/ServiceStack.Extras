@@ -208,7 +208,9 @@
 </div>
 
 <script type="text/javascript">
-	$('#gitstatus').gitgraph({user:'ServiceStack',repo:'ServiceStack'});
+	try {
+		$('#gitstatus').gitgraph({user:'ServiceStack',repo:'ServiceStack'});
+	} catch(e){}
 
     $.getJSON("http://twitter.com/statuses/user_timeline.json?screen_name=ServiceStack&count=30&callback=?",
         function(data){
