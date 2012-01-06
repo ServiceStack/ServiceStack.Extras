@@ -404,6 +404,10 @@ H3#from-tweets A:hover
     text-decoration: none;
 }
 
+#nuget 
+{
+	clear: both;
+}
 #nuget H3
 {
 	padding: 10px 0 0 0;
