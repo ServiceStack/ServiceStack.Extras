@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="default.css" />
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
-	<script src="http://logicalcognition.com/Projects/Gitgraph/Gitgraph.js"></script>    
+    
 </head>
 <body class="host">
 
@@ -64,7 +64,7 @@
 	<a href="http://www.servicestack.net/docs" class="btn large"><b>Documentation</b><small>for sub projects</small></a>
 </div>
 
-<a href="https://github.com/ServiceStack/ServiceStack" title="git project status"><div id="gitstatus"></div></a>
+<a href="https://github.com/ServiceStack/ServiceStack" title="git project status"><img  id="gitstatus" src="gitstatus.png" /></a>
 
 <ul>
     <li><a href="https://github.com/ServiceStack/ServiceStack/wiki/Release-Notes">Latest Release Notes</a></li>
@@ -208,9 +208,6 @@
 </div>
 
 <script type="text/javascript">
-	try {
-		$('#gitstatus').gitgraph({user:'ServiceStack',repo:'ServiceStack'});
-	} catch(e){}
 
     $.getJSON("http://twitter.com/statuses/user_timeline.json?screen_name=ServiceStack&count=30&callback=?",
         function(data){
