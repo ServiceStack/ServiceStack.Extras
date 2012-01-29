@@ -249,18 +249,22 @@ H3.intro
 	clear: right;
 	float: right;
 }
-#primary-links
+#primary-links, #second-links
 {
-	margin: 10px 0 20px 10px;
+	margin: 0px 0 20px 10px;
 	padding: 10px;
 	width: 320px;
 	text-align: center;
 	clear: right;
 	float: right;
 }
-#primary-links a {
+#primary-links a, #second-links a {
 	margin-bottom: 10px;
 	width: 200px;
+	text-align: center;
+}
+#primary-links {
+	padding-top: 9px;
 }
 
 #download H2
@@ -342,6 +346,40 @@ A IMG {
 	border:none;
 }
 
+#nuget 
+{
+	clear: both;
+}
+#nuget H3
+{
+	padding: 20px 0 0 0;
+	text-align: center;
+}
+#nuget H3 A
+{
+    color: #205AAF !important;
+}
+#nuget H3 A:hover
+{
+    color: #343434 !important;
+    text-decoration: none;
+}
+
+.nuget-badge code {
+    background-color: #202020;
+    border: 4px solid #c0c0c0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 2px 2px 3px #6e6e6e;
+    color: #e2e2e2;
+    display:block;
+    font: 1.5em 'andale mono', 'lucida console', monospace; 
+    line-height: 1.5em;
+    overflow: auto;
+    padding: 15px; 
+}
+
 
 /* jstweets */
 
@@ -407,6 +445,45 @@ H3#from-tweets A:hover
 {
     color: #343434 !important;
     text-decoration: none;
+}
+
+#showcase {
+}
+#showcase p {
+	display:none;
+	position:absolute;
+}
+#showcase img {
+}
+#showcase a {
+	display: block;
+	float:left;
+	padding: 4px 4px 3px 4px;
+    text-decoration: none !important;
+    color: #444 !important;
+    line-height: 100%;
+}
+#showcase a:hover {
+	background: #f1f1f1;
+
+-moz-box-shadow: 0 0 3px #888;
+-webkit-box-shadow: 0 0 3px #888;
+box-shadow: 0 0 3px #888;
+}
+#showcase a:hover p {
+	background: #f1f1f1;
+
+-moz-box-shadow: inset 0 0 3px #888;
+-webkit-box-shadow: inset 0 0 3px #888;
+box-shadow: inner 0 0 3px #888;
+
+	display: block;
+	width:897px;
+	height: 30px;
+	padding-top: 10px;
+	margin-top: 10px;
+	text-align:center;
+	left: 27px;
 }
 
 /* bootstrap */

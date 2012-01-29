@@ -170,8 +170,10 @@
 		<a href="http://www.infoq.com/presentations/Heretical-Open-Source">worlds most important wire format</a>, many websites have already changed their MVC websites to use ServiceStack's JsonSerializer including .NET's own MVC champion - <a href="http://www.stackoverflow.com">stackoverflow.com</a>.
 	</p>
 	<i style="text-align:center;display:block;">
-		Easiest way to make use of ServiceStack's new Cache, Session and JSON Serializer is to have your Controllers inherit 
-		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/NuGet/ServiceStack.Host.Mvc/content/App_Start/ControllerBase.cs.pp#L10">ControllerBase.cs</a>		
+		To easily use ServiceStack's new Cache, Session &amp; JSON Serializer have your Controllers inherit 
+		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/src/ServiceStack.FluentValidation.Mvc3/Mvc/ServiceStackController.cs">ServiceStackController.cs</a> or 
+		<a href="https://github.com/ServiceStack/ServiceStack/blob/master/tests/ServiceStack.WebHost.IntegrationTests/PageBase.cs">PageBase.cs</a> (ASP.NET)
+
 	</i>
 
 	<h3>Escaping XML config jail</h3>
