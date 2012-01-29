@@ -20,10 +20,7 @@
 		<a href="http://www.servicestack.net" class="selected">servicestack.net</a>
 		| <a href="http://www.servicestack.net/benchmarks/">benchmarks</a>
 		| <a href="http://www.servicestack.net/mvc-powerpack/">mvc powerpack</a>
-        | <a href="http://www.servicestack.net/ServiceStack.Hello/">hello world tutorial</a>
-        | <a href="http://www.servicestack.net/ServiceStack.Northwind/">northwind webservices</a>
-		| <a href="http://www.servicestack.net/docs/">docs</a>
-		| <a href="https://github.com/ServiceStack/ServiceStack/wiki">github wiki</a>
+		| <a href="http://www.servicestack.net/showcase/">showcase</a>
 		| <a href="http://www.servicestack.net/mythz_blog/">blog</a>
 	</div>
 </div>
@@ -32,13 +29,23 @@
 
 <div id="content">
 
-<h3 id="from-tweets">Latest Tweets from <a href="http://twitter.com/servicestack">@ServiceStack</a>:</h3>
-<div id="jstweets">
+<div id="primary-links">
+	<a href="https://github.com/ServiceStack/ServiceStack/wiki" class="btn large primary"><b>Documentation</b><small>for web framework</small></a>
+
+	<a href="https://github.com/ServiceStack/ServiceStack.Examples/" class="btn large"><b>Example Projects</b><small>demos and starter templates</small></a>
+
+	<a href="http://www.servicestack.net/docs" class="btn large"><b>Documentation</b><small>for sub projects</small></a>
 </div>
 
 <div id="img-overview" style="clear:right;">
 	<a href="overview.htm"><img src="ss-overview.png" alt="Service Stack Overview" title="Service Stack Overview" /></a>
 	<a href="overview.htm">view architecture overview</a>
+</div>
+
+<div id="tweets-container">
+	<h3 id="from-tweets">Latest Tweets from <a href="http://twitter.com/servicestack">@ServiceStack</a>:</h3>
+	<div id="jstweets">
+	</div>
 </div>
 
 <h3 class="intro">
@@ -56,58 +63,31 @@
 	</h5>
 </div>
 
-<div id="primary-links">
-	<a href="https://github.com/ServiceStack/ServiceStack/wiki" class="btn large primary"><b>Documentation</b><small>for web framework</small></a>
-
-	<a href="https://github.com/ServiceStack/ServiceStack.Examples/" class="btn large"><b>Example Projects</b><small>demos and starter templates</small></a>
-
-	<a href="http://www.servicestack.net/docs" class="btn large"><b>Documentation</b><small>for sub projects</small></a>
-</div>
-
 <a href="https://github.com/ServiceStack/ServiceStack" title="git project status"><img  id="gitstatus" src="gitstatus.png" /></a>
 
+<h3>Getting started</h3>
+<ul>
+	<li class="summary">Get an overview in the <a href="https://docs.google.com/present/view?id=dg3mcfb_208gv3kcnd8">introduction slides</a></li>
+	<li>Read the <a href="https://github.com/ServiceStack/ServiceStack/wiki">documentation</a> down here.</li>
+	<li>Download <a href="https://github.com/ServiceStack/ServiceStack/wiki/NuGet">ServiceStack's packages available on NuGet</a> and start programming yourself!</li>
+	<li><b>The <a href="https://github.com/ServiceStack/ServiceStack.Examples">example projects</a> are highly recommended!</b></li>
+</ul>
+
+<h3>Resources</h3>
 <ul>
     <li><a href="https://github.com/ServiceStack/ServiceStack/wiki/Release-Notes">Latest Release Notes</a></li>
-	<li><a href="https://github.com/ServiceStack/ServiceStack/wiki">GitHub Wiki</a>
-	and <a href="http://www.servicestack.net/docs/">Docs website</a></li>
-	<li><a href="http://www.servicestack.net/benchmarks/">Benchmarks</a></li>
-	<li><a href="http://www.servicestack.net/mvc-powerpack/">MVC PowerPack</a></li>
-	<li><a href="http://www.servicestack.net/showcase/">Showcase</a></li>
-    <li><a href="http://www.servicestack.net/ServiceStack.Hello/">Hello world tutorial</a></li>
+	<li><strong><a href="http://groups.google.com/group/servicestack">ServiceStack Mail List and Google Group</a></strong></li>
+</ul>
+
+<h3>Live Examples</h3>
+<ul>
     <li><a href="http://www.servicestack.net/RestFiles/">GitHub-like browser to manage remote filesystem over REST</a></li>
     <li><a href="http://www.servicestack.net/ServiceStack.MovieRest/">REST Web Service example</a></li>
     <li><a href="http://www.servicestack.net/RedisStackOverflow/">StackOverflow clone created entirely with Redis and jQuery</a></li>
     <li><a href="http://www.servicestack.net/Backbone.Todos/">Backbone.js TODO app with Redis and REST backend</a></li>
     <li><a href="http://www.servicestack.net/ServiceStack.Northwind/">ServiceStack features using the real-world Northwind dataset</a></li>
 	<li><a href="http://www.servicestack.net/RedisAdminUI/AjaxClient/">Live preview of Redis Admin UI (Service Stack + Redis)</a></li>
-	<li><a href="https://github.com/ServiceStack/ServiceStack.Examples/blob/master/src/MonoTouch/RestFilesClient/RestFilesClient/Main.cs#L46">Calling Web Services in MonoTouch</a></li>
-	<li><strong><a href="http://groups.google.com/group/servicestack">ServiceStack Mail List and Google Group</a></strong></li>
 </ul>
-
-<div id="nuget">
-	<h3><a href="mvc-powerpack/">Super charge your ASP.NET MVC website with ServiceStack's MVC PowerPack!</a></h3>
-    <p>
-        <b>Side-by-Side with MVC:</b> Hosted at <b>/api</b> - Create an empty MVC Web Application and
-    </p>
-
-    <div class="nuget-badge">
-        <p>
-            <code>PM&gt; Install-Package ServiceStack.Host.Mvc</code>
-        </p>
-    </div>
-
-    <p>
-        <b>ServiceStack Only:</b> Hosted at <b>/</b> - Create an empty ASP.NET Web Application and
-    </p>
-
-    <div class="nuget-badge">
-        <p>
-            <code>PM&gt; Install-Package ServiceStack.Host.AspNet</code>
-        </p>
-    </div>
-
-    Or.. install <a href="https://github.com/ServiceStack/ServiceStack/wiki/NuGet">other NuGet packages</a> in piecemeal - À la carte!
-</div>
 
 <div id="sub-components" class="section">
 	<h2>Running on high performance parts</h2>
