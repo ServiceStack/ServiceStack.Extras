@@ -230,11 +230,11 @@ H3.intro
 {
 	border: 1px solid #7BB682;
 }
-#img-overview A
+#img-overview P
 {
-	display: block;
 	text-align: center;
 	margin: 0;
+    padding: 0;
 }
 #download
 {
