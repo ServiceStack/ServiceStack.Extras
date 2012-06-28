@@ -165,6 +165,9 @@ H3.intro
 	font-family: Comic Sans MS;
 	font-style: italic;
 }
+#quote A {
+	color: #999;
+}
 #slides
 {
 	margin: 30px 0 20px 20px;
