@@ -156,6 +156,20 @@ H3.intro
 	color: #060;
 	text-shadow: 1px 1px 1px rgba(162, 162, 162, 0.6);
 }
+#d100k 
+{
+	float:right;
+	color:#B66D31;
+	font: 18px 'Droid Sans', Helvetica; 
+	margin: -18px 36px 0 0;
+	text-shadow: 1px 1px 1px rgba(247, 150, 70, 0.3);
+	text-decoration:underline;
+}
+#d100k:hover{
+	text-shadow: 1px 1px 1px rgba(247, 150, 70, 0.8);
+	text-decoration:none;
+}
+
 #quote
 {
 	color: #999;
