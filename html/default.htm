@@ -57,7 +57,7 @@
 </div>
 
 <h3 class="intro">
-	A fresh alternative to WCF, MVC and WebApi <br/> 
+	Simpler alternative to WCF, MVC and WebApi <br/> 
 	Code-first, convention-based, codegen-free <br/> 
 	Best-practices, high-performance, cross-platform: Web, REST, RPC &amp; MQ services
 </h3>
@@ -105,7 +105,7 @@
 <div id="showcase">
 <a href="http://razor.servicestack.net">
 	<img src="showcase/img/rockstars-150.png" />
-	<p>Razor Rockstars - Showcase ServiceStack's HTML, Razor and Markdown Support</p>
+	<p>Razor Rockstars - Showcase of ServiceStack's HTML, Razor and Markdown Support</p>
 </a>
 <a href="http://bootstrapapi.apphb.com">
 	<img src="showcase/img/bootstrapapi-150.png" />
@@ -147,10 +147,33 @@
 
 <div id="nuget">
 
-    <h3><a href="mvc-powerpack/">Super charge your ASP.NET MVC website with ServiceStack's MVC PowerPack!</a></h3>
+    <h3>Install ServiceStack from NuGet</h3>
 
     <p>
-        <b>ServiceStack Only:</b> Hosted at <b>/</b> - Create an empty ASP.NET Web Application and
+        <b>ServiceStack with Razor Support:</b> Create an empty ASP.NET Web or Console Application and (.NET 4.0+) 
+    </p>
+
+    <div class="nuget-badge">
+        <p>
+            <code>PM&gt; Install-Package ServiceStack.Razor</code>
+        </p>
+    </div>
+
+    <p>
+        <b>ServiceStack binaries only:</b> Minimal installation of ServiceStack containing only the core-binaries (.NET 3.5+)
+    </p>
+
+    <div class="nuget-badge">
+        <p>
+            <code>PM&gt; Install-Package ServiceStack</code>
+        </p>
+    </div>
+
+    <h4 style="text-align:center;margin: 30px 0 0 0;">
+    	Starter templates with pre-configured AppHost and basic Hello World REST services</h4>
+
+    <p>
+        <b>ServiceStack with ASP.NET:</b> Hosted at <b>/</b> - Create an empty ASP.NET Web Application and (.NET 3.5+) 
     </p>
 
     <div class="nuget-badge">
@@ -160,7 +183,7 @@
     </div>
 
     <p>
-        <b>Side-by-Side with MVC:</b> Hosted at <b>/api</b> - Create an empty MVC Web Application and
+        <b>Side-by-Side with MVC:</b> Hosted at <b>/api</b> - Create an empty MVC Web Application and (.NET 3.5+) 
     </p>
 
     <div class="nuget-badge">
@@ -170,6 +193,9 @@
     </div>
 
     Or.. install <a href="https://github.com/ServiceStack/ServiceStack/wiki/NuGet">other NuGet packages</a> in piecemeal - À la carte!
+
+
+    <h3 style="text-shadow: 0px 2px 3px #ccc;"><a href="mvc-powerpack/">Super charge your existing ASP.NET MVC website with ServiceStack's MVC PowerPack!</a></h3>
 </div>
 
 <div id="sub-components" class="section">
