@@ -191,35 +191,14 @@ H3.intro
 }
 #slides
 {
-	margin: 30px 0 20px 20px;
+	margin: 30px 0 30px 0px;
 }
-#slides-zzz IMG {
-    padding: 5px;
-    box-shadow: 0 3px 8px rgba(100, 100, 100, 0.3);	
-}
-#slides UL {
-	position: absolute;
-	margin: 100px 0 0 20px;
-	padding: 0;
-	list-style: none;
-
-	font-family: 'Droid Sans', Helvetica;
-	font-size: 24px;
-	line-height: 36px;
-	font-weight: normal;
-	color: #0064CD;
-	text-shadow: 1px 2px 3px rgba(162, 162, 162, 0.6);
-
-	background-color: #333;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+#slides iframe {
+    box-shadow: 0px 0px 6px #6e6e6e;
 }
 #slides H5
 {
-	margin: 5px 0 0 10px;
+	margin: 5px 0 0 0px;
 	font-size: 18px;
 	color: #666;
 	font-weight: normal;
