@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>200k ServiceStack downloads on NuGet in 18 months</title>
+    <title>ServiceStack's End of Days, end of 2012 Community Report</title>
     <link rel="stylesheet" type="text/css" href="../default.css" />
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-1.7.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
 
 	<style type="text/css">
 		#content {
 			margin:0;
-			padding:0;
+			padding:15px;
 			width: auto;
 		}
 		#content a
@@ -59,6 +61,12 @@
 		small { 
 			color: #888;
 		}
+		.chart {
+			min-width: 500px; 
+			width: 800px; 
+			height: 400px; 
+			margin: 20px auto;
+		}
 	</style>
 </head>
 <body class="host">
@@ -67,7 +75,7 @@
 	<a id="btn-googlecode" href="https://github.com/ServiceStack/" title="go to Service Stack projects on GitHub"><img src="../btn-github.png" alt="GitHub project" alt="ServiceStack GitHub logo" /></a>
 
 	<a href="http://www.servicestack.net" title="Open source Mono and .NET web service framework"><img src="../logo-servicestack.png" alt="Service Stack" /></a>
-	<h3 id="logo-title">ServiceStack 2012 in Review - Our best yet... </h3>
+	<h3 id="logo-title">ServiceStack in 2012 Review - Our best yet... </h3>
 
 	<div id="breadcrumbs">
 		<a href="https://twitter.com/ServiceStack">@ServiceStack</a>
@@ -82,162 +90,401 @@
 
 <div id="content">
 
-	<h2>100k-200k NuGet downloads in 5 months!</h2>
-
 	<span class="summary">
-		Today we're happy to announce that we've just surpassed <strong>200,000+ total downloads</strong> for <a href="http://nuget.org/profiles/mythz">all our projects on NuGet</a> in just 18 months!
+		As an Open Source project our primary goals are to broaden the reach of our software, grow our community and expand our knowledge-base. 
+		To measure the state of ServiceStack's ecosystem we've collected some stats to track our progress towards these goals.
 	</span>
 
+	<h2>ServiceStack's End of Days, end of 2012 Community Report</h2>
 
-<a href="http://nuget.org/profiles/mythz"><img src="100k-nuget-summary.png" align="right" style="padding: 20px 0" /></a>
+	<p>
+		At the start of 2012 we were still a fairly unknown option in .NET and were only 6 months into offering official releases on NuGet which were off to a relatively slow start. We started to see our first real momentum after publishing some <a href="http://www.servicestack.net/benchmarks/">benchmarks</a> helping solidify our reputation as a performance-focused framework and from our first real exposure to a wide .NET audience with our <a href="#">January interview on hanselminutes</a> kickstarting an exciting year for ServiceStack...
+	</p>
 
-<h4>How are we doing?...</h4>
+	<p>
+		Throughout the year we've technically made constant and significant progress in implementation and features with the release of our <a href="#">New API</a> that was <a href="#">well-received on Hacker News</a> closely followed by our <a href="#">Razor and HTML ViewEngine support</a> upgrading ServiceStack to a full-featured web framework capable of having the same service serving REST, Web, Mobile, SOAP and MQ clients. To improve message throughput at <a href="http://careers.stackoverflow.com/">StackOverflow Careers</a> we enhanced ServiceStack's MQ Support with a new <a href="https://github.com/ServiceStack/ServiceStack/wiki/Messaging-and-redis">multi-threaded Redis Mq Host</a> allowing different services to be parallelized and processed in the background. We also cut Careers build time in 1/2 by adopting <a href="https://github.com/ServiceStack/Bundler">ServiceStack's node.js-based Bundler</a> for all our js, css and less compilation and minification needs.
+	</p>
+
+	<h4>Mid year update</h4>
+	<p>
+		Our technical progress ensured by mid-2012 we had gained a lot of momentum by the time we published our <a href="http://www.servicestack.net/100k-downloads/">first status report</a>. We've continued to rapidly grow since then and have collected new end-of-year statistics to track how well we did in 2012:
+	</p>
+
+	<h4>Public coverage</h4>
+	<p>
+		2012 was also the debut of ServiceStack's first official presentation at a tech conference with <a href="">@demisbellot's</a> <b>What is the ServiceStack</b> intro talk at <a href="http://monkeyspace.org">monkeyspace.org</a> in October. The year continued to host a number of other talks performed around the globe from other ServiceStack Community members: <a href="https://twitter.com/cyberzeddk">Stefan Poulsen</a>, <a href="https://twitter.com/kylehodgson">Kyle Hodgson</a>, <a href="https://twitter.com/RobGibbens">Rob Gibbens</a>, <a href="https://twitter.com/wildturtle21">Sam Abraham</a> and others.
+		Whilst <a href="https://twitter.com/jsonmez">John Sonmez</a> creator of <a href="http://pluralsight.com/training/Courses/TableOfContents/service-stack">ServiceStack's PluralSight course</a> has done a string of Interviews on the <a href="http://thetabletshow.com/?ShowNum=60">The Tablet Show</a> and has ended the year as we started by appearing on <a href="https://twitter.com/shanselman">Scott Hanselman's</a> popular <a href="www.hanselminutes.com/348/more-on-service-stack-with-john-sonmez">hanselminutes</a>.
+	</p>
+
+	<p>
+		With the new momentum behind ServiceStack we're starting to see interest from high-profile IT sites like InfoQ who last week published an <a href="http://www.infoq.com/articles/interview-servicestack">in-depth interview with the Project lead of ServiceStack</a> explaining its differences from WCF. Part 2 of the Interview will be published next week on <a href="http://www.infoq.com">InfoQ</a> explaining what a message-based service is, the motivation behind ServiceStack's HTML Story, the state of .NET Open Source and some of the exciting things we have planned for next year.
+	</p>
+
+	<a name="contributors"></a>
+	<h3>Contributors</h3>
+	<p>
+		One of the statistics we're especially proud of is the number of new Open Source contributors we've been able to attract throughout the year, we're even happier that many were first-time contributors to Open Source, doing our best to encourage more .NET developers to participate in OSS.
+		Having lots of contributors are important for ensuring a high quality and value-focused code-base as they provide a tight feedback loop ensuring we only add real-world useful features capable of supporting multiple use-cases that are hardened and tested against different environments.
+	</p>
+	<p>
+		We started the year with <b>35 contributors</b> by mid-year we hit <b>88 contributors</b> and we're now ending the year with an impressive <a href="https://github.com/ServiceStack/ServiceStack/wiki/Contributors">140 Contributors!</a>. As it's rare for a .NET project, the news that we broke <a href="http://www.infoq.com/news/2012/10/service-stack-100-contributors">100+ Contributors made it on InfoQ</a>.
+	</p>
+
+<div id="chart-contributors" class="chart"></div>
+​
+<script type="text/javascript">
+    $(document).ready(function() {
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart-contributors',
+                type: 'area'
+            },
+            title: {
+                text: 'Code Contributors in 2012'
+            },
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    month: '%b',
+                    year: '%b'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Contributors'
+                },
+                labels: {
+                    formatter: function() {
+                        return this.value +'';
+                    }
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>' + Highcharts.numberFormat(this.y, 0) +'</b> ' + this.series.name;
+                }
+            },
+            plotOptions: {
+                area: {
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Contributors',
+                data: [
+                	[Date.UTC(2012, 0, 01), 35], 
+                	[Date.UTC(2012, 7, 01), 88], 
+                	[Date.UTC(2012, 11, 21), 140]
+                ]
+            }]
+        });
+    });
+</script>
+
+
+	<a name="downloads"></a>
+	<h3>NuGet Downloads</h3>
+	<p>
+		Following our slow transition to NuGet we only had 10k downloads in January but by mid year we hit our first major download milestone with more than <a href="#">100k downloads on NuGet</a>. By the end of the year we're happy to report we've doubled that again with now more than <b>222k total downloads!</b>
+	</p>
+
+
+<div id="chart-downloads" class="chart"></div>
+​
+<script type="text/javascript">
+    $(document).ready(function() {
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart-downloads',
+                type: 'area'
+            },
+            title: {
+                text: 'NuGet Downloads in 2012'
+            },
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    month: '%b',
+                    year: '%b'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'NuGet Downloads'
+                },
+                labels: {
+                    formatter: function() {
+                        return this.value +'';
+                    }
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>' + Highcharts.numberFormat(this.y, 0) +'</b> ' + this.series.name;
+                }
+            },
+            plotOptions: {
+                area: {
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'NuGet Downloads',
+                data: [
+                	[Date.UTC(2012, 0, 01), 10000], 
+                	[Date.UTC(2012, 7, 01), 100000], 
+                	[Date.UTC(2012, 11, 21), 222000]
+                ]
+            }]
+        });
+    });
+</script>
+
+
+<a name="community"></a>
+<h2>ServiceStack Community</h2>
+
+<h3>GitHub Watchers</h3>
+<p>
+	Along with downloads we've also increased the size of our community having more than doubled the number of watchers on GitHub which has seen us move from the <b>13th</b> most watched .NET project on GitHub at the start of the year to our current standing as the <b>6th</b> <a href="github.com/languages/C%23/most_watched">most watched C#/.NET project on GitHub</a>
+</p>	
+
+<div id="chart-watchers" class="chart"></div>
+​
+<script type="text/javascript">
+    $(document).ready(function() {
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart-watchers',
+                type: 'area'
+            },
+            title: {
+                text: 'GitHub Watchers in 2012'
+            },
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    month: '%b',
+                    year: '%b'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'GitHub Watchers'
+                },
+                labels: {
+                    formatter: function() {
+                        return this.value +'';
+                    }
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>' + Highcharts.numberFormat(this.y, 0) +'</b> ' + this.series.name;
+                }
+            },
+            plotOptions: {
+                area: {
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'GitHub Watchers',
+                data: [
+                	[Date.UTC(2012, 0, 01), 500], 
+                	[Date.UTC(2012, 7, 01), 818], 
+                	[Date.UTC(2012, 11, 21), 1172]
+                ]
+            }]
+        });
+    });
+</script>
+
+
+<h3>Twitter Followers</h3>
+<p>
+	Our notifier of real-time news and <a href="https://twitter.com/ServiceStack/favorites">recorder of User feedback</a>, the <a href="https://twitter.com/servicestack">@ServiceStack</a> twitter account has also seen a sizable increase in followers recently breaking 1k followers and now with <b>1160</b> followers:
+</p>	
+
+<div id="chart-followers" class="chart"></div>
+​
+<script type="text/javascript">
+    $(document).ready(function() {
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart-followers',
+                type: 'area'
+            },
+            title: {
+                text: 'Twitter Followers in 2012'
+            },
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    month: '%b',
+                    year: '%b'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Twitter Followers'
+                },
+                labels: {
+                    formatter: function() {
+                        return this.value +'';
+                    }
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>' + Highcharts.numberFormat(this.y, 0) +'</b> ' + this.series.name;
+                }
+            },
+            plotOptions: {
+                area: {
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Twitter Followers',
+                data: [
+                	[Date.UTC(2012, 0, 01), 319], 
+                	[Date.UTC(2012, 7, 01), 720], 
+                	[Date.UTC(2012, 11, 21), 1058]
+                ]
+            }]
+        });
+    });
+</script>
 
 <p>
-
+	Beyond GitHub and Twitter we've created a new <a href="https://plus.google.com/u/0/communities/112445368900682590445">ServiceStack G+ Community</a> which has added more than <b>202</b> members in just the last 10 days.
 </p>
 
-Before: 
-	- 100k downloads 13 months / 200k downloads 18 months
-	- 26 packages / 30 packages
-	- 88 contributors / 135 contributors
-	- 818 watchers / 1135 watchers
-	- 11th most watched GitHub / 6th most watched
-	- 356 questions / 702 questions
-	- 166 votes / 266 votes on pluralsight (2nd page)
-	- 1015 followers twitter
+<a name="knowledgebase"></a>
+<h2>Knowledgebase</h2>
+
+<h3>Questions on StackOverflow</h3>
+<p>
+	Other than our <a href="http://github.com/ServiceStack/ServiceStack/wiki">comprehensive wiki documentation</a>, another great place to maintain a growing knowledgebase is on StackOverflow since you can get direct answers to real world problems. We're happy to see this number more than double from <b>356</b> questions grow to <b>740</b> questions in the last 6 months.
+</p>	
 
 
-<h2>2012 - our best year yet!</h2>
-
-<a href="http://support.pluralsight.com/forums/127919-new-course-suggestions/suggestions/2874723-service-stack"><img src="100k-pluralsight.png" align="right" style="padding: 10px;" /></a>
-
-<p>This caps off what already has been fantastic year for the ServiceStack project where we're now:</p>
-
-<ul>
-	<li>Have received contributions from <a href="https://github.com/ServiceStack/ServiceStack/blob/master/CONTRIBUTORS.md">88 unique contributors</a></li>
-	<li><a href="https://github.com/languages/C%23/most_watched">The 11th most watched .NET project on GitHub</a> with <strong>818 watchers</strong></li>
-	<li><a href="http://support.pluralsight.com/forums/127919-new-course-suggestions/filters/hot">The hottest new course idea on pluralsight</a> for 1+ month running with <strong>166 votes</strong></li>
-	<li><a href="https://groups.google.com/forum/?fromgroups#!forum/servicestack">Have 800 topics posted in our Google Group</a> (General Discussion on web services development)</li>
-	<li><a href="http://stackoverflow.com/search?q=servicestack">Have 356 questions and answers on StackOverflow</a> (Official place for questions as of last month)</li>
-	<li><a href="http://jabbr.net/#/rooms/servicestack">Are one of the most active rooms on Jabbr</a> (Usually in Top 5)</li>
-</ul>
-
-<i><small>We'll be keeping track of these stats to see how well they compare with next year :)</small></i>
-
-<a name="feedback"></a>
-<h3>Fantastic Reviews!</h3>
+<div id="chart-questions" class="chart"></div>
+​
+<script type="text/javascript">
+    $(document).ready(function() {
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart-questions',
+                type: 'area'
+            },
+            title: {
+                text: 'StackOverflow Questions in 2012'
+            },
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    month: '%b',
+                    year: '%b'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'StackOverflow Questions'
+                },
+                labels: {
+                    formatter: function() {
+                        return this.value +'';
+                    }
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>' + Highcharts.numberFormat(this.y, 0) +'</b> ' + this.series.name;
+                }
+            },
+            plotOptions: {
+                area: {
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'StackOverflow Questions',
+                data: [
+                	[Date.UTC(2012, 7, 01), 356], 
+                	[Date.UTC(2012, 11, 21), 740]
+                ]
+            },{
+                name: 'Pluralsight votes',
+                data: [
+                	[Date.UTC(2012, 7, 01), 166], 
+                	[Date.UTC(2012, 11, 21), 262]
+                ]
+            }]
+        });
+    });
+</script>
 
 <p>
-	We've received tremendous feedback in the Google Groups, Twitter, in Jabbr and direct emails from devs letting us know how appreciative they were of just how much ServiceStack has helped them. By far the the most common sentiment remains how they only wished they had discovered ServiceStack sooner, to escape the pain points of WCF.
+	We've also seen increased interest from the community in seeking a Pluralsight video on ServiceStack. 
+	This call was answered by <a href="https://twitter.com/jsonmez">John Sonmez</a> who created a <a href="http://pluralsight.com/training/Courses/TableOfContents/service-stack">comprehensive 5h 27m ServiceStack Pluralsight course</a> that quickly shot to <a href="https://twitter.com/jsonmez/status/280312971509518336">@pluralsight top 10</a>.
 </p>
 
-<p>As of the start of this year we've begun tracking feedback on twitter in <a href="https://twitter.com/#!/ServiceStack/favorites">@ServiceStack's Favourites</a> - some of the highlights from just this last month:</p>
-
-<a href="https://twitter.com/#!/ServiceStack/favorites" style="display: block; text-align:center; padding: 10px 0">
-	<img title="100k feedback from twitter" src="100k-feedback-twitter.png" alt="100k feedback from twitter" width="525" height="541"/>
-</a>
-
-<a href="http://www.govhack.org/2012/06/02/weatheredoak/"><img src="weatheredoak-logo.png" align="right" style="padding: 20px; margin-right: 30px" /></a>
-
-<h4>Winning entry in best API development for government data sets</h4>
+<h3>3rd Party Resources</h3>
 <p>
-	As you can imagine we're thrilled with the feedback we've received, we were particularly surprised when we received an email out of the blue from one of the Winning teams of the <a href="http://www.govhack.org/winners/">Australian GovHack 2012</a> project (<a href="https://twitter.com/layoric">Darren Reid</a> and <a href="https://twitter.com/voltagex">Adam Baxter</a>) wanting to know the best way the could donate part of their prize winnings to the project - as they're winning entry <a href="http://www.govhack.org/2012/06/02/weatheredoak/">Weathered Oak</a> took advantage of the built-in features in ServiceStack to win <strong>Best API development for government data sets</strong>!
+	Our <a href="https://github.com/ServiceStack/ServiceStack/wiki/Community-Resources">3rd Party Community Resources</a> section has also seen many new additions of Blog posts, Articles, Community projects, Examples, demos and more in this last year.
 </p>
 
-<h3>Chance encounters of the ServiceStack kind ;)</h3>
-
-<a href="http://www.nt.gov.au/"><img src="nt.jpg" align="right" style="padding: 10px 20px; margin-right: 20px" /></a>
-
-<p>I've had many of surreal experiences this year where I would randomly bump into devs making use of ServiceStack in their day-to-day jobs:</p>
-
+<h2>2013 and beyond...</h2>
 <p>
-	A couple of weeks ago an old school friend (from my home-town in Darwin) informed me of the new Northern Territory Government mobile app for accepting tenders online is built with <b>MonoTouch powered by a ServiceStack back-end!</b> Especially surprising considering at the time when I left home (7 years ago) we were all forced Java developers since the only web languages the NTG allowed running on their big unix servers was Java + CGI Scripts! Now that there's no such restriction - we get to see ServiceStack's name in lights!
+	Although 2012 was our best year yet, we're planning on making 2013 even better with plenty of exciting releases and news announcements planned for next year. Watch this space!
 </p>
-
-<a href="http://backboneconf.com/"><img src="backboneconf-logo.png" align="right" style="padding: 10px;" /></a>
-
-<p>
-	I also ran into <a href="https://twitter.com/eamodio">@eamodio</a> and the rest of his .NET dev team in a lift going up to this years <a href="http://backboneconf.com/">BackboneConf</a> (my first US TechConf) who were developing a front-end <b>Backbone-enabled JS app powered by a ServiceStack back-end :)</b>. This was a particularly welcomed surprise as it had originally felt we were the only .NET devs in a Node, Rubyist and Pythonista tech conf world :)
-</p>
-
-<a name="spa-optimized"></a>
-<h4>Optimized for Single Page Apps</h4>
-<p>
-	Powering Single Page Javascript apps is one of ServiceStack's strengths as long ago we strongly believed they were the future in creating the best user experiences online, so we've optimized ServiceStack to provide an optimal .NET back-end option where:
-</p>
-
-<ul>
-	<li><a href="http://www.servicestack.net/benchmarks/#burningmonk-benchmarks">We include .NET's fastest JSON Serializer</a></li>
-	<li>Include <a href="http://www.servicestack.net/benchmarks/#dapper">2 of the fastest Micro ORMs</a> in .NET</li>
-	<li>Maintain the <a href="https://github.com/ServiceStack/ServiceStack.Redis">leading .NET Redis Client</a> for the <a href="http://redis.io/topics/benchmarks">worlds fastest distributed NoSQL datastore</a></li>
-	<li>Include clean, pluggable and versatile <a href="https://github.com/ServiceStack/ServiceStack.Redis">Caching API with multiple InMemory, distributed &amp; disk-backed caching providers</a></li>
-	<li>Replaced <a href="http://stackoverflow.com/questions/3629709/i-just-discovered-why-all-asp-net-websites-are-slow-and-i-am-trying-to-work-out">ASP.NET's flawed Session design</a> with a clean, POCO-based <a href="https://github.com/ServiceStack/ServiceStack/wiki/Sessions">Session API working that works with all our Caching providers</a></li>
-	<li>Offer a <a href="https://github.com/ServiceStack/Bundler">fast, simple and easy full-featured, cross-platform nodejs-powered minifier, compiler &amp; bundling solution for .NET projects</a> (cut StackOverflow Careers entire build-time by more than 1/2!)</li>
-	<li>Have many of our <a href="http://www.servicestack.net/Backbone.Todos/">live demos</a> and <a href="https://github.com/ServiceStack/ServiceStack.Examples/tree/master/src/StarterTemplates">Starter templates</a> powering the Backbone TODO sample app</li>
-	<li>Include built-in authentication provider options for <a href="https://github.com/ServiceStack/ServiceStack.Examples/tree/master/src/StarterTemplates">Twitter, Facebook, Credentials, Basic &amp; Digest Auth</a> - for today's demanding social websites</li>
-	<li>Include an example of a full-featured <a href="https://github.com/ServiceStack/SocialBootstrapApi">Backbone + Twitter Bootstrap + MVC + ServiceStack</a> example Single Page App to help you get started</li>
-	<li>Support <a href="https://github.com/ServiceStack/ServiceStack/wiki/Self-hosting">self-hosting</a> and <a href="http://www.servicestack.net/ServiceStack.Hello/#rootpath">ASP.NET hosts</a></li>
-	<li>Running inside <a href="https://github.com/ServiceStack/ServiceStack/wiki/Run-ServiceStack-as-a-daemon-on-Linux">Linux daemons</a> and natively on Linux-based servers &amp; clouds (e.g. <a href="http://cloud.google.com/products/compute-engine.html">Google's new Compute Engine</a>)</li>
-</ul>
-
-<h3>Classic OSS - all tech, no marketing :)</h3>
-
-<h4>$0 spent on marketing</h4>
-<p>
-	Like most Open Source projects we've been able to achieve our awareness through just word of mouth - a side-effect of having spent <br/> <strong>$0 on Marketing</strong> (cumulative total since ServiceStack's 2008 debut :). This is one of all OSS projects biggest weakness in its ability to gain adoption, where we ultimately have to succeed on our technical merits alone and can't rely on full-time evangelists, marketers with "Sponsored Studies" and "Facts" to convince non-technical decision-makers of our value. We believe this was the primary reason why WCF was able to achieve so much penetration in the .NET enterprise despite its failing many fundamental remote-service / SOA principles in practice, which promoted poor service designs and bloated formats resulting in slow, brittle and un-versionable services. Although OSS software by nature lives forever, we realize not having a promotional budget isn't ideal for adoption. We plan to rectify this in the near future by offering supplementary commercial productivity tooling and enterprise-focused add-ons.
-</p>
-<div>
-	Until then <a href="https://twitter.com/#!/ServiceStack/favorites">happy productive users</a>, <a href="http://www.servicestack.net/benchmarks/">benchmarks</a>, fast/scalable systems and <a href="https://github.com/ServiceStack/ServiceStack.Examples/">live demos</a> have become OSS projects best competitive weapons :)
-<div>
-
-<h4>Technically focused</h4>
-<p>
-	At the same time I've been proud of the high-level technical quality we've been able to achieve in ServiceStack. It's turned into what I originally envisaged <a href="https://github.com/ServiceStack/ServiceStack/wiki/Architecture-overview">the ideal web service framework should be</a>: Shaped from <a href="http://careers.stackoverflow.com/mythz">years of experience in the real-world trenches</a> developing robust systems in both large SOA-focused enterprises and productivity-valued &amp; performance-focused start-ups. ServiceStack was born after spending multiple years being <a href="https://github.com/ServiceStack/ServiceStack/wiki/Why-Servicestack">burnt by big .NET web service frameworks</a>: We've seen how code-gen, visual designers, heavy configs and needless leaky abstractions can cripple systems with sheer cruft and inertia, how <a href="https://github.com/ServiceStack/ServiceStack/blob/master/tests/ServiceStack.WebHost.IntegrationTests/Tests/WebServicesTests.cs">testing should be an integral part of the design</a>, what service interface designs, strategies and formats provide the <a href="https://github.com/ServiceStack/ServiceStack.Redis/wiki/MigrationsUsingSchemalessNoSql">most versionable and tolerant services</a>, how <a href="http://www.servicestack.net/mythz_blog/?p=665">not focusing on end-user value leads to unproductive solutions and technical debt</a>. What <a href="https://gist.github.com/1386381">remote service patterns</a> add the most value vs what concepts provide no value and just add un-necessary artificial complexity.
-</p>
-
-<h4>Our primary influences</h4>
-<p>
-	This has led us to <a href="https://github.com/ServiceStack/ServiceStack/wiki/Advantages-of-message-based-web-services">adopt influences from leading SOA platforms that fundamentally promote best practices</a>, least friction and ultimately most value.  Our primary focus on simplicity (eliminating abstractions, artificial concepts and maintaining a low cognitive overhead), good conventions, performance, remote service best-practices and real-world value has thus far been our primary differentiator which seen our original design outlast through many generations of competing rewritten and deprecated web service frameworks.
-<p>
-
-<h4>Attracting talented Contributors</h4>
-<p>
-We've been lucky enough to have attracted a number of other like-minded talented contributors, that continue to own and maintain different ServiceStack modules and leading <a href="https://github.com/ServiceStack/ServiceStack/wiki">our well regarded documentation efforts</a>. We're also lucky to have a vibrant community continually enriching the ServiceStack ecosystem <a href="https://github.com/ServiceStack/ServiceStack/wiki/Community-Resources/">contributing many blog posts, tutorials, presentations and talks</a>. Unfortunately talks has been my weakest area where despite leading the project for 4 years, I've yet to have given a public talk on ServiceStack! All this is set to change in October where I've been invited to give a talk at this years <a href="http://monospace.us/">Monospace conference in Boston</a> on the 17th of October - which is expected to be a fun-filled event that sports an <a href="http://monospace.us/speakers/">all-star speaker line-up</a>. The Mono community is a rare silver lining in .NET who have attracted a high ratio of fun and talented hackers - so if you can make it, its definitely <a href="http://monospace.us/">one not to miss</a>!
-</p>
-
-<a name="future"></a>
-<h3>Exciting future enhancements and product pipeline!</h3>
-
-<p>As good as the first half of this year has been - we're expecting the rest of this year to be even better!</p>
-
-<ul>
-	<li>We'll merge <a href="http://twitter.com/arxisos">@arxisos</a> new <a href="https://github.com/ServiceStack/ServiceStack/tree/async">async branch</a> - already showing some promising performance improvements</li>
-	<li>Documentation and live examples showcasing our new MVC Razor support</li>
-	<li>Fast async TCP pipeline and tight integration with remote <a href="http://nodejs.org/">node.js</a> and <a href="http://www.dartlang.org/">Dart</a> web servers</li>
-	<li>More example projects and optimized support for typed MonoTouch/MonoDroid clients</li>
-	<li>More Starter packs for popular Single Page JS Apps: e.g. <a href="http://backbonejs.org/">Backbone.js</a> and <a href="http://angularjs.org/">AngularJS</a></li>
-	<li>New recommendations on optimal strategies for hosting ServiceStack on Linux (e.g. <a href="https://github.com/ServiceStack/ServiceStack/wiki/Run-ServiceStack-as-a-daemon-on-Linux">self-hosting inside linux daemon</a>)</li>
-	<li>Documentation for running on Amazon &amp; <a href="http://cloud.google.com/products/compute-engine.html">Google Compute engine</a> clouds</li>
-	<li>New website redesign focusing on primary use-cases and showcasing feedback <small>(so if you've got ServiceStack running in production <a href="https://groups.google.com/forum/#!forum/servicestack">we'd love to know</a> :)</small></li>
-</ul>
-
-<h4>Scaling Horizontally at $0 licensing cost</h4>
-<p>
-	We particularly see solid support for hosting on Linux (with Mono) as one of the key areas providing the most value to our users as it's the preferred deployment platform for most large Internet sites and Startups as it allows companies to <b>scale at $0 software licensing costs</b> (a key requirement for scaling horizontally) as well as Linux servers provides the cheapest hosting, e.g. we run all of <a href="http://www.servicestack.net">servicestack.net</a> on a single dedicated Ubuntu server with <a href="http://www.hetzner.de/en/hosting/produkte_vserver/vq19">2GB RAM, 80GB HDD, 100MB bandwidth with 4TB traffic for only 19.90 euro per month</a>.
-	 - an <a href="https://www.windowsazure.com/en-us/pricing/calculator/?scenario=full">equivalent configuration on Azure</a> would cost <b>over 10x as much at USD $3,560 per year</b> (Reserved instance, only 1.75GB RAM, 2TB bandwith, No DB inc) - Scaling horizontally at that price starts to hurt budgets very quickly.
-</p>
-<p>
-	Even if you don't intend to host on Linux / Mono, it's still a good idea to build with cross-platform technologies where possible so you always have the option available should you need to scale-out fast - taking advantage of other platforms where it's not financially prohibitive or legally restrictive to scale horizontally.
-</p>
-
-<p>We also have some ideas on some commercial offerings we can offer to fund our future marketing efforts :)</p>
-
-<ul>
-	<li>"Strong-named" .NET 3.5/4 binary releases for Enterprises wanting "Officially signed" releases of ServiceStack</li>
-	<li>VS.NET extensions, templates and productivity tooling</li>
-	<li>Other suggestions welcomed :)</li>
-</ul>
 
 </div>
 
