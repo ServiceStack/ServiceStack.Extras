@@ -36,3 +36,4 @@ _ReSharper*/
 App_Data/
 
 .idea/
+.DS_Store
