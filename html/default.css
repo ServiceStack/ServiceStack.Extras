@@ -168,6 +168,11 @@ H3.intro
 	text-shadow: 1px 1px 1px rgba(162, 162, 162, 0.6);
 }
 
+#btn-googlecode  /*benchmark page*/
+{
+    margin: 18px 0 0 745px;
+    position: absolute;
+}
 #quote
 {
     color: #999;

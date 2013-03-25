@@ -4,7 +4,7 @@
     <list default="true" id="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" name="Default" comment="" />
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/default.css" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364196487339" ignored="false" />
+    <file path="/default.css" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364197228358" ignored="false" />
     <file path="/default.htm" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364195260733" ignored="false" />
     <file path="/ssbox.css" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364186504823" ignored="false" />
     <file path="/ssbox.js" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364186743353" ignored="false" />
@@ -32,7 +32,7 @@
           <file leaf-file-name="default.htm" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/default.htm">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="60" column="78" selection-start="2534" selection-end="2534" vertical-scroll-proportion="0.58849174">
+                <state line="51" column="81" selection-start="2250" selection-end="2250" vertical-scroll-proportion="0.47079337">
                   <folding>
                     <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#a#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -72,7 +72,7 @@
           <file leaf-file-name="default.css" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/default.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="251" column="19" selection-start="3838" selection-end="3838" vertical-scroll-proportion="0.5525192">
+                <state line="170" column="33" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.39880443">
                   <folding />
                 </state>
               </provider>
@@ -374,7 +374,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/default.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="78" selection-start="2534" selection-end="2534" vertical-scroll-proportion="0.58849174">
+        <state line="51" column="81" selection-start="2250" selection-end="2250" vertical-scroll-proportion="0.47079337">
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -390,7 +390,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="251" column="19" selection-start="3838" selection-end="3838" vertical-scroll-proportion="0.5525192">
+        <state line="170" column="33" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.39880443">
           <folding />
         </state>
       </provider>
