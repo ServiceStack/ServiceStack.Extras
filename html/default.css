@@ -60,11 +60,26 @@ A
 {
     font-family: 'Droid Sans', Arial;
 }
+
 BODY.host
 {
-	background: url(bg-body-1024.png) repeat-y;
-	padding-bottom: 40px;
+    background: url(bg-body-1024.png) repeat-y;
 }
+#home {
+    text-align: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f2f2f2;
+    width: 980px;
+}
+#container {
+    background: #fff;
+    text-align: left;
+    padding: 0 20px;
+    width: 940px;
+}
+
 .r
 {
 	clear: both;
@@ -153,20 +168,51 @@ H3.intro
 	text-shadow: 1px 1px 1px rgba(162, 162, 162, 0.6);
 }
 
-#contributors, #d100k 
+#quote
 {
     color: #999;
-	float:right;
+    position: absolute;
+    margin: 25px 0 0 400px;
+    font-family: Comic Sans MS;
+    font-style: italic;
+    font-size: 12px;
+}
+#quote A {
+    color: #999;
+}
+#head-right {
+    float: right;
+    width: 210px;
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+#contributors, #d100k 
+{
+    display: block;
+    color: #999;
 	font: 14px 'Droid Sans', Helvetica;
-	margin: 0px 20px 0 0;
 	text-decoration:none;
 }
 #contributors:hover, #d100k:hover{
 	text-decoration:underline;
 }
-#contributors {
-	margin: 0px 45px 0 0;
+#d100k {
 }
+#contributors {
+}
+#primary-links {
+    margin: 5px 0;
+    padding: 10px;
+    text-align: center;
+    clear: right;
+    float: right;
+}
+#primary-links a {
+    text-align: center;
+    text-decoration: none;
+    width: 160px;
+}
+
 
 #whatstack {
     text-align: center;
@@ -176,18 +222,6 @@ H3.intro
 {
 }
 
-#quote
-{
-	color: #999;
-	position: absolute;
-	top: 15px;
-	left: 370px;		
-	font-family: Comic Sans MS;
-	font-style: italic;
-}
-#quote A {
-	color: #999;
-}
 #slides
 {
     clear: left;
@@ -215,9 +249,9 @@ H3.intro
 
 #breadcrumbs
 {
-	padding: 0 0 4px 120px;
+	padding: 0 0 10px 120px;
 	margin-bottom: 5px;
-    border-bottom: 1px dotted #D2D2D2;
+    border-bottom: 1px dotted #eee;
 }
 #breadcrumbs A
 {
@@ -413,27 +447,20 @@ A IMG {
     padding: 0;
 }
 
-#primary-links, #second-links
-{
+#second-links {
     margin: 0px 0 20px 10px;
     padding: 10px;
     text-align: center;
     clear: right;
     float: right;
 }
-#primary-links {
-    padding: 20px 10px 0 0;
-}
 #second-links {
     width: 320px;
 }
-#primary-links a, #second-links a {
+#second-links a {
     margin-bottom: 10px;
     text-align: center;
     text-decoration: none;
-}
-#primary-links a {
-    width: 160px;
 }
 #second-links a {
     width: 200px;
