@@ -1,6 +1,7 @@
 #ssbox {
     color: #444;
     margin: 0 0 0 100px;
+    min-height: 800px;
 }
 #ssbox a
 {
