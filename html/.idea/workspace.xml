@@ -5,7 +5,7 @@
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/default.css" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364197228358" ignored="false" />
-    <file path="/default.htm" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364195260733" ignored="false" />
+    <file path="/default.htm" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364197931933" ignored="false" />
     <file path="/ssbox.css" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364186504823" ignored="false" />
     <file path="/ssbox.js" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364186743353" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,10 +29,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.65066224">
       <split-first>
         <leaf>
-          <file leaf-file-name="default.htm" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="default.htm" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/default.htm">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="51" column="81" selection-start="2250" selection-end="2250" vertical-scroll-proportion="0.47079337">
+                <state line="86" column="28" selection-start="4169" selection-end="4169" vertical-scroll-proportion="0.9285092">
                   <folding>
                     <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#a#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -69,7 +69,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="default.css" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/default.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="170" column="33" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.39880443">
@@ -93,8 +93,8 @@
         <option value="$PROJECT_DIR$/overview.htm" />
         <option value="$PROJECT_DIR$/ssbox/ssbox.css" />
         <option value="$PROJECT_DIR$/ssbox/ssbox.js" />
-        <option value="$PROJECT_DIR$/default.htm" />
         <option value="$PROJECT_DIR$/default.css" />
+        <option value="$PROJECT_DIR$/default.htm" />
       </list>
     </option>
   </component>
@@ -372,9 +372,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="170" column="33" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.39880443">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/default.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="81" selection-start="2250" selection-end="2250" vertical-scroll-proportion="0.47079337">
+        <state line="86" column="28" selection-start="4169" selection-end="4169" vertical-scroll-proportion="0.9285092">
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -385,13 +392,6 @@
             <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="33" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.39880443">
-          <folding />
         </state>
       </provider>
     </entry>
