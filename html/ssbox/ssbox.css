@@ -1,0 +1,94 @@
+#ssbox {
+    color: #444;
+    margin: 0 0 0 100px;
+}
+#ssbox a
+{
+    color: #205AAF !important;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+#ssbox h3 a {
+    color: #205AAF !important;
+    font-weight: normal;
+    font-size: 18px;
+}
+#ssbox a:hover
+{
+    color: #343434;
+}
+#ssbox h3 {
+    color: #343434;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 26px;
+}
+#ssbox h4 {
+    font-size: 13px;
+    font-weight: bold;
+    color: #343434;
+}
+#ssbox p, #ssbox ul, li {
+    font-size: 13px !important;
+    line-height: 17px !important;
+}
+#ssbox p {
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+}
+
+#ssbox #ss-info {
+    position: absolute;
+    text-align: center;
+    margin: 230px 0 0 240px;
+    cursor: pointer;
+    color: #444;
+}
+
+#ssbox #img {
+    background: url(ssbox.png);
+    width: 210px;
+    height: 150px;
+}
+#ssbox i {
+    visibility: hidden;
+}
+#ssbox b:hover {
+    color: #444;
+}
+#ssbox #ssbox-summary {
+    display: none;
+    margin: -120px 0 0 30px;
+}
+#ssbox #ssbox-summary li {
+    font-size: 15px !important;
+    line-height: 22px !important;
+}
+#ss-info h4 {
+    font-size: 14px !important;
+    margin: 0;
+}
+.ssinfos {
+    /*border: solid 1px red;*/
+    position: absolute;
+    width: 330px;
+    text-align: left;
+    margin: -620px 0 0 190px;
+    max-height: 350px;
+    overflow: hidden;
+}
+.ssinfos h3 {
+    text-align: center;
+}
+.ssinfos div {
+    display: none;
+    color: #000;
+    font-size: 13px;
+}
+.ssinfos div h4, ul{
+    margin: 0;
+}
+.ssinfos ul+h4 {
+    margin: 5px 0 0 0;
+}
