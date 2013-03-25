@@ -309,7 +309,7 @@ $.fn.initSounds = function(){
             },
             volume: volume,
             loop: $(this).data("loop") == "true",
-            swfPath: "Jplayer.swf",
+            swfPath: "ssbox/Jplayer.swf",
             solution: "html,flash"
         });
     });
