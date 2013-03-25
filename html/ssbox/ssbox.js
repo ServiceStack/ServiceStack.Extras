@@ -182,7 +182,7 @@ function animateSSBox()
     hasAnimated = true;
 
     $("#jplayer-open").jPlayer("play");
-    $("#ss-info #img").css("backgroundPosition","0 -150");
+    $("#ss-info #img").css("backgroundPosition","0 -150px");
     $("#ss-info h3").html("Simple, Fast, <br/>Lightweight Parts");
     $("#ss-info h4").html("Simplicity delivered at speed!");
     $("#ssbox #ssbox-summary").slideDown();
@@ -200,17 +200,16 @@ function animateSSBox()
                 'text-anchor:': 'start',
                 href: href(part.href)
             })
-                .hover(function(e) {
-                    set_texts.attr({fill: disabledColor});
-                    this.txt.animate({ "font-size": activeLabelSize, fill:activeColor }, 100, 'bounce');
-                    $showingInfo = $(".ssinfos ." + safeVar(this.part.text));
-//                    console.log("added: ", $showingInfo && $showingInfo[0] && $showingInfo.attr('class'));
-                    toggleInfo(e, true);
-                }, function(e) {
-                    var size = this.part.h == 1 ? 15 : 13;
-                    this.txt.animate({ "font-size": size }, 100, 'bounce');
-                    toggleInfo(e);
-                }, ctx, ctx);
+            .hover(function(e) {
+                set_texts.attr({fill: disabledColor});
+                this.txt.animate({ "font-size": activeLabelSize, fill:activeColor }, 100, 'bounce');
+                $showingInfo = $(".ssinfos ." + safeVar(this.part.text));
+                toggleInfo(e, true);
+            }, function(e) {
+                var size = this.part.h == 1 ? 15 : 13;
+                this.txt.animate({ "font-size": size }, 100, 'bounce');
+                toggleInfo(e);
+            }, ctx, ctx);
         }
     });
 }
