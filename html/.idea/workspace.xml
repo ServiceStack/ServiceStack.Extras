@@ -7,7 +7,7 @@
     <file path="/default.css" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364184138901" ignored="false" />
     <file path="/default.htm" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364185248436" ignored="false" />
     <file path="/ssbox.css" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364186504823" ignored="false" />
-    <file path="/ssbox.js" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364185504653" ignored="false" />
+    <file path="/ssbox.js" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364186743353" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +47,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ssbox.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="ssbox.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ssbox/ssbox.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="311" column="22" selection-start="9847" selection-end="9847" vertical-scroll-proportion="0.0">
+                <state line="313" column="26" selection-start="9929" selection-end="9929" vertical-scroll-proportion="0.8590948">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ssbox.css" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="ssbox.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ssbox/ssbox.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="21" selection-start="72" selection-end="72" vertical-scroll-proportion="0.038006756">
+                <state line="3" column="21" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -93,8 +93,8 @@
         <option value="$PROJECT_DIR$/overview.htm" />
         <option value="$PROJECT_DIR$/default.htm" />
         <option value="$PROJECT_DIR$/default.css" />
-        <option value="$PROJECT_DIR$/ssbox/ssbox.js" />
         <option value="$PROJECT_DIR$/ssbox/ssbox.css" />
+        <option value="$PROJECT_DIR$/ssbox/ssbox.js" />
       </list>
     </option>
   </component>
@@ -374,13 +374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssbox/ssbox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="311" column="22" selection-start="9847" selection-end="9847" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/default.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="431" column="9" selection-start="6465" selection-end="6465" vertical-scroll-proportion="0.5397096">
@@ -390,7 +383,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ssbox/ssbox.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="72" selection-end="72" vertical-scroll-proportion="0.038006756">
+        <state line="3" column="21" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssbox/ssbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="313" column="26" selection-start="9929" selection-end="9929" vertical-scroll-proportion="0.8590948">
           <folding />
         </state>
       </provider>

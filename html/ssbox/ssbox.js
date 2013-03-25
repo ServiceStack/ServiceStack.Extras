@@ -310,7 +310,8 @@ $.fn.initSounds = function(){
             volume: volume,
             loop: $(this).data("loop") == "true",
             swfPath: "ssbox/Jplayer.swf",
-            solution: "html,flash"
+            solution: "html,flash",
+            preload: "auto"
         });
     });
 };
