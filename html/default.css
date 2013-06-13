@@ -453,13 +453,6 @@ A IMG {
 }
 
 #second-links {
-    margin: 0px 0 20px 10px;
-    padding: 10px;
-    text-align: center;
-    clear: right;
-    float: right;
-}
-#second-links {
     width: 320px;
 }
 #second-links a {

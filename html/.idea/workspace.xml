@@ -5,7 +5,7 @@
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/default.css" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364197228358" ignored="false" />
-    <file path="/default.htm" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364197931933" ignored="false" />
+    <file path="/default.htm" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1371101105177" ignored="false" />
     <file path="/ssbox.css" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364186504823" ignored="false" />
     <file path="/ssbox.js" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1364186743353" ignored="false" />
     <file path="$USER_HOME$/Desktop/servicestack.net/default.html" changelist="81e7ff2c-8bee-40e3-9ee2-39425dcaee68" time="1369802063797" ignored="false" />
@@ -47,6 +47,30 @@
   <component name="FavoritesManager">
     <favorites_list name="html" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="default.htm" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/default.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="828" column="79" selection-start="44409" selection-end="44409" vertical-scroll-proportion="0.45074105">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/default.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="454" column="0" selection-start="6795" selection-end="6795" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -58,16 +82,16 @@
         <option value="$PROJECT_DIR$/overview.htm" />
         <option value="$PROJECT_DIR$/ssbox/ssbox.css" />
         <option value="$PROJECT_DIR$/ssbox/ssbox.js" />
+        <option value="$PROJECT_DIR$/../../sudoku_solver/benchmarks/sudoku.coffee" />
         <option value="$PROJECT_DIR$/default.css" />
         <option value="$PROJECT_DIR$/default.htm" />
-        <option value="$PROJECT_DIR$/../../sudoku_solver/benchmarks/sudoku.coffee" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1534" />
+    <option name="x" value="11" />
     <option name="y" value="22" />
-    <option name="width" value="1023" />
+    <option name="width" value="1392" />
     <option name="height" value="1330" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -96,7 +120,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -105,21 +128,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceStack.Extras" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceStack.Extras" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sudoku_solver/benchmarks/sudoku.coffee" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sudoku_solver/benchmarks/sudoku.coffee" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Node.js.sudoku.coffee">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -176,13 +224,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1534" y="22" width="1023" height="1330" extended-state="0" />
-    <editor active="false" />
+    <frame x="11" y="22" width="1392" height="1330" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.199" sideWeight="0.67161715" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14536157" sideWeight="0.67161715" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -314,16 +362,6 @@
         <state line="19" column="56" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.19616391" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="33" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.012809564" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/default.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="28" selection-start="4169" selection-end="4169" vertical-scroll-proportion="0.013077593" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ssbox/ssbox.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="313" column="26" selection-start="9929" selection-end="9929" vertical-scroll-proportion="0.847973" />
@@ -336,8 +374,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../sudoku_solver/benchmarks/sudoku.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="2778" selection-end="2778" vertical-scroll-proportion="0.0">
+        <state line="21" column="0" selection-start="2778" selection-end="2778" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="454" column="0" selection-start="6795" selection-end="6795" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/default.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="828" column="79" selection-start="44409" selection-end="44409" vertical-scroll-proportion="0.45074105">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

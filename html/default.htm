@@ -686,10 +686,16 @@
             <li><a href="https://github.com/ServiceStack/ServiceStack/wiki/Community-Resources/">Community Resources</a></li>
         </ul>
 
-        <div id="tweets-container">
+        <!--div id="tweets-container">
             <h3 id="from-tweets">Latest Tweets from <a href="http://twitter.com/servicestack">@ServiceStack</a>:</h3>
             <div id="jstweets">
             </div>
+        </div-->
+
+        <div id="second-links" style="margin: 50px 0 0 0">
+            <a href="https://github.com/ServiceStack/ServiceStack.Examples/" class="btn large primary"><b>Example Projects</b><small>demos and starter templates</small></a>
+
+            <a href="http://www.servicestack.net/docs" class="btn large"><b>Documentation</b><small>for sub projects</small></a>
         </div>
     </div>
 
@@ -702,12 +708,6 @@
                 | <a href="overview.htm">detailed</a>
             </p>
         </div>
-
-        <div id="second-links" style="margin: 50px 0 0 0">
-            <a href="https://github.com/ServiceStack/ServiceStack.Examples/" class="btn large primary"><b>Example Projects</b><small>demos and starter templates</small></a>
-
-            <a href="http://www.servicestack.net/docs" class="btn large"><b>Documentation</b><small>for sub projects</small></a>
-        </div>
     </div>
 
 </div>
@@ -719,16 +719,6 @@
     <h3>Install ServiceStack from NuGet</h3>
 
     <p>
-        <b>ServiceStack with Razor Support:</b> Create an empty ASP.NET Web or Console Application and (.NET 4.0+) 
-    </p>
-
-    <div class="nuget-badge">
-        <p>
-            <code>PM&gt; Install-Package ServiceStack.Razor</code>
-        </p>
-    </div>
-
-    <p>
         <b>ServiceStack binaries only:</b> Minimal installation of ServiceStack containing only the core-binaries (.NET 3.5+)
     </p>
 
@@ -738,6 +728,17 @@
         </p>
     </div>
 
+    <p>
+        <b>ServiceStack with Razor Support:</b> Create an empty ASP.NET Web or Console Application and (.NET 4.0+) 
+    </p>
+
+    <div class="nuget-badge">
+        <p>
+            <code>PM&gt; Install-Package ServiceStack.Razor</code>
+        </p>
+    </div>
+
+    <!--
     <h4 style="text-align:center;margin: 30px 0 0 0;">
     	Starter templates with pre-configured AppHost and basic Hello World REST services</h4>
 
@@ -762,7 +763,7 @@
     </div>
 
     Or.. install <a href="https://github.com/ServiceStack/ServiceStack/wiki/NuGet">other NuGet packages</a> in piecemeal - À la carte!
-
+    -->
 
     <h3 id="mvcpowerpack"><a href="mvc-powerpack/">Super charge your existing ASP.NET MVC website with ServiceStack's MVC PowerPack!</a></h3>
 </div>
@@ -830,7 +831,7 @@
 <script type="text/javascript" src="ssbox/ssbox.js"></script>
 
 <script type="text/javascript">
-
+/*
     $.getJSON("http://api.twitter.com/1/statuses/user_timeline.json?screen_name=servicestack&count=30&callback=?",
         function(data){
             var sb = "";
@@ -848,6 +849,7 @@
             });
             $("#jstweets").append(sb);
         });
+*/
 </script>
 
 <script type="text/javascript">
