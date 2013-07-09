@@ -682,17 +682,11 @@ allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
         <h3>Resources</h3>
         <ul>
             <li><a href="https://twitter.com/ServiceStack">@ServiceStack</a> - Updates and Announcements</li>
-            <li><a href="https://plus.google.com/u/0/communities/112445368900682590445">+ServiceStack</a> - Discussion and news from the community</li>
+            <li><a href="https://plus.google.com/u/0/communities/112445368900682590445">+ServiceStack</a> - Community discussion and news</li>
             <li><a href="https://github.com/ServiceStack/ServiceStack/wiki/Release-Notes">Latest Release Notes</a></li>
             <li><a href="http://stackoverflow.com/search?q=servicestack">Ask questions on StackOverflow</a></li>
             <li><a href="https://github.com/ServiceStack/ServiceStack/wiki/Community-Resources/">Community Resources</a></li>
         </ul>
-
-        <!--div id="tweets-container">
-            <h3 id="from-tweets">Latest Tweets from <a href="http://twitter.com/servicestack">@ServiceStack</a>:</h3>
-            <div id="jstweets">
-            </div>
-        </div-->
 
         <div id="second-links" style="margin: 50px 0 0 0">
             <a href="https://github.com/ServiceStack/ServiceStack.Examples/" class="btn large primary"><b>Example Projects</b><small>demos and starter templates</small></a>
@@ -739,33 +733,6 @@ allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
             <code>PM&gt; Install-Package ServiceStack.Razor</code>
         </p>
     </div>
-
-    <!--
-    <h4 style="text-align:center;margin: 30px 0 0 0;">
-    	Starter templates with pre-configured AppHost and basic Hello World REST services</h4>
-
-    <p>
-        <b>ServiceStack with ASP.NET:</b> Hosted at <b>/</b> - Create an empty ASP.NET Web Application and (.NET 3.5+) 
-    </p>
-
-    <div class="nuget-badge">
-        <p>
-            <code>PM&gt; Install-Package ServiceStack.Host.AspNet</code>
-        </p>
-    </div>
-
-    <p>
-        <b>Side-by-Side with MVC:</b> Hosted at <b>/api</b> - Create an empty MVC Web Application and (.NET 3.5+) 
-    </p>
-
-    <div class="nuget-badge">
-        <p>
-            <code>PM&gt; Install-Package ServiceStack.Host.Mvc</code>
-        </p>
-    </div>
-
-    Or.. install <a href="https://github.com/ServiceStack/ServiceStack/wiki/NuGet">other NuGet packages</a> in piecemeal - À la carte!
-    -->
 
     <h3 id="mvcpowerpack"><a href="mvc-powerpack/">Super charge your existing ASP.NET MVC website with ServiceStack's MVC PowerPack!</a></h3>
 </div>
@@ -831,28 +798,6 @@ allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
 <script type="text/javascript" src="ssbox/raphael.js"></script>
 <script type="text/javascript" src="ssbox/jquery.jplayer.min.js"></script>
 <script type="text/javascript" src="ssbox/ssbox.js"></script>
-
-<script type="text/javascript">
-/*
-    $.getJSON("http://api.twitter.com/1/statuses/user_timeline.json?screen_name=servicestack&count=30&callback=?",
-        function(data){
-            var sb = "";
-            var c = 0;
-            $.each(data, function(i,item){
-                var ct = item.text;
-				if (ct.charAt(0) == '@') return;
-				if (c++ > 4) return;
-
-                ct = ct.replace(/https?:\/\/\S+/g,  '<a href="$&" target="_blank">$&</a>');
-                ct = ct.replace(/\s(@)(\w+)/g,    ' <a onclick="javascript:pageTracker._trackPageview(\'/outgoing/twitter.com/\');" href="http://twitter.com/$2" target="_blank">@$2</a>');
-                ct = ct.replace(/\s(#)(\w+)/g,    ' <a onclick="javascript:pageTracker._trackPageview(\'/outgoing/search.twitter.com/search?q=%23\');" href="http://search.twitter.com/search?q=%23$2" target="_blank">#$2</a>');
-
-                sb += '<div>'+ct +'</div>';
-            });
-            $("#jstweets").append(sb);
-        });
-*/
-</script>
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
