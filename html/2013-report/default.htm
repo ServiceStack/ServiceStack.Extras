@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ServiceStack's End of Days, end of 2012 Community Report</title>
+    <link rel="stylesheet" type="text/css" href="../default.css" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="jquery-1.7.js"></script>
+	<script type="text/javascript" src="highcharts.js"></script>
+
+	<style type="text/css">
+		#content {
+			margin:0;
+			padding:15px;
+			width: auto;
+		}
+		#content a
+		{
+			color: #205AAF !important;
+		}
+		#content h3 {
+			color: #666;
+			margin: 10px 0 0 0;
+			padding: 10px 0;
+		}
+		H2 {
+			margin: 5px 0;
+		}
+		H4 {
+			color: #205AAF;
+		}
+		img {
+			margin:0;
+			padding:0;
+			vertical-align: bottom;
+		}
+		img[align=left] {
+			padding: 0 10px 0 0;
+		}
+		#feature {
+			padding: 0;
+		}
+		pre{margin:1em 0;font-size:12px;background-color:#eee;border:1px solid #ddd;padding:5px;line-height:1.5em;color:#444;overflow:auto;-webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+		pre::-webkit-scrollbar{height:8px;width:8px;}
+		pre::-webkit-scrollbar-track-piece{margin-bottom:10px;background-color:#e5e5e5;border-bottom-left-radius:4px 4px;border-bottom-right-radius:4px 4px;border-top-left-radius:4px 4px;border-top-right-radius:4px 4px;}
+		pre::-webkit-scrollbar-thumb:vertical{height:25px;background-color:#ccc;-webkit-border-radius:4px;-webkit-box-shadow:0 1px 1px rgba(255,255,255,1);}
+		pre::-webkit-scrollbar-thumb:horizontal{width:25px;background-color:#ccc;-webkit-border-radius:4px;}
+		pre code{padding:0!important;font-size:12px!important;background-color:#eee!important;border:none!important;}
+
+		kbd {
+			background-color:#eee;
+			padding: 1px 2px;
+		}
+		pre {
+			margin: 20px 40px;
+		}
+		acronym {
+			background-color:#f1f1f1;
+			border-bottom: 1px dotted #063;
+		}
+		small { 
+			color: #888;
+		}
+		.chart {
+			min-width: 500px; 
+			width: 800px; 
+			height: 400px; 
+			margin: 20px auto;
+		}
+	</style>
+</head>
+<body class="host">
+
+<div id="header">
+
+	<a href="http://www.servicestack.net" title="Open source Mono and .NET web service framework"><img src="../logo-servicestack.png" alt="Service Stack" /></a>
+	<h3 id="logo-title">The state of the Stack, 2013</h3>
+	<br/>
+</div>
+
+<div id="content">
+
+<a name="downloads"></a>
+<h3>NuGet Downloads</h3>
+
+<div id="chart-downloads" class="chart"></div>
+​
+<script type="text/javascript">
+    $(document).ready(function() {
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart-downloads',
+                type: 'area'
+            },
+            title: {
+                text: '1,000,000+ - Total NuGet Downloads at 2013'
+            },
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    month: '%b',
+                    year: '%b'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'NuGet Downloads'
+                },
+                labels: {
+                    formatter: function() {
+                        return this.value +'';
+                    }
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>' + Highcharts.numberFormat(this.y, 0) +'</b> ' + this.series.name;
+                }
+            },
+            plotOptions: {
+                area: {
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'NuGet Downloads',
+                data: [
+                    [Date.UTC(2012, 0, 01), 10000], 
+                    [Date.UTC(2012, 7, 01), 100000], 
+                    [Date.UTC(2012, 11, 21), 222000],
+                    [Date.UTC(2013, 11, 21), 1000000]
+                ]
+            }]
+        });
+    });
+</script>
+
+<h3>GitHub Stars (3rd most for .NET)</h3>
+
+<div id="chart-watchers" class="chart"></div>
+​
+<script type="text/javascript">
+    $(document).ready(function() {
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart-watchers',
+                type: 'area'
+            },
+            title: {
+                text: '2,039 - GitHub Favourites at 2012'
+            },
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    month: '%b',
+                    year: '%b'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'GitHub Watchers'
+                },
+                labels: {
+                    formatter: function() {
+                        return this.value +'';
+                    }
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>' + Highcharts.numberFormat(this.y, 0) +'</b> ' + this.series.name;
+                }
+            },
+            plotOptions: {
+                area: {
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'GitHub Watchers',
+                data: [
+                	[Date.UTC(2012, 0, 01), 500], 
+                	[Date.UTC(2012, 7, 01), 818], 
+                    [Date.UTC(2012, 11, 21), 1172],
+                    [Date.UTC(2013, 11, 01), 2039]
+                ]
+            }]
+        });
+    });
+</script>
+
+<a name="contributors"></a>
+<h3>Code Contributors</h3>
+
+<div id="chart-contributors" class="chart"></div>
+​
+<script type="text/javascript">
+    $(document).ready(function() {
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart-contributors',
+                type: 'area'
+            },
+            title: {
+                text: '302 - Code Contributors at 2013'
+            },
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    month: '%b',
+                    year: '%b'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Contributors'
+                },
+                labels: {
+                    formatter: function() {
+                        return this.value +'';
+                    }
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>' + Highcharts.numberFormat(this.y, 0) +'</b> ' + this.series.name;
+                }
+            },
+            plotOptions: {
+                area: {
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Contributors',
+                data: [
+                    [Date.UTC(2012, 0, 01), 35], 
+                    [Date.UTC(2012, 7, 01), 88], 
+                    [Date.UTC(2012, 11, 21), 140],
+                    [Date.UTC(2013, 11, 21), 302]
+                ]
+            }]
+        });
+    });
+</script>
+
+<h3>Questions on StackOverflow</h3>
+
+<div id="chart-questions" class="chart"></div>
+​
+<script type="text/javascript">
+    $(document).ready(function() {
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart-questions',
+                type: 'area'
+            },
+            title: {
+                text: '2,031 - StackOverflow Questions at 2013'
+            },
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    month: '%b',
+                    year: '%b'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'StackOverflow Questions'
+                },
+                labels: {
+                    formatter: function() {
+                        return this.value +'';
+                    }
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>' + Highcharts.numberFormat(this.y, 0) +'</b> ' + this.series.name;
+                }
+            },
+            plotOptions: {
+                area: {
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'StackOverflow Questions',
+                data: [
+                	[Date.UTC(2012, 7, 01), 356], 
+                    [Date.UTC(2012, 11, 21), 740],
+                    [Date.UTC(2013, 11, 01), 2031]
+                ]
+            }]
+        });
+    });
+</script>
+
+<h3>Twitter Followers</h3>
+
+<div id="chart-followers" class="chart"></div>
+​
+<script type="text/javascript">
+    $(document).ready(function() {
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart-followers',
+                type: 'area'
+            },
+            title: {
+                text: '1,959 - Twitter Followers at 2013'
+            },
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    month: '%b',
+                    year: '%b'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Twitter Followers'
+                },
+                labels: {
+                    formatter: function() {
+                        return this.value +'';
+                    }
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>' + Highcharts.numberFormat(this.y, 0) +'</b> ' + this.series.name;
+                }
+            },
+            plotOptions: {
+                area: {
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Twitter Followers',
+                data: [
+                    [Date.UTC(2012, 0, 01), 319], 
+                    [Date.UTC(2012, 7, 01), 720], 
+                    [Date.UTC(2012, 11, 21), 1058],
+                    [Date.UTC(2013, 11, 01), 1959]
+                ]
+            }]
+        });
+    });
+</script>
+
+
+<span class="r"></span>
+<div id="footer">
+	Copyright &copy; 2013 ServiceStack. All rights reserved.
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7722718-7");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
