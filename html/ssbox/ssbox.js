@@ -184,7 +184,7 @@ function animateSSBox()
     $("#jplayer-open").jPlayer("play");
     $("#ss-info #img").css("backgroundPosition","0 -150px");
     $("#ss-info h3").html("Simple, Fast, <br/>Lightweight Parts");
-    $("#ss-info h4").html("Simplicity delivered at speed!");
+    $("#ss-info h4").html("Simplicity at Speed!");
     $("#ssbox #ssbox-summary").slideDown();
 
     set_texts.animate({expand:1}, 1000, 'bounce', function(){
