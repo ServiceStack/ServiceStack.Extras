@@ -63,15 +63,15 @@
 <div id="header">
 	<a id="btn-googlecode" href="https://github.com/ServiceStack/" title="go to Service Stack projects on GitHub"><img src="../btn-github.png" alt="GitHub project" alt="ServiceStack GitHub logo" /></a>
 
-	<a href="http://www.servicestack.net" title="Open source Mono and .NET web service framework"><img src="../logo-servicestack-xmas.png" alt="Service Stack" /></a>
+	<a href="http://mono.servicestack.net" title="Open source Mono and .NET web service framework"><img src="../logo-servicestack-xmas.png" alt="Service Stack" /></a>
 	<h3 id="logo-title">Upgrade to a cleaner, faster, REST API-enabled ASP.NET MVC</h3>
 
 	<div id="breadcrumbs">
 		<a href="https://twitter.com/ServiceStack">@ServiceStack</a>
-		| <a href="http://www.servicestack.net/benchmarks/">benchmarks</a>
-		| <a href="http://www.servicestack.net/docs/">documentation</a>
+		| <a href="http://mono.servicestack.net/benchmarks/">benchmarks</a>
+		| <a href="http://mono.servicestack.net/docs/">documentation</a>
 		| <a href="http://stackoverflow.com/search?q=servicestack">on stackoverflow</a>
-		| <a href="http://www.servicestack.net/mythz_blog/">blog</a>		
+		| <a href="http://mono.servicestack.net/mythz_blog/">blog</a>		
 	</div>
 </div>
 
@@ -140,7 +140,7 @@
 		Already well known to 
 		<a href="http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID</a> developers, an IOC promotes well-designed architecture yet it only takes a little IOC to reap its great rewards. <br/> 
 		As it makes a great first IOC, we've included <a href="https://twitter.com/#!/KZU">@kzu's</a> <a href="http://funq.codeplex.com/">Funq</a> because of its tiny size, 
-		<a href="http://www.servicestack.net/benchmarks/#munq">excellent perf and memory characteristics</a> that sports an intuitive, friendly, code-centric interface. <br/>
+		<a href="http://mono.servicestack.net/benchmarks/#munq">excellent perf and memory characteristics</a> that sports an intuitive, friendly, code-centric interface. <br/>
 	</p>
 	<p>
 		To use: register all your dependencies in the new 
@@ -161,8 +161,8 @@
 		
 		The lack of a JSON serializer with decent performance in .NET has some developers resorting to
 		<a href="https://twitter.com/#!/MikaelEliasson/status/141113725263417344">ugly hacks</a> 
-		and has caused us <a href="http://www.servicestack.net/mythz_blog/?p=344">to develop our own JSON serializer</a> (also included) replacing .NET's slowest serializer with 
-		<a href="http://www.servicestack.net/benchmarks/#burningmonk-json">.NET's fastest</a> - for multiple of times better JSON performance! <br />
+		and has caused us <a href="http://mono.servicestack.net/mythz_blog/?p=344">to develop our own JSON serializer</a> (also included) replacing .NET's slowest serializer with 
+		<a href="http://mono.servicestack.net/benchmarks/#burningmonk-json">.NET's fastest</a> - for multiple of times better JSON performance! <br />
 		We feel the CPU heat energy savings could be put to better use, like toasting marshmallows over a warm xmas fire :)
 	</p>
 	<p>
@@ -238,7 +238,7 @@
 	<p>
 		To this end we provide our own pluggable <a href="https://github.com/ServiceStack/ServiceStack/blob/master/src/ServiceStack/Configuration/AppSettings.cs">AppSettings</a>
 		to provide high-level utility methods to read your Web.config's <b>&lt;appSetting/&gt;</b> values into a List, Dictionary or your own Custom Type using the 
-		<a href="http://www.servicestack.net/docs/text-serializers/jsv-format">human friendly JSV format</a>.
+		<a href="http://mono.servicestack.net/docs/text-serializers/jsv-format">human friendly JSV format</a>.
 	</p>
 	<p>
 		Benefits over existing Configuration API include the ability to store rich data stuctures in appSettings values, more succinct access to typed data and since its an interface it can easily be swapped to source your configuration from an different source (e.g. from a central DB) without a rewrite. <br/>
@@ -268,7 +268,7 @@ var searchUrl = appSettings.Get("SearchUrl", "http://www.google.com"); //use def
 		If you're not concerned about poor performance or being surprised by the occaisional unintended behaviour, then there's a lot to like in Entity Framework :) 
 		Although there may be times when you want to improve a critical hotspot in your code or wish to escape EF's abstractions and flex your SQL skills by issuing 
 		optimized and complex SQL queries. For these situations you can make use of any of the included 
-		<a href="http://www.servicestack.net/benchmarks/#dapper">2 fastest Micro ORMs</a> in .NET in 
+		<a href="http://mono.servicestack.net/benchmarks/#dapper">2 fastest Micro ORMs</a> in .NET in 
 		<a href="http://code.google.com/p/dapper-dot-net/">Dapper</a> and <a href="https://github.com/ServiceStack/ServiceStack.OrmLite">OrmLite</a>. 
 		Both ORMs work the same way in that they're simply Extension methods hanging off ADO.NET's <kbd>System.Data.*</kbd> interfaces. 
 		Since they don't require any config to setup, can make use your existing dbConnection and maps to clean POCOs - they are an easy and non-invasive option to use.
@@ -292,10 +292,10 @@ var searchUrl = appSettings.Get("SearchUrl", "http://www.google.com"); //use def
 	<p>
 		<i>In a CoffeeTable overview:</i> ServiceStack is a 
 		<a href="http://servicestack.net/benchmarks/">high-performance</a>, 
-		<a href="http://www.servicestack.net/files/slides-crossplatform.png">cross-platform</a> web service framework encouraging established remote services best practices (i.e. Martin Fowlers 
+		<a href="http://mono.servicestack.net/files/slides-crossplatform.png">cross-platform</a> web service framework encouraging established remote services best practices (i.e. Martin Fowlers 
 		<a href="http://martinfowler.com/eaaCatalog/remoteFacade.html">Remote Facade</a>, 
 		<a href="http://martinfowler.com/eaaCatalog/dataTransferObject.html">DTO</a>, 
-		<a href="http://martinfowler.com/eaaCatalog/gateway.html">Gateway</a>) common in the Java world and improved upon in ServiceStack after taking advantage of C#'s language features yielding a succinct and expressive framework that's also a friendly option for <a href="http://www.servicestack.net/mythz_blog/?p=785">F# (on Win or Mono)</a>.
+		<a href="http://martinfowler.com/eaaCatalog/gateway.html">Gateway</a>) common in the Java world and improved upon in ServiceStack after taking advantage of C#'s language features yielding a succinct and expressive framework that's also a friendly option for <a href="http://mono.servicestack.net/mythz_blog/?p=785">F# (on Win or Mono)</a>.
 	</p>
 	<p>
 		ServiceStack has strong support for all web formats where all services created automatically enable JSON, XML, HTML, CSV, JSV, SOAP 1.1/1.2 wire formats incl. HTML ContentTypes (form-urlencoded/multipart) and calling conventions (JSONP) out-of-the-box with <b>no XML config required :)</b>. Whilst it only takes a single <acronym title="Line of Code">LOC</acronym> to disable system-wide features. 
@@ -316,13 +316,13 @@ var searchUrl = appSettings.Get("SearchUrl", "http://www.google.com"); //use def
 	</p>
 	<p>
 		For client/server connectivity, succinct and strong-typed 
-		<a href="http://www.servicestack.net/RestFiles/#!files/tests/SyncRestClientTests.cs.txt">Sync</a> and 
-		<a href="http://www.servicestack.net/RestFiles/#!files/tests/AsyncRestClientTests.cs.txt">Async</a> 
+		<a href="http://mono.servicestack.net/RestFiles/#!files/tests/SyncRestClientTests.cs.txt">Sync</a> and 
+		<a href="http://mono.servicestack.net/RestFiles/#!files/tests/AsyncRestClientTests.cs.txt">Async</a> 
 		generic service clients are included enabling typed access end-to-end without any code-gen (re-using code-first DTOs) on .NET/Mono platforms including 
 		<a href="https://github.com/ServiceStack/ServiceStack.Examples/blob/master/src/MonoTouch/RestFilesClient/RestFilesClient/Main.cs#L46">MonoTouch</a>. 
 		Whilst it works cleanly with popular Ajax libraries like 
-		<a href="http://www.servicestack.net/RestFiles/#!files">jQuery</a> and 
-		<a href="http://www.servicestack.net/Backbone.Todos/">Backbone.js</a> without requiring any bloated special-purpose libs to call your services.
+		<a href="http://mono.servicestack.net/RestFiles/#!files">jQuery</a> and 
+		<a href="http://mono.servicestack.net/Backbone.Todos/">Backbone.js</a> without requiring any bloated special-purpose libs to call your services.
 	</p>
 
 	<h4>And lots more...</h4>
@@ -335,7 +335,7 @@ var searchUrl = appSettings.Get("SearchUrl", "http://www.google.com"); //use def
 			<a href="https://github.com/ServiceStack/ServiceStack.Redis/">Full-featured C# Redis Client</a> for access to the fastest distributed NoSQL data store - unprecendented power at your fingertips!
 		</li>
 		<li>
-			<a href="http://www.servicestack.net/mythz_blog/?p=202">T.Dump() extension method</a> which recursively dumps all the public properties of any type into a human readable "pretty formatted" string.
+			<a href="http://mono.servicestack.net/mythz_blog/?p=202">T.Dump() extension method</a> which recursively dumps all the public properties of any type into a human readable "pretty formatted" string.
 		</li>
 		<li>
 			<a href="https://github.com/ServiceStack/ServiceStack/blob/master/src/ServiceStack.Common/Utils/ReflectionUtils.cs#L124">TranslateTo&lt;T&gt; and PopulateWith&lt;T&gt;</a> extension methods
@@ -352,7 +352,7 @@ var searchUrl = appSettings.Get("SearchUrl", "http://www.google.com"); //use def
 
 	<h4>Where to next...</h4>
 	<p>
-		Follow <a href="https://twitter.com/ServiceStack">@ServiceStack</a> for updates. Read the <a href="http://www.servicestack.net/docs/">documentation</a>.
+		Follow <a href="https://twitter.com/ServiceStack">@ServiceStack</a> for updates. Read the <a href="http://mono.servicestack.net/docs/">documentation</a>.
 		Ask questions on <a href="http://stackoverflow.com">StackOverflow</a> (with the <kbd>ServiceStack</kbd> tag) or by posting to
 		<a href="https://groups.google.com/forum/#!forum/servicestack">ServiceStack's mailing list</a>. <br/>
 		For real-time support (that you just can't buy :) we're usually hanging out in <a href="http://jabbr.net/#/rooms/servicestack">http://jabbr.net/servicestack</a>
