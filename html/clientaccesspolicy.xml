@@ -1,4 +1,5 @@
-<cross-domain-access>
+<access-policy>
+  <cross-domain-access>
     <policy>
       <allow-from http-request-headers="*">
         <domain uri="http://www.servicestack.net"/>
